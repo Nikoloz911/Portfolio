@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 //
 import { ElementRef, ViewChild, } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
+import { Location } from '@angular/common';
 //
 @Component({
   selector: 'app-nav-bar',
@@ -9,16 +12,47 @@ import { ElementRef, ViewChild, } from '@angular/core';
 })
 export class NavBarComponent {
   /// Nav bar Link Text Animation  /// Nav bar Link Text Animation
-  @ViewChild('navLinkText', { static: false }) navLinkText!: ElementRef; 
-  constructor() {}
-  ngAfterViewInit(): void {
-    const textElement = this.navLinkText.nativeElement;
-    const text = textElement.innerText;
-    textElement.innerHTML = text.split('').map((letter: string) => {
-      return `<span class="letter">${letter}</span>`;
-    }).join('');
-  }
+  // @ViewChild('navLinkText', { static: false }) navLinkText!: ElementRef; 
+  // constructor() {}
+  // ngAfterViewInit(): void {
+  //   const textElement = this.navLinkText.nativeElement;
+  //   const text = textElement.innerText;
+  //   textElement.innerHTML = text.split('').map((letter: string) => {
+  //     return `<span class="letter">${letter}</span>`;
+  //   }).join('');
+  // }
   /// Nav bar Link Text Animation  /// Nav bar Link Text Animation
+
+
+
+  activeRoute: string = '';
+
+  constructor(private location: Location) {}
+
+  ngOnInit(): void {
+    this.updateActiveRoute();
+
+    // Listen for route changes to update activeRoute
+    this.location.onUrlChange((url: string) => {
+      this.activeRoute = url.split('?')[0]; // Normalize URL without query params
+    });
+  }
+
+  // Set active route on initialization
+  private updateActiveRoute(): void {
+    this.activeRoute = this.location.path().split('?')[0]; // Normalize URL without query params
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 
   

@@ -13,7 +13,10 @@
             </li>
           </a>
         <a class="nav-bar-link" href="/Me"><li>About Me</li></a>
-        <a class="nav-bar-link" href="/Projects"><li>Projects</li></a>
+        <a class="nav-bar-link" href="/Projects" [class.active-link]="activeRoute === '/Projects'">
+          <li>Projects</li>
+        </a>
+  
         <a class="nav-bar-link" href="/Skills"><li>Skills</li></a>
       </ul>
     </div>
