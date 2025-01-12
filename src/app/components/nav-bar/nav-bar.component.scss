@@ -1,0 +1,130 @@
+@mixin Flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+/// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS
+  @keyframes colorChange {
+    0% {
+      color: #00FFFF; 
+    }
+    25% {
+      color: #0000FF;
+    }
+    50% {
+      color: #1E90FF; 
+    }
+    75% {
+      color: #1c1cff; 
+    }
+    100% {
+      color: #00FFFF;
+    }
+  } 
+
+  @keyframes shadowAnimation {
+    0% {
+        box-shadow: 0px 0px 1px 1px rgba(70, 62, 135, 0.75); 
+    }
+    50% {
+        box-shadow: 0px 0px 1px 1px rgba(0, 0, 139, 0.75); 
+    }
+    100% {
+        box-shadow: 0px 0px 1px 1px rgba(70, 62, 135, 0.75); 
+    }
+}
+
+
+@keyframes moveAround {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    25% {
+      top: 0;
+      left: 100%;
+    }
+  }
+  @keyframes hideBorder {
+    100% {
+      opacity: 0; 
+      visibility: hidden; 
+    }
+  }
+
+/// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS
+
+
+/// NAV BAR /// NAV BAR  /// NAV BAR  /// NAV BAR  /// NAV BAR  /// NAV BAR  /// NAV BAR 
+  .nav-bar {
+    font-family: "Montserrat";
+    height: 80px;
+    display: flex;
+    .nav-bar-left-side {
+      border: solid 1px red;
+      width: 50%;
+      display: flex;
+      align-items: center;
+  
+      .nav-bar-title {
+        color: #fff;
+        margin-left: 20%;
+      }
+    }
+    .nav-bar-right-side {
+      border: solid 1px red;
+      width: 50%;
+      @include Flex();
+      .nav-bar-links {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 4px 2px rgba(70,62,135,0.75);
+        -webkit-box-shadow: 0px 0px 4px 2px rgba(70,62,135,0.75);
+        -moz-box-shadow: 0px 0px 4px 2px rgba(70,62,135,0.75);
+       animation: shadowAnimation 3s infinite alternate;
+       position: relative;
+     ::before {
+        content: "";
+        position: absolute;
+        width: 25px;
+        height: 1px;
+        background-color: rgb(123, 171, 255);
+        animation: moveAround 7s infinite linear, hideBorder 2s forwards; 
+      }
+    #nav-bar-link-main {
+        color: rgb(0, 115, 255);
+        .letter {
+            display: inline-block;
+            animation: colorChange 6s linear infinite;
+          }
+          .letter:nth-child(1) {
+            animation-delay: 0s;
+          }       
+          .letter:nth-child(2) {
+            animation-delay: 0.2s;
+          }     
+          .letter:nth-child(3) {
+            animation-delay: 0.4s;
+          }      
+          .letter:nth-child(4) {
+            animation-delay: 0.6s;
+          }
+      }
+        .nav-bar-link {
+          color: #fff;
+          text-decoration: none;
+          font-family: Arial, Helvetica, sans-serif;
+          
+        }
+      }
+    }
+  }
+/// NAV BAR /// NAV BAR  /// NAV BAR  /// NAV BAR  /// NAV BAR  /// NAV BAR  /// NAV BAR 
+  
