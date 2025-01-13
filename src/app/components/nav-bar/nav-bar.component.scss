@@ -3,35 +3,34 @@
     justify-content: center;
     align-items: center;
   } 
-
 /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS
-  @keyframes colorChange {
-    0% {
-      color: #00FFFF; 
-    }
-    25% {
-      color: #0000FF;
-    }
-    50% {
-      color: #1E90FF; 
-    }
-    75% {
-      color: #1c1cff; 
-    }
-    100% {
-      color: #00FFFF;
-    }
-  } 
+@keyframes colorChange {
+  0% {
+    color: #00b7ff;
+  }
+  25% {
+    color: #00d5ff;
+  }
+  50% {
+    color: #00a2ff;
+  }
+  75% {
+    color: #099dff;
+  }
+  100% {
+    color: #008cff;
+  }
+}
 
   @keyframes shadowAnimation {
     0% {
-        box-shadow: 0px 0px 1px 1px rgba(70, 62, 135, 0.75); 
+        box-shadow: 0px 0px 1px 1px rgba(0, 118, 244, 0.75); 
     }
     50% {
-        box-shadow: 0px 0px 1px 1px rgba(0, 0, 139, 0.75); 
+        box-shadow: 0px 0px 1px 1px rgba(0, 63, 252, 0.75); 
     }
     100% {
-        box-shadow: 0px 0px 1px 1px rgba(70, 62, 135, 0.75); 
+        box-shadow: 0px 0px 1px 1px rgba(0, 1, 84, 0.75); 
     }
 }
 
@@ -55,19 +54,17 @@
     font-family: "Montserrat";
     height: 80px;
     display: flex;
+    border: solid 1px red;
     .nav-bar-left-side {
-      border: solid 1px red;
       width: 50%;
       display: flex;
       align-items: center;
-  
       .nav-bar-title {
         color: #fff;
         margin-left: 20%;
       }
     }
     .nav-bar-right-side {
-      border: solid 1px red;
       width: 50%;
       @include Flex();
       .nab-bar-links-container{
@@ -80,7 +77,7 @@
         box-shadow: 0px 0px 1px 2px rgba(70,62,135,0.75);
         -webkit-box-shadow: 0px 0px 1px 2px rgba(70,62,135,0.75);
         -moz-box-shadow: 0px 0px 1px 2px rgba(70,62,135,0.75);
-       animation: shadowAnimation 3s infinite alternate;
+       animation: shadowAnimation 5s infinite alternate;
        position: relative;
        overflow: hidden;
         border: solid 1px rgb(0, 0, 19);
@@ -93,7 +90,7 @@
         top: 0;
         left: 0;
         box-sizing: border-box;
-        animation: borderAnimation 6s linear infinite;
+        animation: borderAnimation 10s linear infinite;
     }
         .nav-bar-links {
           width: 100%;
@@ -109,25 +106,6 @@
          position: relative;
          overflow: hidden;
           border: solid 1px rgb(0, 0, 19);
-      #nav-bar-link-main {
-          color: rgb(0, 115, 255);
-          .letter {
-              display: inline-block;
-              animation: colorChange 6s linear infinite;
-            }
-            .letter:nth-child(1) {
-              animation-delay: 0s;
-            }       
-            .letter:nth-child(2) {
-              animation-delay: 0.2s;
-            }     
-            .letter:nth-child(3) {
-              animation-delay: 0.4s;
-            }      
-            .letter:nth-child(4) {
-              animation-delay: 0.6s;
-            }
-        }
           .nav-bar-link {
             color: #fff;
             text-decoration: none;
@@ -136,7 +114,41 @@
             &:hover{
               color: rgb(0, 132, 255);
             }
-          }      
+            .space{
+              margin: 3px;
+            }
+          }           
+          .active-link {
+            color: rgb(0, 115, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            .letter {
+              display: inline-block;
+              animation: colorChange 6s linear infinite;
+            }
+            .letter:nth-child(1) {
+              animation-delay: 0s;
+            }
+            .letter:nth-child(2) {
+              animation-delay: 0.2s;
+            }
+            .letter:nth-child(3) {
+              animation-delay: 0.4s;
+            }
+            .letter:nth-child(4) {
+              animation-delay: 0.6s;
+            }
+            .letter:nth-child(5) {
+              animation-delay: 0.8s;
+            }
+            &:hover{
+              color: #099dff;
+            }
+          }
+          
+     
+         
+       
+          
         }
       }
    
