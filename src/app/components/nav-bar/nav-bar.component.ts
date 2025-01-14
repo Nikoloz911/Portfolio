@@ -20,7 +20,6 @@ export class NavBarComponent {
   onScroll(): void {
     let currentScroll = window.pageYOffset;
     let navbar = document.querySelector('#nav-bar') as HTMLElement;
-
     if (navbar) {
       if (currentScroll > this.lastScroll && !navbar.classList.contains('scroll-down')) {
         navbar.classList.remove('scroll-up');
@@ -37,5 +36,3 @@ export class NavBarComponent {
   }
     /// SCROLL FUNCTION ON NAV BAR   /// SCROLL FUNCTION ON NAV BAR
 }
-  
-

@@ -65,10 +65,6 @@
       width: 100%;
       opacity: 1;
     }
-    &:not(.scroll-up) {
-      opacity: 0;  
-      transform: translateY(-100%); 
-    }
     /// SCROLL FUNCTION  /// SCROLL FUNCTION
     .nav-bar-left-side {
       width: 50%;
