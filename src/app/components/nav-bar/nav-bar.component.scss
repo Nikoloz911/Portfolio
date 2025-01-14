@@ -54,16 +54,20 @@
     font-family: "Montserrat";
     height: 80px;
     display: flex;
+    width: 100%;
     background-color: transparent;
-    transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
     z-index: 9999;  /// Z-INDEX
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    position: fixed;
+    transition: transform 0.5s ease, opacity 0.5s ease;
     /// SCROLL FUNCTION  /// SCROLL FUNCTION
     &.scroll-up {
-      background-color: transparent;
-      position: fixed;
-      width: 100%;
+      transform: translateY(0); // Fully visible
       opacity: 1;
+    }
+  
+    &.scroll-down {
+      transform: translateY(-100%); // Slide up out of view
+      opacity: 0; // Smooth fade out
     }
     /// SCROLL FUNCTION  /// SCROLL FUNCTION
     .nav-bar-left-side {
@@ -161,6 +165,7 @@
             .letter {
               display: inline-block;
               animation: colorChange 6s linear infinite;
+              animation-delay: calc(var(--index) * 0.2s);
             }
             .letter:nth-child(1) {
               animation-delay: 0s;
@@ -180,15 +185,9 @@
             &:hover{
               color: #099dff;
             }
-          }
-          
-     
-         
-       
-          
+          }       
         }
-      }
-   
+      }   
     }
   }
 /// NAV BAR /// NAV BAR  /// NAV BAR  /// NAV BAR  /// NAV BAR  /// NAV BAR  /// NAV BAR 
