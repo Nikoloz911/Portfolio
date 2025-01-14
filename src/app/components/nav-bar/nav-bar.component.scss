@@ -54,9 +54,22 @@
     font-family: "Montserrat";
     height: 80px;
     display: flex;
-    border: solid 1px red;
-    background-color: #000;
-   
+    background-color: transparent;
+    transition: transform 300ms ease-in-out, background-color 300ms ease-in-out;
+    z-index: 9999;  /// Z-INDEX
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    /// SCROLL FUNCTION  /// SCROLL FUNCTION
+    &.scroll-up {
+      background-color: transparent;
+      position: fixed;
+      width: 100%;
+      opacity: 1;
+    }
+    &:not(.scroll-up) {
+      opacity: 0;  
+      transform: translateY(-100%); 
+    }
+    /// SCROLL FUNCTION  /// SCROLL FUNCTION
     .nav-bar-left-side {
       width: 50%;
       display: flex;
