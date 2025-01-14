@@ -56,10 +56,6 @@
     display: flex;
     border: solid 1px red;
     background-color: #000;
-    &.scroll-up {
-      transform: translateY(0); // Show navbar
-    }
-  
    
     .nav-bar-left-side {
       width: 50%;
