@@ -13,13 +13,14 @@ import { SkillsComponent } from './components/person/skills/skills.component';
 //
 const routes: Routes = [
   {
-    path: "",
-    component: HomeComponent
+    path: 'home',
+    redirectTo: '',
+    pathMatch: 'full'
   },
   {
-    path: "home",
+    path: '',
     component: HomeComponent
-  },
+  }, 
   {
     path: "Me",
     component: MeComponent

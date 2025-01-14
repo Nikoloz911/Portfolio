@@ -1,21 +1,60 @@
 <nav id="nav-bar" class="nav-bar">
-    <div class="nav-bar-left-side">
-      <h1 class="nav-bar-title">Nikoloz Lobzhanidze</h1>
-    </div>
-    <div class="nav-bar-right-side">
+  <div class="nav-bar-left-side">
+    <a class="nav-bar-content" href="/home">
+    <img class="nav-bar-image" src="/assets/images/Logo.jpg" alt="">
+    <h1 class="nav-bar-title">Portfolio</h1>
+    </a>
+  </div>
+  <div class="nav-bar-right-side">
+    <div class="nab-bar-links-container">
       <ul class="nav-bar-links">
-        <a id="nav-bar-link-main" class="nav-bar-link" href="/home">
-            <li>
-              <span class="letter">H</span>
-              <span class="letter">o</span>
-              <span class="letter">m</span>
-              <span class="letter">e</span>
-            </li>
-          </a>
-        <a class="nav-bar-link" href="/Me"><li>About Me</li></a>
-        <a class="nav-bar-link" href="/Projects"><li>Projects</li></a>
-        <a class="nav-bar-link" href="/Skills"><li>Skills</li></a>
+        <a
+        [routerLink]="'/'"
+        class="nav-bar-link"
+        [class.active-link]="isActive('/')"
+      >
+        <li>
+          <span class="letter">H</span>
+          <span class="letter">o</span>
+          <span class="letter">m</span>
+          <span class="letter">e</span>
+        </li>
+      </a>      
+        <a routerLink="/Me" routerLinkActive="active-link" id="nav-bar-link-Me" class="nav-bar-link">
+          <li>
+            <span class="letter">A</span>
+            <span class="letter">b</span>
+            <span class="letter">o</span>
+            <span class="letter">u</span>
+            <span class="letter">t</span>
+            <span class="space"></span>
+            <span class="letter">M</span>
+            <span class="letter">e</span>
+          </li>
+        </a>
+        <a routerLink="/Projects" routerLinkActive="active-link" id="nav-bar-link-Projects" class="nav-bar-link">
+          <li>
+            <span class="letter">P</span>
+            <span class="letter">r</span>
+            <span class="letter">o</span>
+            <span class="letter">j</span>
+            <span class="letter">e</span>
+            <span class="letter">c</span>
+            <span class="letter">t</span>
+            <span class="letter">s</span>
+          </li>
+        </a>
+        <a routerLink="/Skills" routerLinkActive="active-link" id="nav-bar-link-Skills" class="nav-bar-link">
+          <li>
+            <span class="letter">S</span>
+            <span class="letter">k</span>
+            <span class="letter">i</span>
+            <span class="letter">l</span>
+            <span class="letter">l</span>
+            <span class="letter">s</span>
+          </li>
+        </a>
       </ul>
     </div>
-  </nav>
-  
+  </div>
+</nav>

@@ -3,127 +3,183 @@
     justify-content: center;
     align-items: center;
   } 
-
 /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS
-  @keyframes colorChange {
-    0% {
-      color: #00FFFF; 
-    }
-    25% {
-      color: #0000FF;
-    }
-    50% {
-      color: #1E90FF; 
-    }
-    75% {
-      color: #1c1cff; 
-    }
-    100% {
-      color: #00FFFF;
-    }
-  } 
+@keyframes colorChange {
+  0% {
+    color: #00b7ff;
+  }
+  25% {
+    color: #00d5ff;
+  }
+  50% {
+    color: #00a2ff;
+  }
+  75% {
+    color: #099dff;
+  }
+  100% {
+    color: #008cff;
+  }
+}
 
   @keyframes shadowAnimation {
     0% {
-        box-shadow: 0px 0px 1px 1px rgba(70, 62, 135, 0.75); 
+        box-shadow: 0px 0px 1px 1px rgba(0, 118, 244, 0.75); 
     }
     50% {
-        box-shadow: 0px 0px 1px 1px rgba(0, 0, 139, 0.75); 
+        box-shadow: 0px 0px 1px 1px rgba(0, 63, 252, 0.75); 
     }
     100% {
-        box-shadow: 0px 0px 1px 1px rgba(70, 62, 135, 0.75); 
+        box-shadow: 0px 0px 1px 1px rgba(0, 1, 84, 0.75); 
     }
 }
 
-
-@keyframes moveAround {
-    0% {
-      top: 0;
-      left: 0;
-    }
-    25% {
-      top: 0;
-      left: 100%;
-    }
+@keyframes borderAnimation {
+  0% {
+      clip-path: polygon(0% 0%, 40% 40%, 40% 0%, 0% 0%); /* Start with top border */
   }
-  @keyframes hideBorder {
-    100% {
-      opacity: 0; 
-      visibility: hidden; 
-    }
+  33% {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%); /* Top → Right */
   }
-
+  66% {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); /* Right → Bottom */
+  }
+  99% {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%); /* Bottom → Left */
+  }
+}
 /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS
-
-
 /// NAV BAR /// NAV BAR  /// NAV BAR  /// NAV BAR  /// NAV BAR  /// NAV BAR  /// NAV BAR 
   .nav-bar {
     font-family: "Montserrat";
     height: 80px;
     display: flex;
+    border: solid 1px red;
+    background-color: #000;
+   
     .nav-bar-left-side {
-      border: solid 1px red;
       width: 50%;
       display: flex;
       align-items: center;
-  
-      .nav-bar-title {
-        color: #fff;
+      .nav-bar-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-left: 20%;
-      }
+        width: 200px;
+        text-decoration: none;
+        .nav-bar-image{
+          // C:\Users\user\Desktop\Portfolio\Portfolio\src\assets\images\Logo.jpg
+          border: solid 1px blue;
+          border-radius: 7px;
+          width: 50px;
+          height: 50px;       
+          transition: 500ms;
+          cursor: pointer;
+         &:hover{
+          scale: 105%;
+         }
+        }
+        .nav-bar-title {
+          color: #fff;
+          margin-left: 7%;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          transition: 500ms;
+          cursor: pointer; 
+         &:hover{
+          color: #008cff;
+         }
+        }
+      }   
     }
     .nav-bar-right-side {
-      border: solid 1px red;
       width: 50%;
       @include Flex();
-      .nav-bar-links {
+      .nab-bar-links-container{
         width: 50%;
         height: 50%;
-        display: flex;
         list-style: none;
-        justify-content: center;
-        align-items: center;
+      @include Flex();
         gap: 30px;
         border-radius: 5px;
-        box-shadow: 0px 0px 4px 2px rgba(70,62,135,0.75);
-        -webkit-box-shadow: 0px 0px 4px 2px rgba(70,62,135,0.75);
-        -moz-box-shadow: 0px 0px 4px 2px rgba(70,62,135,0.75);
-       animation: shadowAnimation 3s infinite alternate;
+        box-shadow: 0px 0px 1px 2px rgba(70,62,135,0.75);
+        -webkit-box-shadow: 0px 0px 1px 2px rgba(70,62,135,0.75);
+        -moz-box-shadow: 0px 0px 1px 2px rgba(70,62,135,0.75);
+       animation: shadowAnimation 5s infinite alternate;
        position: relative;
-     ::before {
+       overflow: hidden;
+        border: solid 1px rgb(0, 0, 19);
+       &::before {
         content: "";
         position: absolute;
-        width: 25px;
-        height: 1px;
-        background-color: rgb(123, 171, 255);
-        animation: moveAround 7s infinite linear, hideBorder 2s forwards; 
-      }
-    #nav-bar-link-main {
-        color: rgb(0, 115, 255);
-        .letter {
-            display: inline-block;
-            animation: colorChange 6s linear infinite;
+        width: 100%;
+        height: 100%;
+        border: 2px solid rgba(0, 94, 255, 0.75);
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        animation: borderAnimation 10s linear infinite;
+    }
+        .nav-bar-links {
+          width: 100%;
+          height: 100%;
+          list-style: none;
+        @include Flex();
+          gap: 30px;
+          border-radius: 5px;
+          box-shadow: 0px 0px 1px 2px rgba(70,62,135,0.75);
+          -webkit-box-shadow: 0px 0px 1px 2px rgba(70,62,135,0.75);
+          -moz-box-shadow: 0px 0px 1px 2px rgba(70,62,135,0.75);
+         animation: shadowAnimation 3s infinite alternate;
+         position: relative;
+         overflow: hidden;
+          border: solid 1px rgb(0, 0, 19);
+          .nav-bar-link {
+            color: #fff;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: 500ms;
+            &:hover{
+              color: rgb(0, 132, 255);
+            }
+            .space{
+              margin: 3px;
+            }
+          }           
+          .active-link {
+            color: rgb(0, 115, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            .letter {
+              display: inline-block;
+              animation: colorChange 6s linear infinite;
+            }
+            .letter:nth-child(1) {
+              animation-delay: 0s;
+            }
+            .letter:nth-child(2) {
+              animation-delay: 0.2s;
+            }
+            .letter:nth-child(3) {
+              animation-delay: 0.4s;
+            }
+            .letter:nth-child(4) {
+              animation-delay: 0.6s;
+            }
+            .letter:nth-child(5) {
+              animation-delay: 0.8s;
+            }
+            &:hover{
+              color: #099dff;
+            }
           }
-          .letter:nth-child(1) {
-            animation-delay: 0s;
-          }       
-          .letter:nth-child(2) {
-            animation-delay: 0.2s;
-          }     
-          .letter:nth-child(3) {
-            animation-delay: 0.4s;
-          }      
-          .letter:nth-child(4) {
-            animation-delay: 0.6s;
-          }
-      }
-        .nav-bar-link {
-          color: #fff;
-          text-decoration: none;
-          font-family: Arial, Helvetica, sans-serif;
+          
+     
+         
+       
           
         }
       }
+   
     }
   }
 /// NAV BAR /// NAV BAR  /// NAV BAR  /// NAV BAR  /// NAV BAR  /// NAV BAR  /// NAV BAR 

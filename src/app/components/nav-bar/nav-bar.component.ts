@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 //
-import { ElementRef, ViewChild, } from '@angular/core';
+import { Router,} from '@angular/router';
 //
 @Component({
   selector: 'app-nav-bar',
@@ -8,19 +8,13 @@ import { ElementRef, ViewChild, } from '@angular/core';
   styleUrl: './nav-bar.component.scss'
 })
 export class NavBarComponent {
-  /// Nav bar Link Text Animation  /// Nav bar Link Text Animation
-  @ViewChild('navLinkText', { static: false }) navLinkText!: ElementRef; 
-  constructor() {}
-  ngAfterViewInit(): void {
-    const textElement = this.navLinkText.nativeElement;
-    const text = textElement.innerText;
-    textElement.innerHTML = text.split('').map((letter: string) => {
-      return `<span class="letter">${letter}</span>`;
-    }).join('');
+
+  constructor(private router: Router) {}
+  isActive(route: string): boolean {
+    return this.router.url === route || (route === '/' && this.router.url === '/');
   }
-  /// Nav bar Link Text Animation  /// Nav bar Link Text Animation
 
-
+}
   
 //   let body = document.body;
 // let lastScroll = 0;
@@ -44,4 +38,4 @@ export class NavBarComponent {
 //   }
 //   lastScroll = currentScroll;
 // });
-}
+
