@@ -6,6 +6,13 @@ import { Router,} from '@angular/router';
   styleUrl: './nav-bar.component.scss'
 })
 export class NavBarComponent {
+  /// BURGER MENU FUNCTION  /// BURGER MENU FUNCTION
+  isBurgerMenuOpen = false;
+  toggleBurgerMenu(): void {
+    this.isBurgerMenuOpen = !this.isBurgerMenuOpen;
+  }
+  /// BURGER MENU FUNCTION  /// BURGER MENU FUNCTION
+  
   /// NAV-BAR TEXT ANIMATIONS  /// NAV-BAR TEXT ANIMATIONS
   ngAfterViewInit(): void {
     const navBarLinks = document.querySelectorAll('.nav-bar-link');
@@ -49,4 +56,7 @@ export class NavBarComponent {
     }
   }
     /// SCROLL FUNCTION ON NAV BAR   /// SCROLL FUNCTION ON NAV BAR
+
+
+    
 }

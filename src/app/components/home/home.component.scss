@@ -1,7 +1,161 @@
+/// ANIMATIONS   /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS
+
+@keyframes colorSwitch {
+    0% {
+      background: linear-gradient(to right, #70c7ff,  #5bc0ff);
+    }
+    25% {
+      background: linear-gradient(to right, #70ccff, #5bc0ff);
+    }
+    50% {
+      background: linear-gradient(to right, #8cc9ef, #3fb4fc);
+    }
+    75% {
+      background: linear-gradient(to right, #92c3de, #379cdb);
+    }
+    100% {
+      background: linear-gradient(to right, #82b0cc,  #3e9cd6);
+    }
+  }
+
+/// ANIMATIONS   /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS
 body{
     height: 1000px;
+    width: 100%;
     background: #040000;
     background: linear-gradient(270deg,#040000 0%, #00114f 80%);
     background: -webkit-linear-gradient(270deg,#040000 0%, #00114f 80%);
     background: -moz-linear-gradient(270deg,#040000 0%, #00114f 80%);
+    .home-page{
+        display: flex;
+        border: solid 1px red;
+        width: 100%;
+        height: 800px;
+        .home-page-left-side{
+            width: 40%;
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .home-page-title{
+                color: #Fff;
+                font-family: sans-serif;
+                margin-top: 50px;
+            }
+            .home-page-image{
+                width: 200px;
+                height: 200px;
+                border: solid 1px black;
+                border-radius: 50%;
+                margin-top: 50px;
+            }
+            .home-page-title-description{
+                color: #Fff;
+                font-family: sans-serif;
+                margin-top: 50px;
+            }
+          
+            .home-page-left-side-button{
+                cursor: pointer;
+                background-color: rgb(255, 255, 255);
+                border: solid 1px rgb(0, 17, 59);
+                border-radius: 25px;
+                width: 220px;
+                height: 45px;
+                color: #000;
+                margin-top: 50px;
+                font-size: 20px;
+                animation: colorSwitch 4s infinite alternate; 
+                transition: 500ms;
+                &:hover{
+                    background-color: #0024a4;
+                    border: solid 1px black;
+                    color: #fff;
+                    box-shadow: 0px -1px 11px 0px rgba(0,117,255,0.75);
+                    -webkit-box-shadow: 0px -1px 11px 0px rgba(0,117,255,0.75);
+                    -moz-box-shadow: 0px -1px 11px 0px rgba(0,117,255,0.75);
+                }
+            }      
+        }
+        .home-page-right-side{
+            width: 60%;
+            border: solid 1px red;
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .home-page-right-side-title{
+                color: #fff;
+                font-family: cursive;
+                margin-bottom: 50px;
+            }
+            .home-page-right-side-icons-container{
+                 border: solid 1px red; //
+                width: 80%;
+                height: 80%;
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                .icon-Link {
+                  border: solid 1px red;
+                    height: 100px;
+                    text-decoration: none; 
+                    display: inline-block;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .html-icon i {
+                        font-size: 100px; 
+                        transition: transform 0.3s ease, color 0.3s ease;
+                        &:hover{
+                            color: #fe2600;
+                        }
+                    }   
+                    .css-icon i{
+                      font-size: 100px;
+                      transition: transform 0.3s ease, color 0.3s ease;
+                        &:hover{
+                            color: rgb(0, 145, 255);
+                        }
+                    }
+                    .scss-icon i{
+                      font-size: 100px;
+                      transition: transform 0.3s ease, color 0.3s ease;
+                      &:hover{
+                        color: rgb(247, 0, 247);
+                    }
+                    }
+                    .Javascript-icon i {
+                      font-size: 100px;
+                      transition: transform 0.3s ease, color 0.3s ease;
+                      &:hover{
+                        color: rgb(221, 233, 0);
+                    }
+                     }
+                     .Typescript-icon i{
+                      font-size: 100px;
+                      transition: transform 0.3s ease, color 0.3s ease;
+                      &:hover{
+                        color: rgb(0, 197, 246);
+                    }
+                     }
+                }
+                
+                
+            
+                  
+                 
+                 
+                
+              
+            }
+       
+        }
+    }
+  
+
+ 
+      
 }
+
