@@ -20,7 +20,7 @@
 
 /// ANIMATIONS   /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS
 body{
-    height: 1000px;
+    height: 1500px;
     width: 100%;
     background: #040000;
     background: linear-gradient(270deg,#040000 0%, #00114f 80%);
@@ -28,7 +28,6 @@ body{
     background: -moz-linear-gradient(270deg,#040000 0%, #00114f 80%);
     .home-page{
         display: flex;
-        border: solid 1px red;
         width: 100%;
         height: 800px;
         .home-page-left-side{
@@ -79,7 +78,9 @@ body{
         }
         .home-page-right-side{
             width: 60%;
-            border: solid 1px red;
+            border: solid 5px rgba(0, 17, 79, 0.413);
+            border-right: none;
+            border-radius: 5px;
             margin-top: 100px;
             display: flex;
             flex-direction: column;
@@ -91,69 +92,236 @@ body{
                 margin-bottom: 50px;
             }
             .home-page-right-side-icons-container{
-                 border: solid 1px red; //
                 width: 80%;
                 height: 80%;
                 display: flex;
-                justify-content: center;
-                gap: 30px;
-                .icon-Link {
-                  border: solid 1px red;
+                flex-direction: column;
+                align-items: center;
+                .home-page-right-side-icons-container-top-side-title{
+                  margin-top: 60px;
+                  color: #fff;
+                  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                }
+                .home-page-right-side-icons-container-top-side{
+                  width: 100%;
+                  height: 150px;
+                  margin-top: 10px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 30px;
+                  .icon-Link {
+                      height: 100px;
+                      text-decoration: none; 
+                      display: inline-block;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      .html-icon i {
+                          font-size: 100px; 
+                          transition: transform 0.3s ease, color 0.3s ease;
+                          &:hover{
+                              color: #fe2600;
+                          }
+                      }   
+                      .css-icon i{
+                        font-size: 100px;
+                        transition: transform 0.3s ease, color 0.3s ease;
+                          &:hover{
+                              color: rgb(0, 145, 255);
+                          }
+                      }
+                      .scss-icon i{
+                        font-size: 100px;
+                        transition: transform 0.3s ease, color 0.3s ease;
+                        &:hover{
+                          color: rgb(247, 0, 247);
+                      }
+                      }
+                      .Javascript-icon i {
+                        font-size: 100px;
+                        transition: transform 0.3s ease, color 0.3s ease;
+                        &:hover{
+                          color: rgb(221, 233, 0);
+                      }
+                       }
+                       .Typescript-icon i{
+                        font-size: 100px;
+                        transition: transform 0.3s ease, color 0.3s ease;
+                        &:hover{
+                          color: rgb(0, 197, 246);
+                      }
+                       }
+                  }
+                }
+              .home-page-right-side-icons-container-bottom-side-title{
+                color: #fff;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                margin-top: 40px;
+              }
+                .home-page-right-side-icons-container-bottom-side{
+                  width: 100%;
+                  height: 150px;
+                  margin-top: 20px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  gap: 30px;
+                  .icon-Link{
                     height: 100px;
                     text-decoration: none; 
-                    display: inline-block;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    .html-icon i {
-                        font-size: 100px; 
-                        transition: transform 0.3s ease, color 0.3s ease;
-                        &:hover{
-                            color: #fe2600;
-                        }
-                    }   
-                    .css-icon i{
-                      font-size: 100px;
-                      transition: transform 0.3s ease, color 0.3s ease;
-                        &:hover{
-                            color: rgb(0, 145, 255);
-                        }
-                    }
-                    .scss-icon i{
+                    .Csharp-icon i{
                       font-size: 100px;
                       transition: transform 0.3s ease, color 0.3s ease;
                       &:hover{
-                        color: rgb(247, 0, 247);
+                        color: rgb(234, 251, 255);
                     }
                     }
-                    .Javascript-icon i {
-                      font-size: 100px;
+                    .Sql-icon i{
+                      font-size: 110px;
                       transition: transform 0.3s ease, color 0.3s ease;
                       &:hover{
-                        color: rgb(221, 233, 0);
+                        color: rgb(37, 215, 255);
                     }
-                     }
-                     .Typescript-icon i{
-                      font-size: 100px;
-                      transition: transform 0.3s ease, color 0.3s ease;
-                      &:hover{
-                        color: rgb(0, 197, 246);
                     }
-                     }
+                  }
                 }
-                
-                
-            
-                  
-                 
-                 
-                
-              
+                      
             }
-       
         }
     }
-  
+  .tools-section{
+    border: solid 2px yellow;
+    height: 650px;
+    .tools-section-title{
+      color: #fff;
+      font-family: cursive;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .tools-section-container{
+      border: solid 2px blue;
+      height: 500px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .tools-section-first-container{
+         border: solid 2px red;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        gap: 50px;
+        /// FIRST ICON LINK   /// FIRST ICON LINK  /// FIRST ICON LINK  /// FIRST ICON LINK
+        .tools-section-first-container-first-icon-link{
+          border: solid 2px rgb(255, 255, 255);
+          border-radius: 5px;
+          width: 180px;
+          height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
+          font-family: monospace;
+          font-size: 20px;
+          color: #fff;
+          gap: 20px;
+          .github-icon i{
+            font-size: 50px;
+            color: white;
+            transition: 500ms;
+            &:hover{
+              color: rgb(0, 136, 255);
+            }
+          }
+          transition: 500ms;
+          &:hover{
+            color: rgb(0, 136, 255);
+            box-shadow: 1px 1px 20px 2px rgba(255,255,255,0.75);
+           -webkit-box-shadow: 1px 1px 20px 2px rgba(255,255,255,0.75);
+            -moz-box-shadow: 1px 1px 20px 2px rgba(255,255,255,0.75);
+          }
+        }
+          /// FIRST ICON LINK   /// FIRST ICON LINK  /// FIRST ICON LINK  /// FIRST ICON LINK
+          /// SECOND ICON LINK /// SECOND ICON LINK /// SECOND ICON LINK /// SECOND ICON LINK
+          .tools-section-first-container-second-icon-link{
+            border: solid 2px rgb(128, 0, 255);
+            border-radius: 5px;
+            width: 200px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-family: monospace;
+            color: #fff;
+            font-size: 20px;
+            gap: 20px;
+            .bootstrap-icon i{
+              font-size: 50px;  
+              transition: 500ms;
+              &:hover{
+                color: rgb(60, 0, 255);
+              }
+            }
+            transition: 500ms;
+            &:hover{
+              color: rgb(98, 0, 218);
+              box-shadow: 1px 1px 20px 2px rgba(91,0,207,0.75);
+              -webkit-box-shadow: 1px 1px 20px 2px rgba(91,0,207,0.75);
+              -moz-box-shadow: 1px 1px 20px 2px rgba(91,0,207,0.75);
+            }
+          }
+          /// SECOND ICON LINK /// SECOND ICON LINK /// SECOND ICON LINK /// SECOND ICON LINK
+          /// THIRD ICON LINK /// THIRD ICON LINK /// THIRD ICON LINK /// THIRD ICON LINK
+          .tools-section-first-container-third-icon-link{
+            border: solid 2px rgb(0, 99, 50);
+            border-radius: 5px;
+            width: 180px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-family: monospace;
+            color: #fff;
+            font-size: 20px;
+            gap: 20px;
+            .devicon-icon i{
+              font-size: 50px;  
+              transition: 500ms;
+              &:hover{
+                color: rgb(0, 255, 145);
+              }
+            }
+            transition: 500ms;
+            &:hover{
+              color: rgb(0, 218, 131);
+              box-shadow: 1px 1px 20px 2px rgba(0,207,92,0.75);
+              -webkit-box-shadow: 1px 1px 20px 2px rgba(0,207,92,0.75);
+              -moz-box-shadow: 1px 1px 20px 2px rgba(0,207,92,0.75);
+            }
+          }
+          /// THIRD ICON LINK /// THIRD ICON LINK /// THIRD ICON LINK /// THIRD ICON LINK
+        
+      }
+      .tools-section-second-container{
+        border: solid 2px red;
+        height: 100px;
+
+      }
+      .tools-section-third-container{
+        border: solid 2px red;
+        height: 100px;
+
+      }
+    }
+  }
 
  
       
