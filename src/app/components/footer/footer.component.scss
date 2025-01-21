@@ -166,3 +166,36 @@ body{
         }
     }
 }
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+@media screen and (max-width: 480px) {
+    body{
+        height: 1500px;  
+        .footer{
+            .footer-main-section{
+                height: 90%;
+                display: flex;
+                flex-direction: column;
+                .footer-contact-section{
+                      height: 15%;            
+                }
+                .footer-languages-section{        
+                      height: 30%;
+                      margin-left: 0px;              
+                }
+                .footer-projects-section{   
+                      height: 25%;
+                }
+                .footer-social-media-section{
+                      height: 18%;       
+                }
+            }
+            .footer-bottom-section{
+                border-top: solid 1px #ddd;    
+                height: 10%;
+            }
+        }
+    }
+}
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+/// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
