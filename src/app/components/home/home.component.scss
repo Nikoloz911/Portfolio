@@ -528,3 +528,52 @@ body{
 }
  /// RESPONSIVE 480PX /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX
  /// RESPONSIVE 480PX /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX
+ 
+ /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX
+ /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX
+ @media screen and (max-width: 768px) {
+  body{
+    height: 2100px; ///
+    .home-page{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        .home-page-left-side{
+            width: 100%;  
+            flex-direction: column;   
+        }
+        .home-page-right-side{
+            width: 100%;
+            border: none;     
+            flex-direction: column; 
+        }
+    }
+  .tools-section{
+        height: auto;
+    .tools-section-container{
+        height: auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .tools-section-first-container{
+        height: auto;
+        flex-wrap: wrap;
+        gap: 30px; 
+      }
+      .tools-section-second-container{
+        height: auto;
+        gap: 20px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+      }
+      .tools-section-third-container{
+        height: auto;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+    }
+  }   
+}
+ }
+ /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX
+ /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX

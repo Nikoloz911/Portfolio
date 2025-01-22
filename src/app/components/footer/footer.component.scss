@@ -199,3 +199,36 @@ body{
 }
 /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
 /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
+/// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX
+/// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX
+@media screen and (max-width: 768px) {
+    body{
+        height: 1000px;  
+        .footer{
+            .footer-main-section{
+                height: 90%;
+                display: flex;
+                flex-wrap: wrap;
+                .footer-contact-section{
+                      height: 15%;            
+                }
+                .footer-languages-section{        
+                      height: 30%;
+                      margin-left: 0px;              
+                }
+                .footer-projects-section{   
+                      height: 25%;
+                }
+                .footer-social-media-section{
+                      height: 18%;       
+                }
+            }
+            .footer-bottom-section{
+                border-top: solid 1px #ddd;    
+                height: 10%;
+            }
+        }
+    }
+}
+/// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX
+/// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX
