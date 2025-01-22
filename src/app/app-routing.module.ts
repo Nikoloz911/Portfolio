@@ -15,11 +15,14 @@ import { SkillsComponent } from './components/person/skills/skills.component';
 /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS  /// LANGUAGES COMPONENTS
 import { HtmlComponent } from './components/languages/html/html.component';
 import { CssComponent } from './components/languages/css/css.component';
+import { ScssComponent } from './components/languages/scss/scss.component';
 import { JavascriptComponent } from './components/languages/javascript/javascript.component';
 import { TypescriptComponent } from './components/languages/typescript/typescript.component';
 import { CSharpComponent } from './components/languages/c-sharp/c-sharp.component';
 import { SQLComponent } from './components/languages/sql/sql.component';
 /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS  /// LANGUAGES COMPONENTS
+/// ALL ROUTES /// ALL ROUTES  /// ALL ROUTES  /// ALL ROUTES
+/// ALL ROUTES /// ALL ROUTES  /// ALL ROUTES  /// ALL ROUTES
 const routes: Routes = [
   {
     path: 'home',
@@ -42,18 +45,43 @@ const routes: Routes = [
     path: "Skills",
     component: SkillsComponent
   },
-   /// LANGUAGES COMPONENTS
+   /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS
    {
     path: "html",
     component: HtmlComponent
-  },
-  /// LANGUAGES COMPONENTS
+   },
+   {
+    path: "css",
+    component: CssComponent
+   },
+   {
+    path: "scss",
+    component: ScssComponent
+   },
+   {
+    path: "javascript",
+    component: JavascriptComponent
+   },
+   {
+    path: "typescript",
+    component: TypescriptComponent
+   },
+   {
+    path: "Csharp",
+    component: CSharpComponent
+   },
+   {
+    path: "sql",
+    component: SQLComponent
+   },
+  /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS
   {
     path: "**",
     component: ErrorComponent
   },
 ];
-
+/// ALL ROUTES /// ALL ROUTES  /// ALL ROUTES  /// ALL ROUTES
+/// ALL ROUTES /// ALL ROUTES  /// ALL ROUTES  /// ALL ROUTES
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

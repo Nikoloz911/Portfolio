@@ -18,6 +18,7 @@ import { JavascriptComponent } from './components/languages/javascript/javascrip
 import { TypescriptComponent } from './components/languages/typescript/typescript.component';
 import { CSharpComponent } from './components/languages/c-sharp/c-sharp.component';
 import { SQLComponent } from './components/languages/sql/sql.component';
+import { ScssComponent } from './components/languages/scss/scss.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { SQLComponent } from './components/languages/sql/sql.component';
     TypescriptComponent,
     CSharpComponent,
     SQLComponent,
+    ScssComponent,
   ],
   imports: [
     BrowserModule,
