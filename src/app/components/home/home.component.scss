@@ -1,4 +1,36 @@
 /// ANIMATIONS   /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS  /// ANIMATIONS
+@keyframes shine {
+  0% {
+      background-position: 0%;
+  }
+  100% {
+      background-position: -150%; 
+  }
+} 
+@-webkit-keyframes shine {
+  0% {
+      background-position: 0%;
+  }
+  100% {
+      background-position: -150%;
+  }
+}    
+@-moz-keyframes shine {
+  0% {
+      background-position: 00%;
+  }
+  100% {
+      background-position: -150%;
+  }
+}  
+@-o-keyframes shine {
+  0% {
+      background-position: 00%;
+  }
+  100% {
+      background-position: -150%;
+  }
+}
 
 @keyframes colorSwitch {
     0% {
@@ -17,7 +49,7 @@
       background: linear-gradient(to right, #82b0cc,  #3e9cd6);
     }
   }
-  @keyframes shine {
+  @keyframes shineImage {
     0% {
       left: -100px;
     }
@@ -96,7 +128,7 @@ body{
                 transition: all 0.3s ease-in-out;
               }        
               &:hover::before {
-                animation: shine 1.5s ease-out 3  /// Animation for 3 times only
+                animation: shineImage 1.5s ease-out 3  /// Animation for 3 times only
               }
             }            
             .home-page-image {
@@ -105,11 +137,23 @@ body{
               border-radius: 50%; 
               object-fit: cover; 
             }  
-            .home-page-title-description{
-                color: #Fff;
-                font-family: sans-serif;
-                margin-top: 50px;
-            }
+            .home-page-title-description {
+              font-family: sans-serif;
+              margin-top: 50px;
+              background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%);
+              background-size: 300%;
+              background-position: 150%; /* Start from right side */
+              -webkit-background-clip: text;
+              -moz-background-clip: text;
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+              -moz-text-fill-color: transparent;
+              animation: shine 3s linear infinite; 
+              -webkit-animation: shine 3s linear infinite;
+              -moz-animation: shine 3s linear infinite;
+              -o-animation: shine 3s linear infinite;
+              font-size: 30px;
+          }   
             .home-page-left-side-button{
                 cursor: pointer;
                 background-color: rgb(255, 255, 255);
@@ -134,9 +178,8 @@ body{
         }
         .home-page-right-side{
             width: 60%;
-            border: solid 5px rgba(13, 35, 159, 0.151);
+            border: solid 5px rgba(7, 0, 55, 0.212);
             border-right: none;
-            border-bottom: solid 5px rgba(13, 35, 159, 0.041);
             border-radius: 5px;
             margin-top: 100px;
             display: flex;         
