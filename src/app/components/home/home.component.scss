@@ -522,6 +522,7 @@ body{
 @media screen and (max-width: 480px) {
   body{
       height: 2400px; ///
+      padding-bottom: 300px;
       .home-page{
           display: flex;
           flex-direction: column;
