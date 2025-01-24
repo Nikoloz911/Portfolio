@@ -1,3 +1,13 @@
+@keyframes starCascade {
+    0% {
+      color: yellow;
+    }
+    100% {
+      color: orange;
+    }
+  }
+
+
 body{
     height: 500px;
     background: #00144f;
@@ -94,31 +104,52 @@ body{
                     font-family: sans-serif;
                     margin-bottom: 20px;
                 }
-                .footer-projects-link-container{
+                .footer-projects-link-container {
                     display: flex;
                     align-items: center;
-                    .footer-projects-section-link{
-                        width: 130px;
-                        color: rgb(0, 162, 255);
-                        font-size: 18px;
-                        text-decoration: none;
-                        font-family: sans-serif;
-                        display: flex;
-                        align-items: center;
-                        gap: 20px;
-                        transition: 500ms;
-                        &:hover{
-                            color: #fff;
+                  
+                    .footer-projects-section-link {
+                      width: 130px;
+                      color: rgb(0, 162, 255);
+                      font-size: 18px;
+                      text-decoration: none;
+                      font-family: sans-serif;
+                      display: flex;
+                      align-items: center;
+                      gap: 20px;
+                      transition: color 500ms ease;                
+                      &:hover {
+                        color: #fff;
+                        + .footer-projects-links-icon {
+                          i {
+                            animation: starCascade 1000ms ease forwards;
+                          }
+                          i:nth-child(1) {
+                            animation-delay: 0s;
+                          }
+                          i:nth-child(2) {
+                            animation-delay: 0.1s;
+                          }
+                          i:nth-child(3) {
+                            animation-delay: 0.2s;
+                          }
+                          i:nth-child(4) {
+                            animation-delay: 0.3s;
+                          }
                         }
+                      }
                     }
-                    .footer-projects-links-icon{
-                        margin-left: 20px;
-                        color: yellow;
-                        font-size: 20px;
-                        display: flex;
-                        gap: 10px;
+                    .footer-projects-links-icon {
+                      margin-left: 20px;
+                      color: yellow;
+                      font-size: 20px;
+                      display: flex;
+                      gap: 10px;              
+                      i {
+                        transition: color 500ms ease;
+                      }
                     }
-                } 
+                  }
             }
             .footer-social-media-section{
                 width: 300px;
