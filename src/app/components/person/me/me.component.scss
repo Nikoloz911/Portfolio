@@ -115,6 +115,21 @@ body{
 }
 @media screen and (max-width: 480px) {
     body{
-        height: 1050px;
+        height: 1550px;
+        .about-me-container{
+          .content-container{
+            width: 460px;
+          }
+        }
     }
+}
+@media screen and (max-width: 768px) {
+  body{
+      height: 1050px;
+      .about-me-container{
+        .content-container{
+          width: 760px;
+        }
+      }
+  }
 }
