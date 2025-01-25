@@ -1,3 +1,31 @@
+  /* Animations */  /* Animations */  /* Animations */ /* Animations */  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes glowText {
+    0%, 100% {
+      text-shadow: 0 0 10px #ff4949, 0 0 20px #ff4949, 0 0 30px #ff4949;
+    }
+    50% {
+      text-shadow: 0 0 20px #ff7a7a, 0 0 30px #ff7a7a, 0 0 40px #ff7a7a;
+    }
+  }
+  @keyframes expandUnderline {
+    from {
+      width: 0;
+    }
+    to {
+      width: 150px;
+    }
+  }
+  /* Animations */  /* Animations */  /* Animations */ /* Animations */  /* Animations */
 body{
         font-family: 'Arial', sans-serif;
         height: 1150px;
@@ -76,48 +104,23 @@ body{
             }
             .github-text{
                 font-size: 18px;
+                line-height: 1.8;
             }
             .goal-text{
                 font-size: 18px;
+                line-height: 1.8;
             }
           }
         }
       }
-      
-      /* Animations */  /* Animations */  /* Animations */ /* Animations */  /* Animations */
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      @keyframes glowText {
-        0%, 100% {
-          text-shadow: 0 0 10px #ff4949, 0 0 20px #ff4949, 0 0 30px #ff4949;
-        }
-        50% {
-          text-shadow: 0 0 20px #ff7a7a, 0 0 30px #ff7a7a, 0 0 40px #ff7a7a;
-        }
-      }
-      @keyframes expandUnderline {
-        from {
-          width: 0;
-        }
-        to {
-          width: 150px;
-        }
-      }
-      /* Animations */  /* Animations */  /* Animations */ /* Animations */  /* Animations */
 }
 @media screen and (max-width: 480px) {
     body{
-        height: 1550px;
+        height: auto;
+        padding-bottom: 100px;
         .about-me-container{
           .content-container{
+            border: solid 5px red;
             width: 460px;
           }
         }
@@ -125,7 +128,8 @@ body{
 }
 @media screen and (max-width: 768px) {
   body{
-      height: 1050px;
+    height: auto;
+    padding-bottom: 20px;
       .about-me-container{
         .content-container{
           width: 760px;
