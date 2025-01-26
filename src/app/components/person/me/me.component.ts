@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './me.component.scss'
 })
 export class MeComponent {
-
+  goToLink() {
+    window.open('https://ge.itstep.org/programming-ge', '_blank');
+  }
+  
 }

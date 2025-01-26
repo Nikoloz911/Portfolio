@@ -11,7 +11,6 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MeComponent } from './components/person/me/me.component';
 import { ProjectsComponent } from './components/person/projects/projects.component';
-import { SkillsComponent } from './components/person/skills/skills.component';
 import { HtmlComponent } from './components/languages/html/html.component';
 import { CssComponent } from './components/languages/css/css.component';
 import { JavascriptComponent } from './components/languages/javascript/javascript.component';
@@ -19,6 +18,7 @@ import { TypescriptComponent } from './components/languages/typescript/typescrip
 import { CSharpComponent } from './components/languages/c-sharp/c-sharp.component';
 import { SQLComponent } from './components/languages/sql/sql.component';
 import { ScssComponent } from './components/languages/scss/scss.component';
+import { BackEndComponent } from './components/back-end/back-end.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,6 @@ import { ScssComponent } from './components/languages/scss/scss.component';
     FooterComponent,
     MeComponent,
     ProjectsComponent,
-    SkillsComponent,
     HtmlComponent,
     CssComponent,
     JavascriptComponent,
@@ -37,6 +36,7 @@ import { ScssComponent } from './components/languages/scss/scss.component';
     CSharpComponent,
     SQLComponent,
     ScssComponent,
+    BackEndComponent,
   ],
   imports: [
     BrowserModule,

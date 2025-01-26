@@ -1,15 +1,45 @@
+  /* Animations */  /* Animations */  /* Animations */ /* Animations */  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes glowText {
+    0%, 100% {
+      text-shadow: 0 0 10px #ff4949, 0 0 20px #ff4949, 0 0 30px #ff4949;
+    }
+    50% {
+      text-shadow: 0 0 20px #ff7a7a, 0 0 30px #ff7a7a, 0 0 40px #ff7a7a;
+    }
+  }
+  @keyframes expandUnderline {
+    from {
+      width: 0;
+    }
+    to {
+      width: 150px;
+    }
+  }
+  /* Animations */  /* Animations */  /* Animations */ /* Animations */  /* Animations */
 body{
         font-family: 'Arial', sans-serif;
-        height: 950px;
+        height: 1150px;
         background: #040000;
         background: linear-gradient(270deg,#040000 0%, #00114f 80%);
         background: -webkit-linear-gradient(270deg,#040000 0%, #00114f 80%);
         background: -moz-linear-gradient(270deg,#040000 0%, #00114f 80%);
         color: #fff;
       .about-me-container {
-        max-width: 820px;
-        margin: 0 auto;
-        padding: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         animation: fadeIn 1.5s ease-in-out;
         .heading-container {
           text-align: center;
@@ -27,6 +57,7 @@ body{
             animation: glowText 2s infinite;
         }
         .content-container {
+          width: 60%;
           .introduction {
             font-size: 1.2rem;
             margin-bottom: 20px;
@@ -73,45 +104,40 @@ body{
             }
             .github-text{
                 font-size: 18px;
+                line-height: 1.8;
             }
             .goal-text{
                 font-size: 18px;
+                line-height: 1.8;
             }
           }
         }
       }
-      
-      /* Animations */  /* Animations */  /* Animations */ /* Animations */  /* Animations */
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(20px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-      @keyframes glowText {
-        0%, 100% {
-          text-shadow: 0 0 10px #ff4949, 0 0 20px #ff4949, 0 0 30px #ff4949;
-        }
-        50% {
-          text-shadow: 0 0 20px #ff7a7a, 0 0 30px #ff7a7a, 0 0 40px #ff7a7a;
-        }
-      }
-      @keyframes expandUnderline {
-        from {
-          width: 0;
-        }
-        to {
-          width: 150px;
-        }
-      }
-      /* Animations */  /* Animations */  /* Animations */ /* Animations */  /* Animations */
 }
 @media screen and (max-width: 480px) {
     body{
-        height: 1050px;
+        height: auto;
+        padding-bottom: 100px;
+        .about-me-container{
+          .content-container{
+            overflow: hidden;
+           max-width: 420px;
+           padding-left: 40px;
+           padding-right: 20px;
+          }
+        }
     }
+}
+@media screen and (max-width: 768px) {
+  body{
+    height: auto;
+    padding-bottom: 100px;
+      .about-me-container{
+        .content-container{
+          padding-left: 40px;
+          padding-right: 20px;
+          width: 700px;
+        }
+      }
+  }
 }

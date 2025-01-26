@@ -10,7 +10,7 @@ import { FooterComponent } from './components/footer/footer.component';
 /// PAGES COMPONENTS  /// PAGES COMPONENTS   /// PAGES COMPONENTS 
 import { MeComponent } from './components/person/me/me.component';
 import { ProjectsComponent } from './components/person/projects/projects.component';
-import { SkillsComponent } from './components/person/skills/skills.component';
+import { BackEndComponent } from './components/back-end/back-end.component';
 /// PAGES COMPONENTS  /// PAGES COMPONENTS   /// PAGES COMPONENTS 
 /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS  /// LANGUAGES COMPONENTS
 import { HtmlComponent } from './components/languages/html/html.component';
@@ -24,11 +24,13 @@ import { SQLComponent } from './components/languages/sql/sql.component';
 /// ALL ROUTES /// ALL ROUTES  /// ALL ROUTES  /// ALL ROUTES
 /// ALL ROUTES /// ALL ROUTES  /// ALL ROUTES  /// ALL ROUTES
 const routes: Routes = [
+  /// REDIRECT   /// REDIRECT   /// REDIRECT
   {
     path: 'home',
     redirectTo: '',
     pathMatch: 'full'
   },
+  /// REDIRECT   /// REDIRECT   /// REDIRECT
   {
     path: '',
     component: HomeComponent
@@ -42,9 +44,10 @@ const routes: Routes = [
     component: ProjectsComponent
   },
   {
-    path: "Skills",
-    component: SkillsComponent
+    path: "back-end",
+    component: BackEndComponent
   },
+   /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS
    /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS
    {
     path: "html",
@@ -75,6 +78,7 @@ const routes: Routes = [
     component: SQLComponent
    },
   /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS
+   /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS
   {
     path: "**",
     component: ErrorComponent
