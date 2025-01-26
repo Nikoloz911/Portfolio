@@ -24,11 +24,13 @@ import { SQLComponent } from './components/languages/sql/sql.component';
 /// ALL ROUTES /// ALL ROUTES  /// ALL ROUTES  /// ALL ROUTES
 /// ALL ROUTES /// ALL ROUTES  /// ALL ROUTES  /// ALL ROUTES
 const routes: Routes = [
+  /// REDIRECT   /// REDIRECT   /// REDIRECT
   {
     path: 'home',
     redirectTo: '',
     pathMatch: 'full'
   },
+  /// REDIRECT   /// REDIRECT   /// REDIRECT
   {
     path: '',
     component: HomeComponent
@@ -45,6 +47,7 @@ const routes: Routes = [
     path: "back-end",
     component: BackEndComponent
   },
+   /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS
    /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS
    {
     path: "html",
@@ -75,6 +78,7 @@ const routes: Routes = [
     component: SQLComponent
    },
   /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS
+   /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS
   {
     path: "**",
     component: ErrorComponent
