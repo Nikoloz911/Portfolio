@@ -57,7 +57,7 @@ body{
             animation: glowText 2s infinite;
         }
         .content-container {
-          width: 1000px;
+          width: 60%;
           .introduction {
             font-size: 1.2rem;
             margin-bottom: 20px;
@@ -120,8 +120,10 @@ body{
         padding-bottom: 100px;
         .about-me-container{
           .content-container{
-            border: solid 5px red;
-            width: 460px;
+            overflow: hidden;
+           max-width: 420px;
+           padding-left: 40px;
+           padding-right: 20px;
           }
         }
     }
@@ -129,10 +131,12 @@ body{
 @media screen and (max-width: 768px) {
   body{
     height: auto;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
       .about-me-container{
         .content-container{
-          width: 760px;
+          padding-left: 40px;
+          padding-right: 20px;
+          width: 700px;
         }
       }
   }
