@@ -4,4 +4,23 @@ body{
     background: linear-gradient(270deg,#040000 0%, #00114f 80%);
     background: -webkit-linear-gradient(270deg,#040000 0%, #00114f 80%);
     background: -moz-linear-gradient(270deg,#040000 0%, #00114f 80%);
+
+
+    .projects-page{
+        border: solid 1px red;
+        height: 600px;
+        padding-top: 200px;
+        .projects-first-section{
+            border: solid 1px red;
+            height: auto;
+        }
+        .projects-second-section{
+            border: solid 1px red;
+            height: auto;
+        }
+        .projects-third-section{
+            border: solid 1px red;
+            height: auto;
+        }
+    }
 }
