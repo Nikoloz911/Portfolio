@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-
+ openLink() {
+    window.open('https://Your-link', '_blank');
+  }
 }
