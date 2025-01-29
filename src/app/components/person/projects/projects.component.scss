@@ -1,7 +1,429 @@
+/// ANIMATIONS /// ANIMATIONS /// ANIMATIONS /// ANIMATIONS /// ANIMATIONS /// ANIMATIONS /// ANIMATIONS
+@keyframes border-animate {
+    0% {
+      background-position: 100% 0;
+    }
+    25% {
+      background-position: 100% 100%;
+    }
+    50% {
+      background-position: 0 100%;
+    }
+    75% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }  
+/// ANIMATIONS /// ANIMATIONS /// ANIMATIONS /// ANIMATIONS /// ANIMATIONS /// ANIMATIONS /// ANIMATIONS
+/// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES
+/// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES
+/// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES
+@mixin Card-Styles{
+          /// UIVERSE CARD  /// UIVERSE CARD   https://uiverse.io/kennyotsu/witty-deer-12  /// UIVERSE CARD  /// UIVERSE CARD
+            /// UIVERSE CARD  /// UIVERSE CARD   https://uiverse.io/kennyotsu/witty-deer-12  /// UIVERSE CARD  /// UIVERSE CARD
+            /// UIVERSE CARD  /// UIVERSE CARD   https://uiverse.io/kennyotsu/witty-deer-12  /// UIVERSE CARD  /// UIVERSE CARD
+            .container {
+              z-index: 10;
+              position: relative;
+              width: 340px;
+              height: 220px;
+              transition: 200ms;
+              cursor: pointer;
+              #card {
+                position: absolute;
+                inset: 0;
+                z-index: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+                transition: 700ms;
+                .projects-first-section-image {
+                  border-radius: 15px;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover; 
+                }
+              }
+              .tracker {
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+              }
+              .canvas {
+                perspective: 800px;
+                inset: 0;
+                z-index: 200;
+                position: absolute;
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+                gap: 0;
+                grid-template-areas:
+                  "tr-1 tr-2 tr-3 tr-4 tr-5"
+                  "tr-6 tr-7 tr-8 tr-9 tr-10"
+                  "tr-11 tr-12 tr-13 tr-14 tr-15"
+                  "tr-16 tr-17 tr-18 tr-19 tr-20"
+                  "tr-21 tr-22 tr-23 tr-24 tr-25";
+              }
+                          
+              .tr-1 {
+                grid-area: tr-1;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(20deg) rotateY(-10deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-2 {
+                grid-area: tr-2;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(20deg) rotateY(-5deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-3 {
+                grid-area: tr-3;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(20deg) rotateY(0deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-4 {
+                grid-area: tr-4;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(20deg) rotateY(5deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-5 {
+                grid-area: tr-5;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(20deg) rotateY(10deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-6 {
+                grid-area: tr-6;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(10deg) rotateY(-10deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-7 {
+                grid-area: tr-7;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(10deg) rotateY(-5deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-8 {
+                grid-area: tr-8;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(10deg) rotateY(0deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-9 {
+                grid-area: tr-9;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(10deg) rotateY(5deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-10 {
+                grid-area: tr-10;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(10deg) rotateY(10deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-11 {
+                grid-area: tr-11;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-12 {
+                grid-area: tr-12;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(0deg) rotateY(-5deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-13 {
+                grid-area: tr-13;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-14 {
+                grid-area: tr-14;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(0deg) rotateY(5deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-15 {
+                grid-area: tr-15;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(0deg) rotateY(10deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-16 {
+                grid-area: tr-16;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(-10deg) rotateY(-10deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-17 {
+                grid-area: tr-17;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(-10deg) rotateY(-5deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-18 {
+                grid-area: tr-18;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(-10deg) rotateY(0deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-19 {
+                grid-area: tr-19;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(-10deg) rotateY(5deg) rotateZ(0deg);
+                }
+              } 
+              .tr-20 {
+                grid-area: tr-20;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(-10deg) rotateY(10deg) rotateZ(0deg);
+                }
+              }          
+              .tr-21 {
+                grid-area: tr-21;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(-20deg) rotateY(-10deg) rotateZ(0deg);
+                }
+              }     
+              .tr-22 {
+                grid-area: tr-22;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(-20deg) rotateY(-5deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-23 {
+                grid-area: tr-23;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(-20deg) rotateY(0deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-24 {
+                grid-area: tr-24;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(-20deg) rotateY(5deg) rotateZ(0deg);
+                }
+              }
+            
+              .tr-25 {
+                grid-area: tr-25;
+                &:hover ~ #card {
+                  transition: 125ms ease-in-out;
+                  transform: rotateX(-20deg) rotateY(10deg) rotateZ(0deg);
+                }
+              }
+            
+              .noselect {
+                -webkit-touch-callout: none; /* iOS Safari */
+                -webkit-user-select: none;    /* Safari */
+                -moz-user-select: none;       /* Old versions of Firefox */
+                -ms-user-select: none;        /* Internet Explorer/Edge */
+                user-select: none;            /* Non-prefixed version */
+              }
+            }
+            /// UIVERSE CARD  /// UIVERSE CARD   https://uiverse.io/kennyotsu/witty-deer-12  /// UIVERSE CARD  /// UIVERSE CARD
+            /// UIVERSE CARD  /// UIVERSE CARD   https://uiverse.io/kennyotsu/witty-deer-12  /// UIVERSE CARD  /// UIVERSE CARD
+            /// UIVERSE CARD  /// UIVERSE CARD   https://uiverse.io/kennyotsu/witty-deer-12  /// UIVERSE CARD  /// UIVERSE CARD
+}
+/// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES
+/// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES
+/// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES
+
 body{
-    height: 800px;
+    height: auto;
     background: #040000;
     background: linear-gradient(270deg,#040000 0%, #00114f 80%);
     background: -webkit-linear-gradient(270deg,#040000 0%, #00114f 80%);
     background: -moz-linear-gradient(270deg,#040000 0%, #00114f 80%);
-}
+    .projects-page{
+        height: auto;
+        padding-bottom: 100px;
+        padding-top: 100px;
+        .projects-page-title{
+          color: #fff;
+          font-family: sans-serif;
+          text-align: center;
+          margin-bottom: 100px;
+        }
+        /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION
+        /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION
+        /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION
+        .projects-first-section{
+            height: auto;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          gap: 50px;
+          padding-left: 100px;
+          padding-right: 100px;
+          @include Card-Styles();
+         
+        }
+        /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION
+        /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION
+        /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION  /// PROJECTS FIRST SECTION
+        /// PROJECTS SECOND SECTION  /// PROJECTS SECOND SECTION  /// PROJECTS SECOND SECTION  /// PROJECTS SECOND SECTION  /// PROJECTS SECOND SECTION
+        /// PROJECTS SECOND SECTION  /// PROJECTS SECOND SECTION  /// PROJECTS SECOND SECTION  /// PROJECTS SECOND SECTION  /// PROJECTS SECOND SECTION
+        /// PROJECTS SECOND SECTION  /// PROJECTS SECOND SECTION  /// PROJECTS SECOND SECTION  /// PROJECTS SECOND SECTION  /// PROJECTS SECOND SECTION
+        .projects-second-section{
+             margin-top: 100px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+            .project-link{
+            text-decoration: none;
+            .project-second-section-card-container{
+                position: relative;
+                overflow: hidden;
+                border-radius: 20px;
+                width: 400px;
+                height: 430px;
+                display: flex;
+                flex-direction: column;
+                background-color: #273655e7;
+                padding: 20px;
+                font-family: sans-serif;
+                transition: 500ms;          
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: 2px solid transparent;
+                    border-radius: 10px; 
+                    background: linear-gradient(to right, #0099ff, #f50076, #007efd, #0099ff);
+                    background-size: 200% 200%;
+                    background-position: 100% 0;
+                    animation: border-animate 3s ease-in-out infinite;
+                    z-index: 0;
+                  }
+                  &::after {
+                    content: '';
+                    position: absolute;
+                    inset: 5px;
+                    background: rgba(0, 1, 43, 0.9);
+                    border-radius: 20px;
+                    z-index: 1;
+                  }
+                  * {
+                    position: relative;
+                    z-index: 2;
+                  }
+                }
+                .projects-second-section-card-container-image{
+                    border-radius: 10px;
+                }
+                h1 {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    font-size: 1.5em;
+                    color: #fff;
+                    transition: 500ms;
+                    &:hover{
+                        color: rgb(0, 174, 255);
+                    }
+                  }
+                  .project-details {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 10px 0;
+                    font-size: 17px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;                 
+                    li {
+                      display: flex;
+                      justify-content: flex-start;
+                      align-items: center;                  
+                      strong {
+                        display: inline-block;
+                        width: 110px; 
+                        color: #ffc506;
+                        font-weight: 600;
+                        transition: 500ms;
+                        &:hover{
+                            color: rgb(204, 255, 0);
+                        }
+                      }       
+                      span {                  
+                        color: #ccc; 
+                        margin-left: 40px;
+                        width:  auto;
+                        transition: 500ms;
+                        &:hover{
+                            color: rgb(214, 255, 80);
+                        }
+                      }
+                    }             
+                  }  
+                  /// CARD       
+                }  
+                /// LINK
+            }
+        
+        }
+       
+    }
