@@ -287,14 +287,14 @@
 /// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES /// MIXIN FIRST SECTION CARDS STYLES
 
 body{
-    height: 2000px;
+    height: auto;
     background: #040000;
     background: linear-gradient(270deg,#040000 0%, #00114f 80%);
     background: -webkit-linear-gradient(270deg,#040000 0%, #00114f 80%);
     background: -moz-linear-gradient(270deg,#040000 0%, #00114f 80%);
     .projects-page{
-        border: solid 10px red;
-        height: 1800px;
+        height: auto;
+        padding-bottom: 100px;
         padding-top: 100px;
         .projects-page-title{
           color: #fff;
@@ -324,8 +324,8 @@ body{
         /// PROJECTS SECOND SECTION  /// PROJECTS SECOND SECTION  /// PROJECTS SECOND SECTION  /// PROJECTS SECOND SECTION  /// PROJECTS SECOND SECTION
         /// PROJECTS SECOND SECTION  /// PROJECTS SECOND SECTION  /// PROJECTS SECOND SECTION  /// PROJECTS SECOND SECTION  /// PROJECTS SECOND SECTION
         .projects-second-section{
-            border: solid 1px red;
-            height: 600px;
+             margin-top: 100px;
+            height: auto;
             display: flex;
             justify-content: center;
             align-items: center;

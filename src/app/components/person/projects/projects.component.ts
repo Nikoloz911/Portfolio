@@ -6,7 +6,19 @@ import { Component } from '@angular/core';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
- openLink() {
+ openLinkEmis() {
+    window.open('https://Your-link', '_blank');
+  }
+  openLinkSkolebi() {
+    window.open('https://Your-link', '_blank');
+  }
+  openLinkZoomer() {
+    window.open('https://Your-link', '_blank');
+  }
+  openLinkDoctor() {
+    window.open('https://Your-link', '_blank');
+  }
+  openLinkFigma() {
     window.open('https://Your-link', '_blank');
   }
 }
