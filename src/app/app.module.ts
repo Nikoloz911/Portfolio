@@ -19,6 +19,7 @@ import { CSharpComponent } from './components/languages/c-sharp/c-sharp.componen
 import { SQLComponent } from './components/languages/sql/sql.component';
 import { ScssComponent } from './components/languages/scss/scss.component';
 import { BackEndComponent } from './components/back-end/back-end.component';
+import { LanguagesNavBarComponent } from './components/languages/languages-nav-bar/languages-nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { BackEndComponent } from './components/back-end/back-end.component';
     SQLComponent,
     ScssComponent,
     BackEndComponent,
+    LanguagesNavBarComponent,
   ],
   imports: [
     BrowserModule,

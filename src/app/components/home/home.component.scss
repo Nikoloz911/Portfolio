@@ -492,8 +492,10 @@ body{
           @include tools-section-first-container-icon-Styles();
           .tools-section-second-container-fourth-Image{
              width: 100px;
-             height: 50px;
+             scale: 80%;
+             height: 60px;
              border-radius: 5px;
+             object-fit: cover;
           }
           &:hover{
             color:  rgba(253,253,253,0.75);
@@ -545,6 +547,7 @@ body{
              width: 70px;
              height: 50px;
              border-radius: 5px;
+             object-fit: cover;
           }
           &:hover{
             color:  rgba(0, 255, 255, 0.75);

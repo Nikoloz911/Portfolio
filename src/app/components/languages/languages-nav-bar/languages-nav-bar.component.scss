@@ -1,0 +1,28 @@
+.main{
+    border: solid 1px white;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: #FFF;
+    padding-top: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .main-links{
+        width: 100%;
+        border: solid 2px #fff;
+        border-radius: 15px;
+        height: 60px;
+        margin-left: 50px;
+        margin-right: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        .main-link{
+            text-decoration: none;
+            color: #FFF;
+        }
+    }
+}
