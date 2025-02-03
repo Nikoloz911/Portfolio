@@ -315,7 +315,7 @@ body{
         align-items: center;
         justify-content: center;
         margin-top: 30px;
-        gap: 50px;
+        gap: 40px;
         /// FIRST ICON LINK   /// FIRST ICON LINK  /// FIRST ICON LINK  /// FIRST ICON LINK
         .tools-section-first-container-first-icon-link{
           border: solid 2px rgb(255, 255, 255);
@@ -430,11 +430,13 @@ body{
       /// TOOLS SECTION FIRST CONTAINER  /// TOOLS SECTION FIRST CONTAINER  /// TOOLS SECTION FIRST CONTAINER
       /// TOOLS SECTION SECOND CONTAINER   /// TOOLS SECTION SECOND CONTAINER   /// TOOLS SECTION SECOND CONTAINER 
       .tools-section-second-container{
-        height: 100px;
+        height: auto;
+        padding-bottom: 20px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 60px;
+        gap: 30px;
         /// FIRST ICON LINK  /// FIRST ICON LINK   /// FIRST ICON LINK
         .tools-section-second-container-first-icon-link{
           @include tools-section-first-container-icon-Styles();
@@ -455,7 +457,7 @@ body{
         .tools-section-second-container-second-icon-link{
           @include tools-section-first-container-icon-Styles();
           border: solid 2px rgb(205, 255, 118);
-          width: 240px;
+          width: 220px;
           .tools-section-second-container-second-Image{
             scale: 170%;
           }
@@ -471,10 +473,9 @@ body{
         .tools-section-second-container-third-icon-link{
           @include tools-section-first-container-icon-Styles();
           border: solid 2px rgb(3, 0, 171);
-          width: 180px;
+          width: 160px;
           .tools-section-second-container-third-Image{
-            scale: 170%;
-            
+            scale: 170%;  
           }
           &:hover{
             color: #304fff;
@@ -484,6 +485,78 @@ body{
           }
         }
         /// THIRD ICON LINK  /// THIRD ICON LINK  /// THIRD ICON LINK
+        /// FOURTH ICON LINK /// FOURTH ICON LINK /// FOURTH ICON LINK
+        .tools-section-second-container-fourth-icon-link{
+          border: solid 2px rgb(157, 157, 157);
+          width: 200px;
+          @include tools-section-first-container-icon-Styles();
+          .tools-section-second-container-fourth-Image{
+             width: 100px;
+             scale: 80%;
+             height: 60px;
+             border-radius: 5px;
+             object-fit: cover;
+          }
+          &:hover{
+            color:  rgba(253,253,253,0.75);
+            box-shadow: 0px 0px 12px 4px rgba(253,253,253,0.75);
+            -webkit-box-shadow: 0px 0px 12px 4px rgba(253,253,253,0.75);
+            -moz-box-shadow: 0px 0px 12px 4px rgba(253,253,253,0.75);
+          }
+        }
+        /// FOURTH ICON LINK /// FOURTH ICON LINK /// FOURTH ICON LINK
+        /// FIFTH ICON LINK   /// FIFTH ICON LINK   /// FIFTH ICON LINK
+        .tools-section-second-container-fifth-icon-link{
+          border: solid 2px rgb(37, 120, 103);
+          width: 180px;
+          @include tools-section-first-container-icon-Styles();
+          .tools-section-second-container-fifth-Image{
+             scale: 150%;
+          }
+          &:hover{
+            color:  rgba(43,135,74,0.75);
+            box-shadow: 0px 0px 12px 4px rgba(43,135,74,0.75);
+            -webkit-box-shadow: 0px 0px 12px 4px rgba(43,135,74,0.75);
+            -moz-box-shadow: 0px 0px 12px 4px rgba(43,135,74,0.75);
+          }
+        }
+        /// FIFTH ICON LINK   /// FIFTH ICON LINK   /// FIFTH ICON LINK
+        /// SIXTH ICON LINK  /// SIXTH ICON LINK  /// SIXTH ICON LINK
+        .tools-section-second-container-sixth-icon-link{
+          border: solid 2px rgb(147, 209, 197);
+          width: 220px;
+          @include tools-section-first-container-icon-Styles();
+          .tools-section-second-container-sixth-Image{
+             width: 70px;
+             height: 50px;
+          }
+          &:hover{
+            color:  rgba(174,253,235,0.75);
+            box-shadow: 0px 0px 10px 3px rgba(174,253,235,0.75);
+            -webkit-box-shadow: 0px 0px 10px 3px rgba(174,253,235,0.75);
+            -moz-box-shadow: 0px 0px 10px 3px rgba(174,253,235,0.75);
+          }
+        }
+         /// SIXTH ICON LINK  /// SIXTH ICON LINK  /// SIXTH ICON LINK
+         /// SEVENTH ICON LINK   /// SEVENTH ICON LINK  /// SEVENTH ICON LINK
+         .tools-section-second-container-seventh-icon-link{
+          border: solid 2px rgb(10, 255, 255);
+          width: 180px;
+          @include tools-section-first-container-icon-Styles();
+          .tools-section-second-container-seventh-Image{
+             width: 70px;
+             height: 50px;
+             border-radius: 5px;
+             object-fit: cover;
+          }
+          &:hover{
+            color:  rgba(0, 255, 255, 0.75);
+            box-shadow: 0px 0px 10px 3px rgba(35,253,253,0.75);
+            -webkit-box-shadow: 0px 0px 10px 3px rgba(35,253,253,0.75);
+            -moz-box-shadow: 0px 0px 10px 3px rgba(35,253,253,0.75);
+          }
+        }
+         /// SEVENTH ICON LINK   /// SEVENTH ICON LINK  /// SEVENTH ICON LINK
       }
       /// TOOLS SECTION SECOND CONTAINER   /// TOOLS SECTION SECOND CONTAINER   /// TOOLS SECTION SECOND CONTAINER 
       /// TOOLS SECTION THIRD CONTAINER /// TOOLS SECTION THIRD CONTAINER  /// TOOLS SECTION THIRD CONTAINER 
@@ -551,15 +624,12 @@ body{
           }
         }
         /// THIRD FRAMEWORK LINK  /// THIRD FRAMEWORK LINK   /// THIRD FRAMEWORK LINK
-        
       }
       /// TOOLS SECTION THIRD CONTAINER /// TOOLS SECTION THIRD CONTAINER  /// TOOLS SECTION THIRD CONTAINER 
     }
   }
     /// WEBSITES AND FRAMEWORKS SECTION   /// WEBSITES AND FRAMEWORKS SECTION   /// WEBSITES AND FRAMEWORKS SECTION     
 }
-
-
  /// RESPONSIVE 480PX /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX
  /// RESPONSIVE 480PX /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX
 @media screen and (max-width: 480px) {
@@ -614,11 +684,12 @@ body{
  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX
  @media screen and (max-width: 768px) {
   body{
-    height: 2100px; ///
+    height: 2300px; /// 
     .home-page{
         display: flex;
         flex-direction: column;
         height: auto;
+        
         .home-page-left-side{
             width: 100%;  
             flex-direction: column;   
@@ -631,6 +702,7 @@ body{
     }
   .tools-section{
         height: auto;
+        padding-bottom: 300px;
     .tools-section-container{
         height: auto;
       width: 100%;
