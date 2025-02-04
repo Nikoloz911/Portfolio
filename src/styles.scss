@@ -3,3 +3,41 @@
 * {
     margin: 0;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #007bff;
+    border-radius: 10px;
+}
+
+* {
+    scrollbar-color: #0051a8 #a5a5a5;
+}
+
+html {
+    -ms-overflow-style: scrollbar;
+}
+
+::-ms-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-ms-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-ms-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 10px;
+}
