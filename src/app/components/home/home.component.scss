@@ -559,6 +559,30 @@ body{
          /// SEVENTH ICON LINK   /// SEVENTH ICON LINK  /// SEVENTH ICON LINK
       }
       /// TOOLS SECTION SECOND CONTAINER   /// TOOLS SECTION SECOND CONTAINER   /// TOOLS SECTION SECOND CONTAINER 
+      .added-container{
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        .tools-section-added-container-icon-link{
+          border: solid 2px rgb(220, 255, 255);
+          width: 180px;
+          @include tools-section-first-container-icon-Styles();
+          .tools-section-added-container-first-Image{
+             width: 70px;
+             height: 50px;
+             border-radius: 5px;
+             object-fit: cover;
+          }
+          &:hover{
+            color:  rgba(156, 255, 255, 0.75);
+            box-shadow: 0px 0px 10px 3px rgba(228, 255, 255, 0.75);
+            -webkit-box-shadow: 0px 0px 10px 3px rgba(209, 255, 255, 0.75);
+            -moz-box-shadow: 0px 0px 10px 3px rgba(219, 255, 255, 0.75);
+          }
+        }
+      }
       /// TOOLS SECTION THIRD CONTAINER /// TOOLS SECTION THIRD CONTAINER  /// TOOLS SECTION THIRD CONTAINER 
       .Framework-section-title{
         text-align: center;
@@ -679,7 +703,11 @@ body{
 }
  /// RESPONSIVE 480PX /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX
  /// RESPONSIVE 480PX /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX
- 
+ @media screen and (max-width: 768px) {
+  body{
+    height: 2500px !important; /// 
+}
+ }
  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX
  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX
  @media screen and (max-width: 768px) {
