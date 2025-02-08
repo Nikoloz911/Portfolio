@@ -1,7 +1,173 @@
-body{
-    height: 900px;
-    background: #000000;
-    background: linear-gradient(270deg,#000000 10%, #7c0000 60%);
-    background: -webkit-linear-gradient(270deg,#000000 10%, #7c0000 60%);
-    background: -moz-linear-gradient(270deg,#000000 10%, #7c0000 60%);
+body {
+  height: 1400px;
+  background: #000000;
+  background: linear-gradient(270deg, #000000 10%, #7c0000 60%);
+  background: -webkit-linear-gradient(270deg, #000000 10%, #7c0000 60%);
+  background: -moz-linear-gradient(270deg, #000000 10%, #7c0000 60%);
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin-top: 30px;
+    .title-icon {
+      text-decoration: none;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100%;
+      .html-icon {
+        font-size: 90px;
+      }
+    }
+  }
+  .html-page {
+    border: solid 2px blue;
+    height: 1100px; // auto
+    /// FIRST SECTION  /// FIRST SECTION  /// FIRST SECTION  /// FIRST SECTION
+    .html-page-first-section {
+      height: 300px;
+      margin-top: 40px;
+      display: flex;
+      .html-page-first-section-left-side {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .html-page-first-description {
+          color: #fff;
+          width: 700px;
+          font-size: 18px;
+          text-align: center;
+          font-family: sans-serif;
+          letter-spacing: 1px;
+        }
+      }
+      .html-page-first-section-right-side {
+        width: 50%;
+        display: flex;
+        .html-page-first-section-right-side-first-container{
+            width: 50%;
+            .html-page-first-section-first-title{
+                color: #fff;
+                font-family: sans-serif;
+            }
+            .html-page-first-section-first-image{
+                width: 400px;
+                margin-top: 20px;
+                height: 80%;
+                transition: 500ms;
+                cursor: pointer;
+                &:hover{
+                    scale: 105%;
+                }
+            }
+        }
+        .html-page-first-section-right-side-second-container{
+            width: 50%;
+            .html-page-first-section-second-title{
+                color: #fff;
+                font-family: sans-serif;
+            }
+            .html-page-first-section-second-image{
+                width: 400px;
+                margin-top: 20px;
+                height: 80%;
+                transition: 500ms;
+                cursor: pointer;
+                &:hover{
+                    scale: 105%;
+                }
+            }
+        }
+      }
+    }
+    /// FIRST SECTION  /// FIRST SECTION  /// FIRST SECTION  /// FIRST SECTION
+    /// SECOND SECTION  /// SECOND SECTION  /// SECOND SECTION  /// SECOND SECTION
+    .html-page-second-section {
+      height: 300px;
+      display: flex;
+      margin-top: 40px;
+      .html-page-second-section-left-side {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .html-page-first-description {
+          color: #fff;
+          width: 700px;
+          font-size: 18px;
+          text-align: center;
+          font-family: sans-serif;
+          letter-spacing: 1px;
+        }
+      }
+      .html-page-second-section-right-side {
+        width: 50%;
+        display: flex;
+        .html-page-second-section-right-side-first-container{
+            width: 50%;
+            .html-page-second-section-first-title{
+                color: #fff;
+                font-family: sans-serif;
+            }
+            .html-page-second-section-first-image{
+                width: 400px;
+                margin-top: 20px;
+                height: 80%;
+                transition: 500ms;
+                cursor: pointer;
+                &:hover{
+                    scale: 105%;
+                }
+            }
+        }
+        .html-page-second-section-right-side-second-container{
+            width: 50%;
+            .html-page-second-section-second-title{
+                color: #fff;
+                font-family: sans-serif;
+            }
+            .html-page-second-section-second-image{
+                width: 400px;
+                margin-top: 20px;
+                height: 80%;
+                transition: 500ms;
+                cursor: pointer;
+                &:hover{
+                    scale: 105%;
+                }
+            }
+        }
+      }
+    }
+    /// SECOND SECTION  /// SECOND SECTION  /// SECOND SECTION  /// SECOND SECTION
+    /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION
+    .html-page-third-section {
+      height: 300px;
+      display: flex;
+      margin-top: 40px;
+      .html-page-third-section-left-side {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .html-page-first-description {
+          color: #fff;
+          width: 700px;
+          font-size: 18px;
+          text-align: center;
+          font-family: sans-serif;
+          letter-spacing: 1px;
+        }
+      }
+      .html-page-third-section-right-side {
+        width: 50%;
+      }
+    }
+    /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION
+  }
 }
