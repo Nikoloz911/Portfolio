@@ -1,5 +1,5 @@
 body {
-  height: 1400px;
+  height: 2000px;
   background: #000000;
   background: linear-gradient(270deg, #000000 10%, #7c0000 60%);
   background: -webkit-linear-gradient(270deg, #000000 10%, #7c0000 60%);
@@ -25,15 +25,16 @@ body {
     }
   }
   .html-page {
-    border: solid 2px blue;
-    height: 1100px; // auto
+    height: 1700px; // auto
+    /// FIRST SECTION  /// FIRST SECTION  /// FIRST SECTION  /// FIRST SECTION
     /// FIRST SECTION  /// FIRST SECTION  /// FIRST SECTION  /// FIRST SECTION
     .html-page-first-section {
-      height: 300px;
+      height: auto;
       margin-top: 40px;
       display: flex;
+      flex-direction: column;
       .html-page-first-section-left-side {
-        width: 50%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -47,16 +48,21 @@ body {
         }
       }
       .html-page-first-section-right-side {
-        width: 50%;
+        width: 100%;
         display: flex;
+        margin-top: 40px;
         .html-page-first-section-right-side-first-container{
             width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             .html-page-first-section-first-title{
                 color: #fff;
                 font-family: sans-serif;
             }
             .html-page-first-section-first-image{
-                width: 400px;
+                width: 500px;
                 margin-top: 20px;
                 height: 80%;
                 transition: 500ms;
@@ -68,6 +74,10 @@ body {
         }
         .html-page-first-section-right-side-second-container{
             width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             .html-page-first-section-second-title{
                 color: #fff;
                 font-family: sans-serif;
@@ -86,13 +96,17 @@ body {
       }
     }
     /// FIRST SECTION  /// FIRST SECTION  /// FIRST SECTION  /// FIRST SECTION
+    /// FIRST SECTION  /// FIRST SECTION  /// FIRST SECTION  /// FIRST SECTION
+    /// SECOND SECTION  /// SECOND SECTION  /// SECOND SECTION  /// SECOND SECTION
     /// SECOND SECTION  /// SECOND SECTION  /// SECOND SECTION  /// SECOND SECTION
     .html-page-second-section {
-      height: 300px;
+      height: 600px;
       display: flex;
       margin-top: 40px;
+      flex-direction: column;
+
       .html-page-second-section-left-side {
-        width: 50%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -106,10 +120,14 @@ body {
         }
       }
       .html-page-second-section-right-side {
-        width: 50%;
+        width: 100%;
         display: flex;
         .html-page-second-section-right-side-first-container{
             width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             .html-page-second-section-first-title{
                 color: #fff;
                 font-family: sans-serif;
@@ -127,6 +145,10 @@ body {
         }
         .html-page-second-section-right-side-second-container{
             width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             .html-page-second-section-second-title{
                 color: #fff;
                 font-family: sans-serif;
@@ -145,6 +167,8 @@ body {
       }
     }
     /// SECOND SECTION  /// SECOND SECTION  /// SECOND SECTION  /// SECOND SECTION
+    /// SECOND SECTION  /// SECOND SECTION  /// SECOND SECTION  /// SECOND SECTION
+    /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION
     /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION
     .html-page-third-section {
       height: 300px;
@@ -168,6 +192,7 @@ body {
         width: 50%;
       }
     }
+    /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION
     /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION
   }
 }
