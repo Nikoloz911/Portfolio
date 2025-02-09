@@ -133,13 +133,14 @@ body {
                 font-family: sans-serif;
             }
             .html-page-second-section-first-image{
-                width: 400px;
+                width: 500px;
+                object-fit: cover;
                 margin-top: 20px;
-                height: 80%;
+                height: 90%;
                 transition: 500ms;
                 cursor: pointer;
                 &:hover{
-                    scale: 105%;
+                    scale: 110%;
                 }
             }
         }
@@ -154,13 +155,13 @@ body {
                 font-family: sans-serif;
             }
             .html-page-second-section-second-image{
-                width: 400px;
+                width: 500px;
                 margin-top: 20px;
-                height: 80%;
+                height: 90%;
                 transition: 500ms;
                 cursor: pointer;
                 &:hover{
-                    scale: 105%;
+                    scale: 110%;
                 }
             }
         }
@@ -173,9 +174,10 @@ body {
     .html-page-third-section {
       height: 300px;
       display: flex;
+      flex-direction: column;
       margin-top: 40px;
       .html-page-third-section-left-side {
-        width: 50%;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -189,7 +191,10 @@ body {
         }
       }
       .html-page-third-section-right-side {
-        width: 50%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
     /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION
