@@ -1,5 +1,5 @@
 body {
-  height: 2300px;
+  height: auto;
   background: #000000;
   background: linear-gradient(270deg, #000000 10%, #7c0000 60%);
   background: -webkit-linear-gradient(270deg, #000000 10%, #7c0000 60%);
@@ -25,7 +25,8 @@ body {
     }
   }
   .html-page {
-    height: 2000px; // auto
+    height: auto;
+    padding-bottom: 100px;
     /// FIRST SECTION  /// FIRST SECTION  /// FIRST SECTION  /// FIRST SECTION
     /// FIRST SECTION  /// FIRST SECTION  /// FIRST SECTION  /// FIRST SECTION
     .html-page-first-section {
@@ -51,41 +52,41 @@ body {
         width: 100%;
         display: flex;
         margin-top: 40px;
-        .html-page-first-section-right-side-first-container{
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            .html-page-first-section-first-title{
-                color: #fff;
-                font-family: sans-serif;
-            }
-            .html-page-first-section-first-image{
-                width: 500px;
-                margin-top: 20px;
-                height: 80%;
-                cursor: pointer;
-                border-radius: 10px;
-            }
+        .html-page-first-section-right-side-first-container {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          .html-page-first-section-first-title {
+            color: #fff;
+            font-family: sans-serif;
+          }
+          .html-page-first-section-first-image {
+            width: 500px;
+            margin-top: 20px;
+            height: 80%;
+            cursor: pointer;
+            border-radius: 10px;
+          }
         }
-        .html-page-first-section-right-side-second-container{
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            .html-page-first-section-second-title{
-                color: #fff;
-                font-family: sans-serif;
-            }
-            .html-page-first-section-second-image{
-                width: 400px;
-                margin-top: 20px;
-                height: 80%;
-                cursor: pointer;
-                border-radius: 10px;       
-            }
+        .html-page-first-section-right-side-second-container {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          .html-page-first-section-second-title {
+            color: #fff;
+            font-family: sans-serif;
+          }
+          .html-page-first-section-second-image {
+            width: 400px;
+            margin-top: 20px;
+            height: 80%;
+            cursor: pointer;
+            border-radius: 10px;
+          }
         }
       }
     }
@@ -94,11 +95,10 @@ body {
     /// SECOND SECTION  /// SECOND SECTION  /// SECOND SECTION  /// SECOND SECTION
     /// SECOND SECTION  /// SECOND SECTION  /// SECOND SECTION  /// SECOND SECTION
     .html-page-second-section {
-      height: 600px;
+      height: auto;
       display: flex;
       margin-top: 40px;
       flex-direction: column;
-
       .html-page-second-section-left-side {
         width: 100%;
         display: flex;
@@ -116,42 +116,42 @@ body {
       .html-page-second-section-right-side {
         width: 100%;
         display: flex;
-        .html-page-second-section-right-side-first-container{
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            .html-page-second-section-first-title{
-                color: #fff;
-                font-family: sans-serif;
-            }
-            .html-page-second-section-first-image{
-                width: 500px;
-                object-fit: cover;
-                margin-top: 20px;
-                height: 90%;
-                cursor: pointer;
-                border-radius: 10px;       
-            }
+        .html-page-second-section-right-side-first-container {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          .html-page-second-section-first-title {
+            color: #fff;
+            font-family: sans-serif;
+          }
+          .html-page-second-section-first-image {
+            width: 500px;
+            object-fit: cover;
+            margin-top: 20px;
+            height: 90%;
+            cursor: pointer;
+            border-radius: 10px;
+          }
         }
-        .html-page-second-section-right-side-second-container{
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            .html-page-second-section-second-title{
-                color: #fff;
-                font-family: sans-serif;
-            }
-            .html-page-second-section-second-image{
-                width: 500px;
-                margin-top: 20px;
-                height: 90%;
-                cursor: pointer;
-                border-radius: 10px;         
-            }
+        .html-page-second-section-right-side-second-container {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          .html-page-second-section-second-title {
+            color: #fff;
+            font-family: sans-serif;
+          }
+          .html-page-second-section-second-image {
+            width: 500px;
+            margin-top: 20px;
+            height: 90%;
+            cursor: pointer;
+            border-radius: 10px;
+          }
         }
       }
     }
@@ -160,7 +160,7 @@ body {
     /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION
     /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION
     .html-page-third-section {
-      height: 550px;
+      height: auto;
       display: flex;
       flex-direction: column;
       margin-top: 40px;
@@ -183,19 +183,19 @@ body {
         width: 100%;
         height: 70%;
         display: flex;
-        .html-page-third-section-right-side-first{
+        .html-page-third-section-right-side-first {
           height: 100%;
           width: 50%;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          .html-page-third-section-first-title{
+          .html-page-third-section-first-title {
             color: #fff;
             font-family: sans-serif;
             margin-bottom: 20px;
           }
-          .html-page-third-section-first-image{
+          .html-page-third-section-first-image {
             width: 500px;
             height: 400px;
             height: 85%;
@@ -203,19 +203,19 @@ body {
             border-radius: 10px;
           }
         }
-        .html-page-third-section-right-side-second{
+        .html-page-third-section-right-side-second {
           height: 100%;
           width: 50%;
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          .html-page-third-section-second-title{
+          .html-page-third-section-second-title {
             color: #fff;
             font-family: sans-serif;
             margin-bottom: 20px;
           }
-          .html-page-third-section-second-image{
+          .html-page-third-section-second-image {
             width: 500px;
             height: 400px;
             height: 85%;
@@ -229,3 +229,101 @@ body {
     /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION
   }
 }
+
+/// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX
+/// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX
+@media screen and (max-width: 480px) {
+  body {
+    .html-page {
+      .html-page-first-section {
+        .html-page-first-section-right-side {
+          flex-direction: column;
+          .html-page-first-section-right-side-first-container {
+            width: 95%;
+          }
+          .html-page-first-section-right-side-second-container {
+            margin-top: 40px;
+            width: 95%;
+          }
+        }
+      }
+      .html-page-second-section {
+        .html-page-second-section-right-side {
+          flex-direction: column;
+          .html-page-second-section-right-side-first-container {
+            margin-top: 40px;
+            width: 95%;
+          }
+          .html-page-second-section-right-side-second-container {
+            margin-top: 40px;
+            width: 95%;
+          }
+        }
+      }
+      .html-page-third-section {
+        .html-page-third-section-right-side {
+          flex-direction: column;
+          .html-page-third-section-right-side-first {
+            width: 95%;
+            margin-top: 40px;
+          }
+          .html-page-third-section-right-side-second {
+            width: 95%;
+            margin-top: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+/// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX
+/// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX
+
+/// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
+/// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
+@media screen and (max-width: 768px) {
+  body {
+    .html-page {
+      .html-page-first-section {
+        .html-page-first-section-right-side {
+          flex-direction: column;
+          .html-page-first-section-right-side-first-container {
+            width: 95%;
+          }
+          .html-page-first-section-right-side-second-container {
+            margin-top: 40px;
+            width: 95%;
+          }
+        }
+      }
+      .html-page-second-section {
+        .html-page-second-section-right-side {
+          flex-direction: column;
+          .html-page-second-section-right-side-first-container {
+            margin-top: 40px;
+            width: 95%;
+          }
+          .html-page-second-section-right-side-second-container {
+            margin-top: 40px;
+            width: 95%;
+          }
+        }
+      }
+      .html-page-third-section {
+        .html-page-third-section-right-side {
+          flex-direction: column;
+          .html-page-third-section-right-side-first {
+            width: 95%;
+            margin-top: 40px;
+          }
+          .html-page-third-section-right-side-second {
+            width: 95%;
+            margin-top: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+/// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
+/// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
