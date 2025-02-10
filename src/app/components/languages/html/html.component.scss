@@ -1,5 +1,5 @@
 body {
-  height: 2000px;
+  height: 2300px;
   background: #000000;
   background: linear-gradient(270deg, #000000 10%, #7c0000 60%);
   background: -webkit-linear-gradient(270deg, #000000 10%, #7c0000 60%);
@@ -25,7 +25,7 @@ body {
     }
   }
   .html-page {
-    height: 1700px; // auto
+    height: 2000px; // auto
     /// FIRST SECTION  /// FIRST SECTION  /// FIRST SECTION  /// FIRST SECTION
     /// FIRST SECTION  /// FIRST SECTION  /// FIRST SECTION  /// FIRST SECTION
     .html-page-first-section {
@@ -65,11 +65,8 @@ body {
                 width: 500px;
                 margin-top: 20px;
                 height: 80%;
-                transition: 500ms;
                 cursor: pointer;
-                &:hover{
-                    scale: 105%;
-                }
+                border-radius: 10px;
             }
         }
         .html-page-first-section-right-side-second-container{
@@ -86,11 +83,8 @@ body {
                 width: 400px;
                 margin-top: 20px;
                 height: 80%;
-                transition: 500ms;
                 cursor: pointer;
-                &:hover{
-                    scale: 105%;
-                }
+                border-radius: 10px;       
             }
         }
       }
@@ -137,11 +131,8 @@ body {
                 object-fit: cover;
                 margin-top: 20px;
                 height: 90%;
-                transition: 500ms;
                 cursor: pointer;
-                &:hover{
-                    scale: 110%;
-                }
+                border-radius: 10px;       
             }
         }
         .html-page-second-section-right-side-second-container{
@@ -158,11 +149,8 @@ body {
                 width: 500px;
                 margin-top: 20px;
                 height: 90%;
-                transition: 500ms;
                 cursor: pointer;
-                &:hover{
-                    scale: 110%;
-                }
+                border-radius: 10px;         
             }
         }
       }
@@ -172,12 +160,13 @@ body {
     /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION
     /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION
     .html-page-third-section {
-      height: 300px;
+      height: 550px;
       display: flex;
       flex-direction: column;
       margin-top: 40px;
       .html-page-third-section-left-side {
         width: 100%;
+        height: 30%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -192,9 +181,48 @@ body {
       }
       .html-page-third-section-right-side {
         width: 100%;
+        height: 70%;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        .html-page-third-section-right-side-first{
+          height: 100%;
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .html-page-third-section-first-title{
+            color: #fff;
+            font-family: sans-serif;
+            margin-bottom: 20px;
+          }
+          .html-page-third-section-first-image{
+            width: 500px;
+            height: 400px;
+            height: 85%;
+            cursor: pointer;
+            border-radius: 10px;
+          }
+        }
+        .html-page-third-section-right-side-second{
+          height: 100%;
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          .html-page-third-section-second-title{
+            color: #fff;
+            font-family: sans-serif;
+            margin-bottom: 20px;
+          }
+          .html-page-third-section-second-image{
+            width: 500px;
+            height: 400px;
+            height: 85%;
+            cursor: pointer;
+            border-radius: 10px;
+          }
+        }
       }
     }
     /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION /// THIRD SECTION
