@@ -1,0 +1,7 @@
+<div *ngIf="isVisible" class="modal-overlay" (click)="close()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <button class="close-btn" (click)="close()">X</button>
+      <img [src]="imageSrc" alt="Modal Image" class="modal-image" />
+    </div>
+  </div>
+  

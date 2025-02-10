@@ -20,6 +20,7 @@ import { SQLComponent } from './components/languages/sql/sql.component';
 import { ScssComponent } from './components/languages/scss/scss.component';
 import { BackEndComponent } from './components/back-end/back-end.component';
 import { LanguagesNavBarComponent } from './components/languages/languages-nav-bar/languages-nav-bar.component';
+import { ImageModalComponent } from './components/image-modal/image-modal.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { LanguagesNavBarComponent } from './components/languages/languages-nav-b
     ScssComponent,
     BackEndComponent,
     LanguagesNavBarComponent,
+    ImageModalComponent,
   ],
   imports: [
     BrowserModule,
