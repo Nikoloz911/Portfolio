@@ -21,6 +21,7 @@ import { ScssComponent } from './components/languages/scss/scss.component';
 import { BackEndComponent } from './components/back-end/back-end.component';
 import { LanguagesNavBarComponent } from './components/languages/languages-nav-bar/languages-nav-bar.component';
 import { ImageModalComponent } from './components/image-modal/image-modal.component';
+import { TrFooterComponent } from './components/languages/tr-footer/tr-footer.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { ImageModalComponent } from './components/image-modal/image-modal.compon
     BackEndComponent,
     LanguagesNavBarComponent,
     ImageModalComponent,
+    TrFooterComponent,
   ],
   imports: [
     BrowserModule,
