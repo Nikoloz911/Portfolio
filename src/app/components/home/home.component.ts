@@ -26,12 +26,13 @@ export class HomeComponent implements OnInit {
       this.showAnimation = true;
       setTimeout(() => {
         this.hideAnimation = true;
-      }, 2000); 
+      }, 2000);
       setTimeout(() => {
         this.showAnimation = false;
-      }, 3000); 
-      localStorage.setItem('hasVisited', 'true');  /// Local Storage
+      }, 3000);
+      localStorage.setItem('hasVisited', 'true');
     }
   }
 }
+
 
