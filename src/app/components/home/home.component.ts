@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
   showAnimation = false;
   hideAnimation = false;
   ngOnInit() {
-    let hasVisited = localStorage.getItem('hasVisited');
+    let hasVisited = sessionStorage.getItem('hasVisited');  /// sessionStorage Instead of LocalStorage
     if (!hasVisited) {
       this.showAnimation = true;
       setTimeout(() => {
@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
       setTimeout(() => {
         this.showAnimation = false;
       }, 3000);
-      localStorage.setItem('hasVisited', 'true');
+      sessionStorage.setItem('hasVisited', 'true');  /// sessionStorage Instead of LocalStorage
     }
   }
 }
