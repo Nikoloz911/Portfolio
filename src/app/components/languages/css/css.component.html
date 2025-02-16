@@ -1,1 +1,25 @@
-
+<app-nav-bar></app-nav-bar>
+<body>
+    <app-languages-nav-bar></app-languages-nav-bar>
+    <header class="header">
+        <a class="title-icon" href="/css">
+            <div class="css-icon">               
+                <i class="devicon-css3-plain-wordmark colored"></i>
+           </div>
+        </a>
+    </header>
+    <div class="css-page">
+        <div class="css-page-top-side">
+            <p class="css-page-description">My CSS knowledge is minimal because I’ve been fully committed to SCSS. In 2023, I worked with CSS, but after that, I transitioned entirely to SCSS and never looked back. Angular has built-in support for SCSS, so no extra configuration is needed, it integrates seamlessly. However, when working outside Angular, I use an SCSS compiler to convert my styles into CSS.
+                While I no longer use CSS directly, understanding it was essential for mastering SCSS. If you want to see my expertise in styling websites, check out my SCSS page</p>
+        </div>
+        <div class="css-page-bottom-side">
+            <img (click)="openImage('assets/code/Screenshot-7.png')" class="css-screenshot" src="assets/code/Screenshot-7.png" alt="Screenshot">
+            <div class="image-icon"><i class="bi bi-aspect-ratio"></i></div>
+        </div>
+    </div>
+    <app-tr-footer></app-tr-footer>
+</body>
+<!-- This Is for Open Image-modal-component -->
+<app-image-modal #imageModal></app-image-modal> 
+<!-- This Is for Open Image-modal-component -->

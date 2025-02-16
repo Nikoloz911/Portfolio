@@ -16,9 +16,9 @@ export class ProjectsComponent {
     window.open('https://Your-link', '_blank');
   }
   openLinkDoctor() {
-    window.open('https://Your-link', '_blank');
+    window.open('https://html-css-lobjo-2.netlify.app/', '_blank');
   }
   openLinkFigma() {
-    window.open('https://Your-link', '_blank');
+    window.open('https://html-css-lobjo-1.netlify.app/', '_blank');
   }
 }

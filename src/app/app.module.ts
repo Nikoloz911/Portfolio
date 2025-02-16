@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 //
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,8 @@ import { SQLComponent } from './components/languages/sql/sql.component';
 import { ScssComponent } from './components/languages/scss/scss.component';
 import { BackEndComponent } from './components/back-end/back-end.component';
 import { LanguagesNavBarComponent } from './components/languages/languages-nav-bar/languages-nav-bar.component';
+import { ImageModalComponent } from './components/image-modal/image-modal.component';
+import { TrFooterComponent } from './components/languages/tr-footer/tr-footer.component';
 
 @NgModule({
   declarations: [
@@ -39,11 +42,16 @@ import { LanguagesNavBarComponent } from './components/languages/languages-nav-b
     ScssComponent,
     BackEndComponent,
     LanguagesNavBarComponent,
+    ImageModalComponent,
+    TrFooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    //
+    HttpClientModule,
+    BrowserAnimationsModule
+    //
   ],
   providers: [],
   bootstrap: [AppComponent]

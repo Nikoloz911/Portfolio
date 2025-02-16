@@ -1,0 +1,28 @@
+body{
+    height: 800px; //auto
+    padding-bottom: 150px;
+    background: #000000;
+    background: linear-gradient(270deg,#000000 20%, #780083 40%, #a500bc 60%);
+    background: -webkit-linear-gradient(270deg,#000000 20%, #780083 40%, #a500bc 60%);
+    background: -moz-linear-gradient(270deg,#000000 20%, #780083 40%, #a500bc 60%);
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        margin-top: 30px;
+        .title-icon {
+          text-decoration: none;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100px;
+          height: 100%;
+          .html-icon {
+            font-size: 90px;
+          }
+        }
+      }
+}

@@ -17,11 +17,13 @@
            <div class="html-page-first-section-right-side">
             <div class="html-page-first-section-right-side-first-container">
                 <h1 class="html-page-first-section-first-title">Html In C#</h1>
-                <img class="html-page-first-section-first-image" src="assets/code/Screenshot-1.png" alt="Screenshot">
+                <img (click)="openImage('assets/code/Screenshot-1.png')" class="html-page-first-section-first-image" src="assets/code/Screenshot-1.png" alt="Screenshot">
+                <div class="first-image-icon"><i class="bi bi-aspect-ratio"></i></div>
             </div>    
             <div class="html-page-first-section-right-side-second-container">
                 <h1 class="html-page-first-section-second-title">Result:</h1>
-                <img class="html-page-first-section-second-image" src="assets/code/Screenshot-2.png" alt="">
+                <img (click)="openImage('assets/code/Screenshot-2.png')" class="html-page-first-section-second-image" src="assets/code/Screenshot-2.png" alt="Screenshot">
+                <div class="second-image-icon"><i class="bi bi-aspect-ratio"></i></div>
             </div>
            </div>
         </section>
@@ -29,16 +31,18 @@
          <!-- SECOND SECTION -->   <!-- SECOND SECTION -->   <!-- SECOND SECTION -->
        <section class="html-page-second-section">
         <div class="html-page-second-section-left-side">
-            <p class="html-page-first-description">In the past, I would write complex HTML code to get the desired structure, not knowing yet how easy it would become with frameworks like Angular. Now, with the experience I've gained, I have realized that HTML has become much simpler. Thanks to Angular and modern tools, the number of lines in an HTML file has reduced drastically, making it cleaner and easier to manage. Of course, the complexity still depends on API and the type of page you're building, but it's far less overwhelming compared to how it used to be.</p>
+            <p class="html-page-first-description">In the past, I would write complex HTML code to get the desired structure, not knowing yet how easy it would become with frameworks like Angular. Now, with the experience I've gained, I have realized that HTML has become much simpler. Thanks to Angular and modern tools, the number of lines in an HTML file has reduced drastically, making it cleaner and easier to manage. Of course, the complexity still depends on API and the page you're building, but it's far less overwhelming compared to how it used to be.</p>
         </div>
        <div class="html-page-second-section-right-side">
         <div class="html-page-second-section-right-side-first-container">
-            <h1 class="html-page-second-section-first-title">Html In C#</h1>
-            <img class="html-page-second-section-first-image" src="assets/code/Screenshot-1.png" alt="Screenshot">
+            <h1 class="html-page-second-section-first-title">Old Code:</h1>
+            <img (click)="openImage('assets/code/Screenshot-3.png')"  class="html-page-second-section-first-image" src="assets/code/Screenshot-3.png" alt="Screenshot">
+            <div class="third-image-icon"><i class="bi bi-aspect-ratio"></i></div>
         </div>    
         <div class="html-page-second-section-right-side-second-container">
-            <h1 class="html-page-second-section-second-title">Result:</h1>
-            <img class="html-page-second-section-second-image" src="assets/code/Screenshot-2.png" alt="">
+            <h1 class="html-page-second-section-second-title">New Code:</h1>
+            <img (click)="openImage('assets/code/Screenshot-4.png')"  class="html-page-second-section-second-image" src="assets/code/Screenshot-4.png" alt="Screenshot">
+            <div class="fourth-image-icon"><i class="bi bi-aspect-ratio"></i></div>
         </div>
        </div>
        </section>
@@ -46,12 +50,25 @@
        <!-- THIRD SECTION -->  <!-- THIRD SECTION -->  <!-- THIRD SECTION -->  <!-- THIRD SECTION -->
        <section class="html-page-third-section">
         <div class="html-page-third-section-left-side">
-            <p class="html-page-first-description">When the code starts getting complicated, I find it helpful to add comments. It's a practice I've picked up over time. Comments make it easier to understand the code later, especially when you come back to it after a while. They act as reminders, helping me recall why I wrote certain parts of the code, even if it is been some time since I worked on the project.</p>
+            <p class="html-page-first-description">When the code starts getting complicated, I find it helpful to add comments like in Other Languages. It's a practice I've picked up over time. Comments make it easier to understand the code later, especially when you come back to it after a while. They act as reminders, helping me recall why I wrote certain parts of the code, even if it is been some time since I worked on the project.</p>
         </div>
        <div class="html-page-third-section-right-side">
-        <img src="" alt="Screenshot">
+        <div class="html-page-third-section-right-side-first">
+            <h1 class="html-page-third-section-first-title">Old Code:</h1>
+            <img (click)="openImage('assets/code/Screenshot-5.png')"  class="html-page-third-section-first-image" src="assets/code/Screenshot-5.png" alt="Screenshot">
+            <div class="fifth-image-icon"><i class="bi bi-aspect-ratio"></i></div>
+        </div>
+        <div class="html-page-third-section-right-side-second">
+            <h1 class="html-page-third-section-second-title">New Code:</h1>
+            <img (click)="openImage('assets/code/Screenshot-6.png')"  class="html-page-third-section-second-image" src="assets/code/Screenshot-6.png" alt="Screenshot">
+            <div class="sixth-image-icon"><i class="bi bi-aspect-ratio"></i></div>
+        </div>
        </div>
        </section>
        <!-- THIRD SECTION -->  <!-- THIRD SECTION -->  <!-- THIRD SECTION -->  <!-- THIRD SECTION -->
     </div>
+    <app-tr-footer></app-tr-footer>
 </body>
+<!-- This Is for Open Image-modal-component -->
+<app-image-modal #imageModal></app-image-modal> 
+<!-- This Is for Open Image-modal-component -->

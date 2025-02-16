@@ -1,4 +1,15 @@
+<!-- Entrance Animation -->  <!-- Entrance Animation -->  <!-- Entrance Animation -->
+<div 
+  *ngIf="showAnimation" 
+  [@fadeIn]="!hideAnimation ? 'visible' : 'hidden'" 
+  [@fadeOut]="hideAnimation ? 'hidden' : 'visible'" 
+  class="intro-animation"
+>
+  <h1 style="font-family: sans-serif;">Welcome to My Portfolio</h1>
+</div>
+<!-- Entrance Animation -->  <!-- Entrance Animation -->  <!-- Entrance Animation -->
 <body>
+  <div *ngIf="!showAnimation" >
     <app-nav-bar></app-nav-bar>
     <div class="home-page">
         <div class="home-page-left-side">
@@ -9,7 +20,6 @@
             <h1 class="home-page-title-description">FullStack Developer</h1>
             <button class="home-page-left-side-button" [routerLink]="'/Projects'">Projects</button>
         </div>
-     
         <div class="home-page-right-side">
             <h1 class="home-page-right-side-title">Languages</h1>
             <div class="home-page-right-side-icons-container">
@@ -152,11 +162,10 @@
      </a>
          </div>
          <!-- TOOLS THIRD CONTAINER -->   <!-- TOOLS THIRD CONTAINER -->     <!-- TOOLS THIRD CONTAINER -->
-
        </div>
     </section>
  <!-- TOOLS & WEBSITES SECTION -->  <!-- TOOLS & WEBSITES SECTION -->  <!-- TOOLS & WEBSITES SECTION -->
- 
+</div>
 </body>
 <app-footer></app-footer>
 
