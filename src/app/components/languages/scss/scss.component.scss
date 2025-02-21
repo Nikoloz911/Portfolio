@@ -1,5 +1,5 @@
 body{
-    height: 800px; //auto
+    height: 1100px; //auto
     padding-bottom: 150px;
     background: #000000;
     background: linear-gradient(270deg,#000000 20%, #780083 40%, #a500bc 60%);
@@ -26,5 +26,8 @@ body{
         }
       }
 
-      
+      .scss-page{
+        border: solid 4px blue;
+        height: 500px;
+      }
 }
