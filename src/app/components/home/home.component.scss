@@ -614,6 +614,42 @@ body{
           }
         }
         /// DOCKER /// DOCKER /// DOCKER /// DOCKER /// DOCKER /// DOCKER /// DOCKER /// DOCKER
+        /// NETLIFY  /// NETLIFY  /// NETLIFY  /// NETLIFY  /// NETLIFY  /// NETLIFY  /// NETLIFY
+        .tools-section-added-container-third-icon-link{
+          border: solid 2px rgb(217, 245, 244);
+          width: 200px;
+          @include tools-section-first-container-icon-Styles();
+          .tools-section-added-container-third-Image{
+             width: 70px;
+             height: 50px;
+             object-fit: cover;
+          }
+          &:hover{
+            color:  rgb(148, 255, 251);
+            box-shadow: 0px 0px 10px 3pxrgb(217, 245, 244);
+            -webkit-box-shadow: 0px 0px 10px 3px rgb(217, 245, 244);
+            -moz-box-shadow: 0px 0px 10px 3px rgb(217, 245, 244);
+          }
+        }
+        /// NETLIFY  /// NETLIFY  /// NETLIFY  /// NETLIFY  /// NETLIFY  /// NETLIFY  /// NETLIFY
+        /// VERCEL  /// VERCEL  /// VERCEL  /// VERCEL  /// VERCEL  /// VERCEL  /// VERCEL  /// VERCEL
+        .tools-section-added-container-fourth-icon-link{
+          border: solid 2px #000;
+          width: 180px;
+          @include tools-section-first-container-icon-Styles();
+          .tools-section-added-container-fourth-Image{
+             width: 70px;
+             height: 50px;
+             object-fit: cover;
+          }
+          &:hover{
+            color:  #ff0000;
+            box-shadow: 0px 0px 10px 3px #000;
+            -webkit-box-shadow: 0px 0px 10px 3px  #000;
+            -moz-box-shadow: 0px 0px 10px 3px #000;
+          }
+        }
+        /// VERCEL  /// VERCEL  /// VERCEL  /// VERCEL  /// VERCEL  /// VERCEL  /// VERCEL  /// VERCEL
       }
       /// ADDED CONTAINER  /// ADDED CONTAINER  /// ADDED CONTAINER  /// ADDED CONTAINER  /// ADDED CONTAINER
       /// TOOLS SECTION THIRD CONTAINER /// TOOLS SECTION THIRD CONTAINER  /// TOOLS SECTION THIRD CONTAINER 
