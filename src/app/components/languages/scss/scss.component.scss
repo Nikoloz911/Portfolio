@@ -1,3 +1,25 @@
+/// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS
+@mixin Images-Styles {
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+  transition: filter 300ms ease-in-out;
+  cursor: pointer;  
+  &:hover {
+    filter: brightness(70%);
+  }
+}
+@mixin Icons-Styles {
+  display: none;
+  color: #fff;
+  position: absolute;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+}
+/// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS
+
 body{
     height: 1500px; //auto
     padding-bottom: 150px;
@@ -34,9 +56,8 @@ body{
         .scss-page-first-section{
           margin-top: 50px;
           border: solid 3px yellow;
-          height: 600px;
+          height: 550px;
           .scss-page-first-section-description-side{
-            border: solid 2px blue;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -45,6 +66,44 @@ body{
               letter-spacing: 1px;
               width: 700px;
               text-align: center;
+            }     
+          }
+          .scss-page-first-section-images-side{
+            margin-top: 50px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;   
+            .scss-page-first-image{
+              @include Images-Styles();
+            }
+            .scss-page-second-image{
+              @include Images-Styles();
+            }
+            .scss-page-third-image{
+              @include Images-Styles();
+            }
+            .first-image-icon {
+              @include Icons-Styles();
+              transform: translate(-1300%, 450%);          
+            }
+            .second-image-icon {
+              @include Icons-Styles();
+              transform: translate(-50%, 450%);          
+            }
+            .third-image-icon {
+              @include Icons-Styles();
+              transform: translate(1200%, 450%);          
+            }
+            .scss-page-first-image:hover + .first-image-icon {
+              display: block;
+            }
+            .scss-page-second-image:hover + .second-image-icon {
+              display: block;
+            }
+            .scss-page-third-image:hover + .third-image-icon {
+              display: block;
             }
           }
         }
@@ -65,7 +124,8 @@ body{
           }
         }
         .scss-page-third-section{
-
+          border: solid 3px yellow;
+          height: 100px;
         }
       }
 }
