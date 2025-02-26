@@ -337,7 +337,7 @@ body {
           overflow: hidden;
           border-radius: 20px;
           width: 400px;
-          height: 430px;
+          height: 400px;
           display: flex;
           flex-direction: column;
           background-color: #273655e7;
@@ -440,7 +440,7 @@ body {
 @media screen and (max-width: 480px) {
   body{
     .projects-page{
-      padding-bottom: 300px;
+      padding-bottom: 100px;
       .projects-first-section{
         gap: 240px;
       }

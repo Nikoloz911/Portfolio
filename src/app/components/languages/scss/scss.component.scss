@@ -1,6 +1,7 @@
 body{
-    height: 800px; //auto
+    height: 1500px; //auto
     padding-bottom: 150px;
+    font-family: sans-serif;
     background: #000000;
     background: linear-gradient(270deg,#000000 20%, #780083 40%, #a500bc 60%);
     background: -webkit-linear-gradient(270deg,#000000 20%, #780083 40%, #a500bc 60%);
@@ -23,6 +24,47 @@ body{
           .html-icon {
             font-size: 90px;
           }
+        }
+      }
+
+      .scss-page{
+        border: solid 4px blue;
+        height: 1400px;
+        .scss-page-first-section{
+          margin-top: 50px;
+          border: solid 3px yellow;
+          height: 600px;
+          .scss-page-first-section-description-side{
+            border: solid 2px blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .scss-page-first-description{
+              color: #fff;
+              letter-spacing: 1px;
+              width: 700px;
+              text-align: center;
+            }
+          }
+        }
+        .scss-page-second-section{
+          border: solid 3px yellow;
+          height: 600px;
+          .scss-page-second-section-description-side{
+            border: solid 2px blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .scss-page-second-description{
+              color: #fff;
+              letter-spacing: 1px;
+              width: 700px;
+              text-align: center;
+            }
+          }
+        }
+        .scss-page-third-section{
+
         }
       }
 }
