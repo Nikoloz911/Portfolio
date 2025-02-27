@@ -50,6 +50,7 @@ body{
       
       .scss-page{
         height: auto;
+        padding-bottom: 100px;
         .scss-page-first-section{
           margin-top: 50px;
           height: auto;
@@ -66,6 +67,7 @@ body{
           }
           .scss-page-first-section-images-side{
             margin-top: 50px;
+            padding-bottom: 50px;
             height: auto;
             display: flex;
             justify-content: center;
@@ -147,3 +149,76 @@ body{
         }
       }
 }
+/// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX
+/// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX
+@media screen and (max-width: 480px) {
+  body{
+    .scss-page{
+      .scss-page-first-section{
+        padding-bottom: 100px;
+        .scss-page-first-section-images-side{
+          flex-direction: column;    
+          .first-image-icon {
+            transform: translate(-50%, 700%);          
+          }
+          .second-image-icon {
+            transform: translate(-50%, 1400%);          
+          }
+          .third-image-icon {
+            transform: translate(-50%, 2150%);          
+          }
+        }
+      }
+      .scss-page-second-section{
+        .scss-page-second-section-images-side{
+          flex-direction: column;
+          .fourth-image-icon {
+            transform: translate(-50%, 3600%);          
+          }
+          .fifth-image-icon {
+            transform: translate(-50%, 4350%);          
+          } 
+        }
+      }
+    }
+  }
+}
+/// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX
+/// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX
+/// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
+/// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
+@media screen and (max-width: 768px) {
+  body{
+    .scss-page{
+      .scss-page-first-section{
+        padding-bottom: 100px;
+        .scss-page-first-section-images-side{
+          flex-direction: column;    
+          .first-image-icon {
+            transform: translate(-50%, 550%);          
+          }
+          .second-image-icon {
+            transform: translate(-50%, 1250%);          
+          }
+          .third-image-icon {
+            transform: translate(-50%, 2050%);          
+          }
+        }
+      }
+      .scss-page-second-section{
+        .scss-page-second-section-images-side{
+          flex-direction: column;
+          .fourth-image-icon {
+            transform: translate(-50%, 3300%);          
+          }
+          .fifth-image-icon {
+            transform: translate(-50%, 4050%);          
+          } 
+        }
+      }
+    }
+  }
+}
+/// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
+/// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
+
