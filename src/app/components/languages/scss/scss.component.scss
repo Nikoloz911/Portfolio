@@ -21,8 +21,7 @@
 /// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS
 
 body{
-    height: 1500px; //auto
-    padding-bottom: 150px;
+    height: auto; 
     font-family: sans-serif;
     background: #000000;
     background: linear-gradient(270deg,#000000 20%, #780083 40%, #a500bc 60%);
@@ -48,15 +47,12 @@ body{
           }
         }
       }
-
       
       .scss-page{
-        border: solid 4px blue;
-        height: 1400px;
+        height: auto;
         .scss-page-first-section{
           margin-top: 50px;
-          border: solid 3px yellow;
-          height: 550px;
+          height: auto;
           .scss-page-first-section-description-side{
             display: flex;
             justify-content: center;
@@ -108,10 +104,8 @@ body{
           }
         }
         .scss-page-second-section{
-          border: solid 3px yellow;
-          height: 600px;
+          height: auto;
           .scss-page-second-section-description-side{
-            border: solid 2px blue;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -122,10 +116,34 @@ body{
               text-align: center;
             }
           }
-        }
-        .scss-page-third-section{
-          border: solid 3px yellow;
-          height: 100px;
+          .scss-page-second-section-images-side{
+            margin-top: 50px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px; 
+            .scss-page-fourth-image{
+              @include Images-Styles();
+            }
+            .scss-page-fifth-image{
+              @include Images-Styles();
+            }    
+            .fourth-image-icon {
+              @include Icons-Styles();
+              transform: translate(-700%, 1650%);          
+            }
+            .fifth-image-icon {
+              @include Icons-Styles();
+              transform: translate(580%, 1650%);          
+            } 
+            .scss-page-fourth-image:hover + .fourth-image-icon {
+              display: block;
+            }
+            .scss-page-fifth-image:hover + .fifth-image-icon {
+              display: block;
+            }    
+          }
         }
       }
 }
