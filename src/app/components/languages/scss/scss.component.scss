@@ -1,6 +1,28 @@
+/// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS
+@mixin Images-Styles {
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+  transition: filter 300ms ease-in-out;
+  cursor: pointer;  
+  &:hover {
+    filter: brightness(70%);
+  }
+}
+@mixin Icons-Styles {
+  display: none;
+  color: #fff;
+  position: absolute;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+}
+/// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS
+
 body{
-    height: 800px; //auto
-    padding-bottom: 150px;
+    height: auto; 
+    font-family: sans-serif;
     background: #000000;
     background: linear-gradient(270deg,#000000 20%, #780083 40%, #a500bc 60%);
     background: -webkit-linear-gradient(270deg,#000000 20%, #780083 40%, #a500bc 60%);
@@ -25,4 +47,178 @@ body{
           }
         }
       }
+      
+      .scss-page{
+        height: auto;
+        padding-bottom: 100px;
+        .scss-page-first-section{
+          margin-top: 50px;
+          height: auto;
+          .scss-page-first-section-description-side{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .scss-page-first-description{
+              color: #fff;
+              letter-spacing: 1px;
+              width: 700px;
+              text-align: center;
+            }     
+          }
+          .scss-page-first-section-images-side{
+            margin-top: 50px;
+            padding-bottom: 50px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;   
+            .scss-page-first-image{
+              @include Images-Styles();
+            }
+            .scss-page-second-image{
+              @include Images-Styles();
+            }
+            .scss-page-third-image{
+              @include Images-Styles();
+            }
+            .first-image-icon {
+              @include Icons-Styles();
+              transform: translate(-1300%, 450%);          
+            }
+            .second-image-icon {
+              @include Icons-Styles();
+              transform: translate(-50%, 450%);          
+            }
+            .third-image-icon {
+              @include Icons-Styles();
+              transform: translate(1200%, 450%);          
+            }
+            .scss-page-first-image:hover + .first-image-icon {
+              display: block;
+            }
+            .scss-page-second-image:hover + .second-image-icon {
+              display: block;
+            }
+            .scss-page-third-image:hover + .third-image-icon {
+              display: block;
+            }
+          }
+        }
+        .scss-page-second-section{
+          height: auto;
+          .scss-page-second-section-description-side{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .scss-page-second-description{
+              color: #fff;
+              letter-spacing: 1px;
+              width: 700px;
+              text-align: center;
+            }
+          }
+          .scss-page-second-section-images-side{
+            margin-top: 50px;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px; 
+            .scss-page-fourth-image{
+              @include Images-Styles();
+            }
+            .scss-page-fifth-image{
+              @include Images-Styles();
+            }    
+            .fourth-image-icon {
+              @include Icons-Styles();
+              transform: translate(-700%, 1650%);          
+            }
+            .fifth-image-icon {
+              @include Icons-Styles();
+              transform: translate(580%, 1650%);          
+            } 
+            .scss-page-fourth-image:hover + .fourth-image-icon {
+              display: block;
+            }
+            .scss-page-fifth-image:hover + .fifth-image-icon {
+              display: block;
+            }    
+          }
+        }
+      }
 }
+/// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX
+/// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX
+@media screen and (max-width: 480px) {
+  body{
+    .scss-page{
+      .scss-page-first-section{
+        padding-bottom: 100px;
+        .scss-page-first-section-images-side{
+          flex-direction: column;    
+          .first-image-icon {
+            transform: translate(-50%, 700%);          
+          }
+          .second-image-icon {
+            transform: translate(-50%, 1400%);          
+          }
+          .third-image-icon {
+            transform: translate(-50%, 2150%);          
+          }
+        }
+      }
+      .scss-page-second-section{
+        .scss-page-second-section-images-side{
+          flex-direction: column;
+          .fourth-image-icon {
+            transform: translate(-50%, 3600%);          
+          }
+          .fifth-image-icon {
+            transform: translate(-50%, 4350%);          
+          } 
+        }
+      }
+    }
+  }
+}
+/// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX
+/// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX
+/// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
+/// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
+@media screen and (max-width: 768px) {
+  body{
+    .scss-page{
+      .scss-page-first-section{
+        padding-bottom: 100px;
+        .scss-page-first-section-images-side{
+          flex-direction: column;    
+          .first-image-icon {
+            transform: translate(-50%, 550%);          
+          }
+          .second-image-icon {
+            transform: translate(-50%, 1250%);          
+          }
+          .third-image-icon {
+            transform: translate(-50%, 2050%);          
+          }
+        }
+      }
+      .scss-page-second-section{
+        .scss-page-second-section-images-side{
+          flex-direction: column;
+          .fourth-image-icon {
+            transform: translate(-50%, 3300%);          
+          }
+          .fifth-image-icon {
+            transform: translate(-50%, 4050%);          
+          } 
+        }
+      }
+    }
+  }
+}
+/// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
+/// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
+
