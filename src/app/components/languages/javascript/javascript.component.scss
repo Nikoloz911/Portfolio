@@ -1,0 +1,35 @@
+body{
+    height: 1000px; // auto
+    font-family: sans-serif;
+    background: #000000;
+    background: linear-gradient(270deg,#000000 25%, #fffc00 55%);
+    background: -webkit-linear-gradient(270deg,#000000 25%, #fffc00 55%);
+    background: -moz-linear-gradient(270deg,#000000 25%, #fffc00 55%);
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        margin-top: 30px;
+        .title-icon {
+          text-decoration: none;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100px;
+          height: 100%;
+          .html-icon {
+            font-size: 90px;
+          }
+        }
+      }
+
+
+      .javascript-page{
+        height: 600px; // auto
+        border: solid 3px red;
+      }
+}
