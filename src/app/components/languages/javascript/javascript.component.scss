@@ -2,9 +2,9 @@ body{
     height: 1000px; // auto
     font-family: sans-serif;
     background: #000000;
-    background: linear-gradient(270deg,#000000 25%, #fffc00 55%);
-    background: -webkit-linear-gradient(270deg,#000000 25%, #fffc00 55%);
-    background: -moz-linear-gradient(270deg,#000000 25%, #fffc00 55%);
+    background: linear-gradient(270deg,#000000 20%, #fffc00 60%);
+    background: -webkit-linear-gradient(270deg,#000000 20%, #fffc00 60%);
+    background: -moz-linear-gradient(270deg,#000000 20%, #fffc00 60%);
 
     .header {
         display: flex;
@@ -31,5 +31,33 @@ body{
       .javascript-page{
         height: 600px; // auto
         border: solid 3px red;
+        margin-top: 50px;
+        .javascript-page-description-side {
+          height: 250px; //
+          border: solid 3px red;
+        
+          display: flex;
+          justify-content: center;
+          align-items: center;       
+          .javascript-text {
+            text-align: center;
+            width: 750px;
+            letter-spacing: 1px;
+            color: #f73939; 
+            .highlight-text {
+              color: #00ff11; 
+            }
+            .project-link{
+              text-decoration: none;
+              font-size: 18px;
+              color: rgb(0, 140, 255);
+              transition: 500ms;
+              &:hover{
+                color: #000000;
+              }
+            }
+          }
+        }
+        
       }
 }
