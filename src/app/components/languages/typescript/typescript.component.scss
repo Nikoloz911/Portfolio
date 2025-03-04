@@ -1,7 +1,8 @@
 body{
-    height: 1100px; // auto
+    height: 1700px; // auto
     background: #000000;
     background: #000000;
+    font-family: sans-serif;
     background: linear-gradient(270deg,#000000 20%, #0055ff 60%);
     background: -webkit-linear-gradient(270deg,#000000 20%, #0055ff 60%);
     background: -moz-linear-gradient(270deg,#000000 20%, #0055ff 60%);
@@ -23,6 +24,26 @@ body{
           .typescript-icon {
             font-size: 90px;
           }
+        }
+      }
+      .typescript-page{
+        border: solid 3px red;
+        color: #Fff;
+        height: 1500px; // auto
+        .first-section{
+          border: solid 2px red;
+          height: 400px;
+
+        }
+        .second-section{
+          border: solid 2px red;
+          height: 400px;
+
+        }
+        .third-section{
+          border: solid 2px red;
+          height: 400px;
+
         }
       }
 }
