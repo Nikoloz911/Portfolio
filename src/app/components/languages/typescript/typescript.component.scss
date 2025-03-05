@@ -33,7 +33,34 @@ body{
         .first-section{
           border: solid 2px red;
           height: 400px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .first-description{
+            width: 700px;
+            text-align: center;
+          }
+          .images-side{
+            display: flex;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: center;
+            .Ts-page-first-image{
+              width: 200px;
+              height: 250px;
+              cursor: pointer;
+            }
+            .Ts-page-second-image{
+              width: 200px;
+              height: 250px;
+            }
+            .Ts-page-third-image{
+              width: 200px;
+              height: 250px;
 
+            }
+          }
         }
         .second-section{
           border: solid 2px red;
