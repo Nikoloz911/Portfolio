@@ -1,5 +1,6 @@
 body {
-    height: 1200px; // auto
+    height: 1800px; // auto
+    font-family: sans-serif;
     background: #000000;
     background: linear-gradient(270deg,#000000 20%, #9600ff 60%);
     background: -webkit-linear-gradient(270deg,#000000 20%, #9600ff 60%);
@@ -26,5 +27,49 @@ body {
     }
     .c-sharp-page{
         border: solid 2px red;
+        height: 1400px; // auto
+        .first-section{
+          margin-top: 50px;
+        border: solid 2px red;
+        height: 600px; // auto
+          .description-side{
+           text-align: center;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            .description{
+            color: #fff;
+            width: 700px;
+            font-size: 18px;
+            }
+          }
+          .images-side{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+          }
+        }
+        .second-section{
+        border: solid 2px red;
+        height: 600px; // auto
+          .description-side{
+           text-align: center;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+            .description{
+            color: #fff;
+            width: 700px;
+            font-size: 18px;
+            }
+          }
+          .images-side{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+          }
+        }
     }
 }
