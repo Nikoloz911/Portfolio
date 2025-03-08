@@ -1,5 +1,36 @@
+/// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS
+@mixin Images-Styles {
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+  transition: filter 300ms ease-in-out;
+  cursor: pointer;  
+  &:hover {
+    filter: brightness(70%);
+  }
+}
+@mixin Icons-Styles {
+  display: none;
+  color: #fff;
+  position: absolute;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+}
+@mixin Images-Side-Styles {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+}
+/// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS
+/// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES
+
 body {
-    height: 1800px; // auto
+    height: auto;
     font-family: sans-serif;
     background: #000000;
     background: linear-gradient(270deg,#000000 20%, #9600ff 60%);
@@ -26,12 +57,11 @@ body {
       }
     }
     .c-sharp-page{
-        border: solid 2px red;
-        height: 1400px; // auto
+        height: auto; 
+        padding-bottom: 140px;
         .first-section{
           margin-top: 50px;
-        border: solid 2px red;
-        height: 600px; // auto
+        height: auto;
           .description-side{
            text-align: center;
            display: flex;
@@ -43,16 +73,45 @@ body {
             font-size: 18px;
             }
           }
+          /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES
           .images-side{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-          }
+            @include Images-Side-Styles();
+             .Ts-page-first-image{
+               @include Images-Styles();
+             }
+             .Ts-page-second-image{
+               @include Images-Styles();
+             }
+             .Ts-page-third-image{
+               @include Images-Styles();
+             }
+             .first-image-icon{
+               @include Icons-Styles();
+               transform: translate(-1250%, 400%);  
+             }
+             .second-image-icon{
+               @include Icons-Styles();
+               transform: translate(-50%, 400%);          
+             }
+             .third-image-icon{
+               @include Icons-Styles();
+               transform: translate(1150%, 400%);          
+             }
+             .Ts-page-first-image:hover + .first-image-icon {
+               display: block;
+             }
+             .Ts-page-second-image:hover + .second-image-icon {
+               display: block;
+             }
+             .Ts-page-third-image:hover + .third-image-icon {
+               display: block;
+             }
+           }
+          /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES
         }
         .second-section{
-        border: solid 2px red;
-        height: 600px; // auto
+        margin-top: 70px;
+        height: auto;
           .description-side{
            text-align: center;
            display: flex;
@@ -64,12 +123,41 @@ body {
             font-size: 18px;
             }
           }
+          /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES
           .images-side{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
+            @include Images-Side-Styles();
+            .Ts-page-first-image{
+              @include Images-Styles();
+            }
+            .Ts-page-second-image{
+              @include Images-Styles();
+            }
+            .Ts-page-third-image{
+              @include Images-Styles();
+            }
+            .first-image-icon{
+              @include Icons-Styles();
+              transform: translate(-1300%, 1700%);  
+            }
+            .second-image-icon{
+              @include Icons-Styles();
+              transform: translate(-50%, 1700%);          
+            }
+            .third-image-icon{
+              @include Icons-Styles();
+              transform: translate(1200%, 1700%);          
+            }
+            .Ts-page-first-image:hover + .first-image-icon {
+              display: block;
+            }
+            .Ts-page-second-image:hover + .second-image-icon {
+              display: block;
+            }
+            .Ts-page-third-image:hover + .third-image-icon {
+              display: block;
+            }
           }
+          /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES
         }
     }
 }
