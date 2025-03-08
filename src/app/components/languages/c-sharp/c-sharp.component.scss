@@ -87,15 +87,15 @@ body {
              }
              .first-image-icon{
                @include Icons-Styles();
-               transform: translate(-1250%, 400%);  
+               transform: translate(-1300%, 440%);  
              }
              .second-image-icon{
                @include Icons-Styles();
-               transform: translate(-50%, 400%);          
+               transform: translate(-50%, 440%);          
              }
              .third-image-icon{
                @include Icons-Styles();
-               transform: translate(1150%, 400%);          
+               transform: translate(1250%, 440%);          
              }
              .Ts-page-first-image:hover + .first-image-icon {
                display: block;
@@ -137,15 +137,15 @@ body {
             }
             .first-image-icon{
               @include Icons-Styles();
-              transform: translate(-1300%, 1700%);  
+              transform: translate(-1300%, 1600%);  
             }
             .second-image-icon{
               @include Icons-Styles();
-              transform: translate(-50%, 1700%);          
+              transform: translate(-50%, 1600%);          
             }
             .third-image-icon{
               @include Icons-Styles();
-              transform: translate(1200%, 1700%);          
+              transform: translate(1200%, 1600%);          
             }
             .Ts-page-first-image:hover + .first-image-icon {
               display: block;
@@ -161,3 +161,87 @@ body {
         }
     }
 }
+/// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX
+/// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX
+@media screen and (max-width: 480px) {
+  body{
+    .c-sharp-page{
+      .first-section{
+        .images-side{
+            .first-image-icon{
+               @include Icons-Styles();
+               transform: translate(-40%, 650%) !important;  
+             }
+             .second-image-icon{
+               @include Icons-Styles();
+               transform: translate(-40%, 1400%)  !important;          
+             }
+             .third-image-icon{
+               @include Icons-Styles();
+               transform: translate(-40%, 2150%)  !important;          
+             }
+        }
+      }
+       .second-section{
+        .images-side{
+            .first-image-icon{
+               @include Icons-Styles();
+               transform: translate(-40%, 3450%)  !important;  
+             }
+             .second-image-icon{
+               @include Icons-Styles();
+               transform: translate(-40%, 4200%)  !important;          
+             }
+             .third-image-icon{
+               @include Icons-Styles();
+               transform: translate(-40%, 5000%)  !important;          
+             }
+        }
+      }
+    }
+  }
+}
+/// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX
+/// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX
+/// responsive 768 px /// responsive 768 px  /// responsive 768 px  /// responsive 768 px  /// responsive 768 px
+/// responsive 768 px /// responsive 768 px  /// responsive 768 px  /// responsive 768 px  /// responsive 768 px
+@media screen and (max-width: 768px) {
+  body{
+    .c-sharp-page{
+      .first-section{
+        .images-side{
+            .first-image-icon{
+               @include Icons-Styles();
+               transform: translate(-40%, 530%);  
+             }
+             .second-image-icon{
+               @include Icons-Styles();
+               transform: translate(-40%, 1300%);          
+             }
+             .third-image-icon{
+               @include Icons-Styles();
+               transform: translate(-40%, 2000%);          
+             }
+        }
+      }
+       .second-section{
+        .images-side{
+            .first-image-icon{
+               @include Icons-Styles();
+               transform: translate(-40%, 3250%);  
+             }
+             .second-image-icon{
+               @include Icons-Styles();
+               transform: translate(-40%, 4000%);          
+             }
+             .third-image-icon{
+               @include Icons-Styles();
+               transform: translate(-40%, 4800%);          
+             }
+        }
+      }
+    }
+  }
+}
+/// responsive 768 px /// responsive 768 px  /// responsive 768 px  /// responsive 768 px  /// responsive 768 px
+/// responsive 768 px /// responsive 768 px  /// responsive 768 px  /// responsive 768 px  /// responsive 768 px
