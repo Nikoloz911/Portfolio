@@ -7,13 +7,13 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
  openLinkEmis() {
-    window.open('https://Your-link', '_blank');
+    window.open('https://emis-ge.vercel.app/', '_blank');
   }
   openLinkSkolebi() {
-    window.open('https://Your-link', '_blank');
+    window.open('https://skolebi-emis-ge.vercel.app/', '_blank');
   }
   openLinkZoomer() {
-    window.open('https://Your-link', '_blank');
+    window.open('https://zoomerge.vercel.app/', '_blank');
   }
   openLinkDoctor() {
     window.open('https://html-css-lobjo-2.netlify.app/', '_blank');
