@@ -1,5 +1,35 @@
+@mixin Images-Styles {
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+  transition: filter 300ms ease-in-out;
+  cursor: pointer;  
+  &:hover {
+    filter: brightness(70%);
+  }
+}
+@mixin Icons-Styles {
+  display: none;
+  color: #fff;
+  position: absolute;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+}
+
+@mixin Images-Side-Styles {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+}
+
 body {
-    height: 1400px; //auto
+    height: auto;
+    padding-bottom: 200px; 
     font-family: sans-serif;
     background: #000000;
     background: linear-gradient(270deg,#000000 10%, #d5d5d5 50%, #ffffff 80%);
@@ -26,11 +56,10 @@ body {
       }
     }
     .sql-page{
-      height: 1100px; // auto
-      border: solid 2px red;
+      height: auto; 
       .first-section{
-      border: solid 2px blue;
-      height: 500px;
+      height: auto;
+      padding-bottom: 100px;
       margin-top: 50px;      
       .description-side{
         text-align: center;
@@ -50,12 +79,34 @@ body {
         }
       }
       .images-side{
-      
+        @include Images-Side-Styles();
+        .Ts-page-first-image{
+          @include Images-Styles();
+        }
+        .Ts-page-second-image{
+          @include Images-Styles();
+        }
+        .Ts-page-third-image{
+          @include Images-Styles();
+        }
+        .first-image-icon{
+          @include Icons-Styles();
+          transform: translate(-1250%, 300%);  
+        }
+        .second-image-icon{
+          @include Icons-Styles();
+          transform: translate(-50%, 300%);          
+        }
+        .Ts-page-first-image:hover + .first-image-icon {
+          display: block;
+        }
+        .Ts-page-second-image:hover + .second-image-icon {
+          display: block;
+        }
       }
       }
       .second-section{
-      border: solid 2px blue;
-      height: 500px;
+      height: auto;
         .description-side{
           text-align: center;
           display: flex;
@@ -74,8 +125,39 @@ body {
           font-size: 18px;
         }
         .images-side{
-
+          @include Images-Side-Styles();
+          .Ts-page-first-image{
+            @include Images-Styles();
+          }
+          .Ts-page-second-image{
+            @include Images-Styles();
+          }
+          .Ts-page-third-image{
+            @include Images-Styles();
+          }
+          .first-image-icon{
+            @include Icons-Styles();
+            transform: translate(-1250%, 1450%);  
+          }
+          .second-image-icon{
+            @include Icons-Styles();
+            transform: translate(-50%, 1450%);          
+          }
+          .third-image-icon{
+            @include Icons-Styles();
+            transform: translate(1150%, 1450%);          
+          }
+          .Ts-page-first-image:hover + .first-image-icon {
+            display: block;
+          }
+          .Ts-page-second-image:hover + .second-image-icon {
+            display: block;
+          }
+          .Ts-page-third-image:hover + .third-image-icon {
+            display: block;
+          }
         }
+
       }
     }
 }
