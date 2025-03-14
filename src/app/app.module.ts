@@ -23,6 +23,7 @@ import { BackEndComponent } from './components/back-end/back-end.component';
 import { LanguagesNavBarComponent } from './components/languages/languages-nav-bar/languages-nav-bar.component';
 import { ImageModalComponent } from './components/image-modal/image-modal.component';
 import { TrFooterComponent } from './components/languages/tr-footer/tr-footer.component';
+import { SqlFooterComponent } from './components/languages/sql-footer/sql-footer.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { TrFooterComponent } from './components/languages/tr-footer/tr-footer.co
     LanguagesNavBarComponent,
     ImageModalComponent,
     TrFooterComponent,
+    SqlFooterComponent,
   ],
   imports: [
     BrowserModule,

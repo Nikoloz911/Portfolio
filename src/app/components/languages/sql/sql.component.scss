@@ -1,0 +1,176 @@
+@mixin Images-Styles {
+  width: 450px;
+  height: 300px;
+  border-radius: 10px;
+  transition: filter 300ms ease-in-out;
+  cursor: pointer;  
+  &:hover {
+    filter: brightness(70%);
+  }
+}
+@mixin Icons-Styles {
+  display: none;
+  color: #000;
+  position: absolute;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+}
+
+@mixin Images-Side-Styles {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+}
+
+body {
+    height: auto;
+    padding-bottom: 200px; 
+    font-family: sans-serif;
+    background: #000000;
+    background: linear-gradient(270deg,#000000 10%, #d5d5d5 50%, #ffffff 80%);
+    background: -webkit-linear-gradient(270deg,#000000 10%, #d5d5d5 50%, #ffffff 80%);
+    background: -moz-linear-gradient(270deg,#000000 10%, #d5d5d5 50%, #ffffff 80%);
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 80px;
+      margin-top: 30px;
+      .title-icon {
+        text-decoration: none;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100%;
+        .html-icon {
+          font-size: 90px;
+        }
+      }
+    }
+    .sql-page{
+      height: auto; 
+      .first-section{
+      height: auto;
+      padding-bottom: 100px;
+      margin-top: 50px;      
+      .description-side{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+        .description{
+          width: 700px;
+          font-size: 18px;
+        }
+        .second-description{
+          margin-top: 20px;
+          width: 700px;
+          font-size: 18px;
+        }
+      }
+      .images-side{
+        @include Images-Side-Styles();
+        .Ts-page-first-image{
+          @include Images-Styles();
+        }
+        .Ts-page-second-image{
+          @include Images-Styles();
+        }  
+        .first-image-icon{
+          @include Icons-Styles();
+          transform: translate(-650%, 500%);  
+        }
+        .second-image-icon{
+          @include Icons-Styles();
+          transform: translate(550%, 500%);          
+        }
+        .Ts-page-first-image:hover + .first-image-icon {
+          display: block;
+        }
+        .Ts-page-second-image:hover + .second-image-icon {
+          display: block;
+        }
+      }
+      }
+      .second-section{
+      height: auto;
+        .description-side{
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          color: #000;
+        }
+        .description{
+          width: 700px;
+          font-size: 18px;
+        }
+        .second-description{
+          margin-top: 20px;
+          width: 700px;
+          font-size: 18px;
+        }
+        .images-side{
+          @include Images-Side-Styles();
+          .Ts-page-first-image{
+            @include Images-Styles();
+          }
+          .first-image-icon{
+            @include Icons-Styles();
+            transform: translate(-50%, 2000%);  
+          }
+          .Ts-page-first-image:hover + .first-image-icon {
+            display: block;
+          }
+        }
+      }
+    }
+}
+@media screen and (max-width: 480px) {
+  body{
+    .sql-page{
+      .first-section{
+        .description-side{
+          .description{
+            width: 420px;
+          }
+          .second-description{
+            width: 420px;
+          }
+        }
+        .images-side{
+          .first-image-icon{
+            transform: translate(-50%, 900%);  
+          }
+          .second-image-icon{
+            transform: translate(-50%, 1600%);          
+          }
+        }
+      }
+      .second-section{
+        .description{
+          width: 400px;
+        }
+        .second-description{
+          width: 400px;
+        }
+        .images-side{
+          .first-image-icon{
+            transform: translate(-50%, 3200%);  
+          }
+        }
+      }
+    }
+  }
+}
