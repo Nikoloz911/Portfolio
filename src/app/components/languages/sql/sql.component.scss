@@ -10,7 +10,7 @@
 }
 @mixin Icons-Styles {
   display: none;
-  color: #fff;
+  color: #000;
   position: absolute;
   font-size: 40px;
   top: 50%;
@@ -85,17 +85,14 @@ body {
         }
         .Ts-page-second-image{
           @include Images-Styles();
-        }
-        .Ts-page-third-image{
-          @include Images-Styles();
-        }
+        }  
         .first-image-icon{
           @include Icons-Styles();
-          transform: translate(-1250%, 300%);  
+          transform: translate(-650%, 500%);  
         }
         .second-image-icon{
           @include Icons-Styles();
-          transform: translate(-50%, 300%);          
+          transform: translate(550%, 500%);          
         }
         .Ts-page-first-image:hover + .first-image-icon {
           display: block;
@@ -129,35 +126,51 @@ body {
           .Ts-page-first-image{
             @include Images-Styles();
           }
-          .Ts-page-second-image{
-            @include Images-Styles();
-          }
-          .Ts-page-third-image{
-            @include Images-Styles();
-          }
           .first-image-icon{
             @include Icons-Styles();
-            transform: translate(-1250%, 1450%);  
-          }
-          .second-image-icon{
-            @include Icons-Styles();
-            transform: translate(-50%, 1450%);          
-          }
-          .third-image-icon{
-            @include Icons-Styles();
-            transform: translate(1150%, 1450%);          
+            transform: translate(-50%, 2000%);  
           }
           .Ts-page-first-image:hover + .first-image-icon {
             display: block;
           }
-          .Ts-page-second-image:hover + .second-image-icon {
-            display: block;
-          }
-          .Ts-page-third-image:hover + .third-image-icon {
-            display: block;
-          }
         }
-
       }
     }
+}
+@media screen and (max-width: 480px) {
+  body{
+    .sql-page{
+      .first-section{
+        .description-side{
+          .description{
+            width: 420px;
+          }
+          .second-description{
+            width: 420px;
+          }
+        }
+        .images-side{
+          .first-image-icon{
+            transform: translate(-50%, 900%);  
+          }
+          .second-image-icon{
+            transform: translate(-50%, 1600%);          
+          }
+        }
+      }
+      .second-section{
+        .description{
+          width: 400px;
+        }
+        .second-description{
+          width: 400px;
+        }
+        .images-side{
+          .first-image-icon{
+            transform: translate(-50%, 3200%);  
+          }
+        }
+      }
+    }
+  }
 }

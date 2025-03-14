@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './sql-footer.component.scss'
 })
 export class SqlFooterComponent {
-
+  sendEmail(): void {
+    window.location.href = 'mailto:nikalobjanidze014@gmail.com';
+  } 
 }
