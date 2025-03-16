@@ -652,8 +652,8 @@ body{
         /// VERCEL  /// VERCEL  /// VERCEL  /// VERCEL  /// VERCEL  /// VERCEL  /// VERCEL  /// VERCEL
         /// NUGET ORG   /// NUGET ORG  /// NUGET ORG  /// NUGET ORG  /// NUGET ORG  /// NUGET ORG 
         .tools-section-added-container-fifth-icon-link{
-          border: solid 2px #000;
-          width: 230px;
+          border: solid 2px rgb(0, 72, 128);
+          width: 210px;
           @include tools-section-first-container-icon-Styles();
           .tools-section-added-container-fifth-Image{
              width: 70px;
@@ -746,8 +746,8 @@ body{
  /// RESPONSIVE 480PX /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX
 @media screen and (max-width: 480px) {
   body{
-      height: 2400px; ///
-      padding-bottom: 100px;
+      height: 2900px !important;
+      padding-bottom: 450px;
       .home-page{
           display: flex;
           flex-direction: column;
@@ -785,27 +785,26 @@ body{
           flex-wrap: wrap;
           gap: 30px;
         }
+        .added-container{
+          height: auto;
+          flex-wrap: wrap;
+          gap: 30px;
+        }
       }
     }   
   }
 }
  /// RESPONSIVE 480PX /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX
  /// RESPONSIVE 480PX /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX
- @media screen and (max-width: 768px) {
-  body{
-    height: 2500px !important; /// 
-}
- }
  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX
  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX
  @media screen and (max-width: 768px) {
   body{
-    height: 2300px; /// 
+    height: 2400px !important; 
     .home-page{
         display: flex;
         flex-direction: column;
-        height: auto;
-        
+        height: auto;    
         .home-page-left-side{
             width: 100%;  
             flex-direction: column;   
@@ -836,6 +835,11 @@ body{
         flex-wrap: wrap;
       }
       .tools-section-third-container{
+        height: auto;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+      .added-container{
         height: auto;
         flex-wrap: wrap;
         gap: 30px;
