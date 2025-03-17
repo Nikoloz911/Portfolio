@@ -575,7 +575,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 60px;
+        gap: 35px;
         /// TWILIO  /// TWILIO  /// TWILIO  /// TWILIO  /// TWILIO  /// TWILIO  /// TWILIO 
         .tools-section-added-container-first-icon-link{
           border: solid 2px rgb(220, 255, 255);
@@ -669,6 +669,25 @@ body{
           }
         }
         /// NUGET ORG   /// NUGET ORG  /// NUGET ORG  /// NUGET ORG  /// NUGET ORG  /// NUGET ORG 
+        /// DOCKER HUB  /// DOCKER HUB  /// DOCKER HUB  /// DOCKER HUB  /// DOCKER HUB  /// DOCKER HUB
+        .tools-section-added-container-sixth-icon-link{
+          border: solid 2px rgb(37, 67, 86);
+          width: 210px;
+          @include tools-section-first-container-icon-Styles();
+          .tools-section-added-container-sixth-Image{
+             width: 70px;
+             height: 70px;
+             scale: 80%;
+             object-fit: cover;
+          }
+          &:hover{
+            color:  rgb(37, 67, 86);
+           box-shadow: 0px 0px 15px 4px rgba(37,67,86,0.75);
+          -webkit-box-shadow: 0px 0px 15px 4px rgba(37,67,86,0.75);
+          -moz-box-shadow: 0px 0px 15px 4px rgba(37,67,86,0.75);
+          }
+        }
+        /// DOCKER HUB  /// DOCKER HUB  /// DOCKER HUB  /// DOCKER HUB  /// DOCKER HUB  /// DOCKER HUB
       }
       /// ADDED CONTAINER  /// ADDED CONTAINER  /// ADDED CONTAINER  /// ADDED CONTAINER  /// ADDED CONTAINER
       /// TOOLS SECTION THIRD CONTAINER /// TOOLS SECTION THIRD CONTAINER  /// TOOLS SECTION THIRD CONTAINER 
