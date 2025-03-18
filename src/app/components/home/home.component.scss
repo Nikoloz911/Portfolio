@@ -111,6 +111,7 @@ html, body {
 /// Entrance Animation  /// Entrance Animation  /// Entrance Animation  /// Entrance Animation
 body{
     height: 1500px;
+    padding-bottom: 80px;
     width: 100%;
     background: #040000;
     background: linear-gradient(270deg,#040000 0%, #00114f 80%);
@@ -461,6 +462,7 @@ body{
       .tools-section-second-container{
         height: auto;
         padding-bottom: 20px;
+        margin-top: 20px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -690,6 +692,74 @@ body{
         /// DOCKER HUB  /// DOCKER HUB  /// DOCKER HUB  /// DOCKER HUB  /// DOCKER HUB  /// DOCKER HUB
       }
       /// ADDED CONTAINER  /// ADDED CONTAINER  /// ADDED CONTAINER  /// ADDED CONTAINER  /// ADDED CONTAINER
+      /// ADDED AI-CONTAINER  /// ADDED AI-CONTAINER  /// ADDED AI-CONTAINER  /// ADDED AI-CONTAINER  /// ADDED AI-CONTAINER
+      .Ai-container{
+       
+        margin-top: 10px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+         /// CLAUDE AI   /// CLAUDE AI   /// CLAUDE AI   /// CLAUDE AI   /// CLAUDE AI
+        .ai-container-first-icon-link{
+         border: solid 1px rgb(216, 118, 87);
+          width: 200px;
+          @include tools-section-first-container-icon-Styles();
+          .ai-container-first-Image{
+            width: 70px;
+            height: 70px;
+            scale: 80%;
+            object-fit: cover;
+          }
+          &:hover{
+            color:  rgb(216, 118, 87);
+            box-shadow: 0px 0px 22px 5px rgba(216,118,87,0.75);
+            -webkit-box-shadow: 0px 0px 22px 5px rgba(216,118,87,0.75);
+            -moz-box-shadow: 0px 0px 22px 5px rgba(216,118,87,0.75);
+          }
+        }
+         /// CLAUDE AI   /// CLAUDE AI   /// CLAUDE AI   /// CLAUDE AI   /// CLAUDE AI
+        /// DEEPSEEK  /// DEEPSEEK  /// DEEPSEEK  /// DEEPSEEK  /// DEEPSEEK  /// DEEPSEEK
+        .ai-container-second-icon-link{
+          border: solid 1px rgb(77, 107, 254);
+           width: 200px;
+           @include tools-section-first-container-icon-Styles();
+           .ai-container-second-Image{
+             width: 70px;
+             height: 70px;
+             scale: 80%;
+             object-fit: cover;
+           }
+           &:hover{
+             color:  rgb(77, 107, 254);
+             box-shadow: 0px 0px 22px 5px rgba(77,107,254,0.75);
+             -webkit-box-shadow: 0px 0px 22px 5px rgba(77,107,254,0.75);
+             -moz-box-shadow: 0px 0px 22px 5px rgba(77,107,254,0.75);
+           }
+         }
+        /// DEEPSEEK  /// DEEPSEEK  /// DEEPSEEK  /// DEEPSEEK  /// DEEPSEEK  /// DEEPSEEK
+        /// CHATGPT  /// CHATGPT  /// CHATGPT  /// CHATGPT  /// CHATGPT  /// CHATGPT  /// CHATGPT
+        .ai-container-third-icon-link{
+          border: solid 1px rgb(178, 178, 178);
+           width: 200px;
+           @include tools-section-first-container-icon-Styles();
+           .ai-container-third-Image{
+             width: 70px;
+             height: 70px;
+             scale: 80%;
+             object-fit: cover;
+           }
+           &:hover{
+             color:  rgb(178, 178, 178);
+             box-shadow: 0px 0px 22px 5px rgba(178,178,178,0.75);
+             -webkit-box-shadow: 0px 0px 22px 5px rgba(178,178,178,0.75);
+             -moz-box-shadow: 0px 0px 22px 5px rgba(178,178,178,0.75);
+           }
+         }
+        /// CHATGPT  /// CHATGPT  /// CHATGPT  /// CHATGPT  /// CHATGPT  /// CHATGPT  /// CHATGPT
+      }
+      /// ADDED AI-CONTAINER  /// ADDED AI-CONTAINER  /// ADDED AI-CONTAINER  /// ADDED AI-CONTAINER  /// ADDED AI-CONTAINER
       /// TOOLS SECTION THIRD CONTAINER /// TOOLS SECTION THIRD CONTAINER  /// TOOLS SECTION THIRD CONTAINER 
       .Framework-section-title{
         text-align: center;
@@ -761,12 +831,26 @@ body{
   }
     /// WEBSITES AND FRAMEWORKS SECTION   /// WEBSITES AND FRAMEWORKS SECTION   /// WEBSITES AND FRAMEWORKS SECTION     
 }
+/// RESPONSIVE 
+/// RESPONSIVE 
+@media screen and (min-width: 387px) and (max-width: 400px) {
+  body {
+    padding-bottom: 1900px !important;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 388px) {
+  body {
+    padding-bottom: 2000px !important;
+  }
+}
+/// RESPONSIVE 
+/// RESPONSIVE 
  /// RESPONSIVE 480PX /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX
  /// RESPONSIVE 480PX /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX
 @media screen and (max-width: 480px) {
   body{
       height: 2900px !important;
-      padding-bottom: 450px;
+      padding-bottom: 650px;
       .home-page{
           display: flex;
           flex-direction: column;
@@ -805,6 +889,11 @@ body{
           gap: 30px;
         }
         .added-container{
+          height: auto;
+          flex-wrap: wrap;
+          gap: 30px;
+        }
+        .Ai-container{
           height: auto;
           flex-wrap: wrap;
           gap: 30px;
@@ -859,6 +948,11 @@ body{
         gap: 30px;
       }
       .added-container{
+        height: auto;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+      .Ai-container{
         height: auto;
         flex-wrap: wrap;
         gap: 30px;
