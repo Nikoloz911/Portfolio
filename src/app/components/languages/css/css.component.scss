@@ -72,6 +72,17 @@ body{
       }
     }
 }
+@media screen and (min-width: 360px) and (max-width: 400px) {
+  body{
+    .css-page{
+      .css-page-bottom-side{
+        .css-screenshot{
+          width: 360px !important;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 480px) {
   body{
     .css-page{

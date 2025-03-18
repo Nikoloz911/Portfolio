@@ -161,6 +161,51 @@ body {
         }
     }
 }
+@media screen and (min-width: 360px) and (max-width: 400px) {
+  body{
+    .c-sharp-page{
+      .first-section{
+        .images-side{
+          .Ts-page-first-image{
+            width: 360px;
+          }
+          .Ts-page-second-image{
+            width: 360px;
+          }
+          .Ts-page-third-image{
+            width: 360px;
+          }
+        }
+      }
+      .second-section{
+        .images-side{
+          .Ts-page-first-image{
+            width: 360px;
+          }
+          .Ts-page-second-image{
+            width: 360px;
+          }
+          .Ts-page-third-image{
+            width: 360px;
+          }    
+        }
+      }
+      .third-section{
+        .images-side{
+          .Ts-page-first-image{
+            width: 360px;
+          }
+          .Ts-page-second-image{
+            width: 360px;
+          }
+          .Ts-page-third-image{
+            width: 360px;
+          }    
+        }
+      }
+    }
+  }
+}
 /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX
 /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX
 @media screen and (max-width: 480px) {
