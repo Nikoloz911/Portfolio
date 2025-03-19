@@ -114,6 +114,34 @@ body{
         }
       }
 }
+/// RESPONSIVE 
+@media screen and (min-width: 387px) and (max-width: 400px) {
+  body {
+    .about-me-container{
+      .content-container{
+        width: 320px !important;
+        .introduction{
+          width: 320px;
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 388px) {
+  body {
+    .about-me-container{
+      .content-container{
+        width: 310px !important;
+        .introduction{
+          width: 310px;
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}
+/// RESPONSIVE 
 @media screen and (max-width: 480px) {
     body{
         height: auto;
