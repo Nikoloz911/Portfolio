@@ -441,6 +441,9 @@ body {
 @media screen and (min-width: 387px) and (max-width: 400px) {
 body{
   .projects-page{
+        .projects-second-section-title{
+        display: none;
+      }
     .projects-first-section{
       display: none;
     }
@@ -457,6 +460,9 @@ body{
 @media screen and (min-width: 360px) and (max-width: 388px) {
   body{
     .projects-page{
+      .projects-second-section-title{
+        display: none;
+      }
       .projects-first-section{
         display: none;
       }
