@@ -24,6 +24,7 @@ import { LanguagesNavBarComponent } from './components/languages/languages-nav-b
 import { ImageModalComponent } from './components/image-modal/image-modal.component';
 import { TrFooterComponent } from './components/languages/tr-footer/tr-footer.component';
 import { SqlFooterComponent } from './components/languages/sql-footer/sql-footer.component';
+import { LanguagesPageComponent } from './components/languages/languages-page/languages-page.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { SqlFooterComponent } from './components/languages/sql-footer/sql-footer
     ImageModalComponent,
     TrFooterComponent,
     SqlFooterComponent,
+    LanguagesPageComponent,
   ],
   imports: [
     BrowserModule,

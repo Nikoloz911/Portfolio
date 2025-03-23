@@ -20,6 +20,7 @@ import { JavascriptComponent } from './components/languages/javascript/javascrip
 import { TypescriptComponent } from './components/languages/typescript/typescript.component';
 import { CSharpComponent } from './components/languages/c-sharp/c-sharp.component';
 import { SQLComponent } from './components/languages/sql/sql.component';
+import { LanguagesPageComponent } from './components/languages/languages-page/languages-page.component';
 /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS  /// LANGUAGES COMPONENTS
 /// ALL ROUTES /// ALL ROUTES  /// ALL ROUTES  /// ALL ROUTES
 /// ALL ROUTES /// ALL ROUTES  /// ALL ROUTES  /// ALL ROUTES
@@ -76,6 +77,10 @@ const routes: Routes = [
    {
     path: "sql",
     component: SQLComponent
+   },
+   {
+    path: "languages",
+    component: LanguagesPageComponent
    },
   /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS
    /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS /// LANGUAGES COMPONENTS
