@@ -39,7 +39,16 @@ body{
         }
     }
     .first-section-right-side{
-
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        .back-end-page-first-screenshot{
+            object-fit: cover;
+            width: 300px;
+            height: 400px;
+        }
     }
   }
   .second-section{
