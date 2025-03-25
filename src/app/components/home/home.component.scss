@@ -111,6 +111,7 @@ html, body {
 /// Entrance Animation  /// Entrance Animation  /// Entrance Animation  /// Entrance Animation
 body{
     height: 1500px;
+    padding-bottom: 80px;
     width: 100%;
     background: #040000;
     background: linear-gradient(270deg,#040000 0%, #00114f 80%);
@@ -461,6 +462,7 @@ body{
       .tools-section-second-container{
         height: auto;
         padding-bottom: 20px;
+        margin-top: 20px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -502,7 +504,7 @@ body{
         .tools-section-second-container-third-icon-link{
           @include tools-section-first-container-icon-Styles();
           border: solid 2px rgb(3, 0, 171);
-          width: 160px;
+          width: 180px;
           .tools-section-second-container-third-Image{
             scale: 170%;  
           }
@@ -575,7 +577,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 60px;
+        gap: 35px;
         /// TWILIO  /// TWILIO  /// TWILIO  /// TWILIO  /// TWILIO  /// TWILIO  /// TWILIO 
         .tools-section-added-container-first-icon-link{
           border: solid 2px rgb(220, 255, 255);
@@ -650,8 +652,114 @@ body{
           }
         }
         /// VERCEL  /// VERCEL  /// VERCEL  /// VERCEL  /// VERCEL  /// VERCEL  /// VERCEL  /// VERCEL
+        /// NUGET ORG   /// NUGET ORG  /// NUGET ORG  /// NUGET ORG  /// NUGET ORG  /// NUGET ORG 
+        .tools-section-added-container-fifth-icon-link{
+          border: solid 2px rgb(0, 72, 128);
+          width: 210px;
+          @include tools-section-first-container-icon-Styles();
+          .tools-section-added-container-fifth-Image{
+             width: 70px;
+             height: 70px;
+             scale: 80%;
+             object-fit: cover;
+          }
+          &:hover{
+            color:  rgb(4,71,186);
+            box-shadow: 0px 0px 19px 2px rgba(0,54,151,0.75);
+            -webkit-box-shadow: 0px 0px 19px 2px rgba(0,54,151,0.75);
+            -moz-box-shadow: 0px 0px 19px 2px rgba(0,54,151,0.75);
+          }
+        }
+        /// NUGET ORG   /// NUGET ORG  /// NUGET ORG  /// NUGET ORG  /// NUGET ORG  /// NUGET ORG 
+        /// DOCKER HUB  /// DOCKER HUB  /// DOCKER HUB  /// DOCKER HUB  /// DOCKER HUB  /// DOCKER HUB
+        .tools-section-added-container-sixth-icon-link{
+          border: solid 2px rgb(37, 67, 86);
+          width: 210px;
+          @include tools-section-first-container-icon-Styles();
+          .tools-section-added-container-sixth-Image{
+             width: 70px;
+             height: 70px;
+             scale: 80%;
+             object-fit: cover;
+          }
+          &:hover{
+            color:  rgb(37, 67, 86);
+           box-shadow: 0px 0px 15px 4px rgba(37,67,86,0.75);
+          -webkit-box-shadow: 0px 0px 15px 4px rgba(37,67,86,0.75);
+          -moz-box-shadow: 0px 0px 15px 4px rgba(37,67,86,0.75);
+          }
+        }
+        /// DOCKER HUB  /// DOCKER HUB  /// DOCKER HUB  /// DOCKER HUB  /// DOCKER HUB  /// DOCKER HUB
       }
       /// ADDED CONTAINER  /// ADDED CONTAINER  /// ADDED CONTAINER  /// ADDED CONTAINER  /// ADDED CONTAINER
+      /// ADDED AI-CONTAINER  /// ADDED AI-CONTAINER  /// ADDED AI-CONTAINER  /// ADDED AI-CONTAINER  /// ADDED AI-CONTAINER
+      .Ai-container{
+       
+        margin-top: 10px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+         /// CLAUDE AI   /// CLAUDE AI   /// CLAUDE AI   /// CLAUDE AI   /// CLAUDE AI
+        .ai-container-first-icon-link{
+         border: solid 1px rgb(216, 118, 87);
+          width: 200px;
+          @include tools-section-first-container-icon-Styles();
+          .ai-container-first-Image{
+            width: 70px;
+            height: 70px;
+            scale: 80%;
+            object-fit: cover;
+          }
+          &:hover{
+            color:  rgb(216, 118, 87);
+            box-shadow: 0px 0px 22px 5px rgba(216,118,87,0.75);
+            -webkit-box-shadow: 0px 0px 22px 5px rgba(216,118,87,0.75);
+            -moz-box-shadow: 0px 0px 22px 5px rgba(216,118,87,0.75);
+          }
+        }
+         /// CLAUDE AI   /// CLAUDE AI   /// CLAUDE AI   /// CLAUDE AI   /// CLAUDE AI
+        /// DEEPSEEK  /// DEEPSEEK  /// DEEPSEEK  /// DEEPSEEK  /// DEEPSEEK  /// DEEPSEEK
+        .ai-container-second-icon-link{
+          border: solid 1px rgb(77, 107, 254);
+           width: 200px;
+           @include tools-section-first-container-icon-Styles();
+           .ai-container-second-Image{
+             width: 70px;
+             height: 70px;
+             scale: 80%;
+             object-fit: cover;
+           }
+           &:hover{
+             color:  rgb(77, 107, 254);
+             box-shadow: 0px 0px 22px 5px rgba(77,107,254,0.75);
+             -webkit-box-shadow: 0px 0px 22px 5px rgba(77,107,254,0.75);
+             -moz-box-shadow: 0px 0px 22px 5px rgba(77,107,254,0.75);
+           }
+         }
+        /// DEEPSEEK  /// DEEPSEEK  /// DEEPSEEK  /// DEEPSEEK  /// DEEPSEEK  /// DEEPSEEK
+        /// CHATGPT  /// CHATGPT  /// CHATGPT  /// CHATGPT  /// CHATGPT  /// CHATGPT  /// CHATGPT
+        .ai-container-third-icon-link{
+          border: solid 1px rgb(178, 178, 178);
+           width: 200px;
+           @include tools-section-first-container-icon-Styles();
+           .ai-container-third-Image{
+             width: 70px;
+             height: 70px;
+             scale: 80%;
+             object-fit: cover;
+           }
+           &:hover{
+             color:  rgb(178, 178, 178);
+             box-shadow: 0px 0px 22px 5px rgba(178,178,178,0.75);
+             -webkit-box-shadow: 0px 0px 22px 5px rgba(178,178,178,0.75);
+             -moz-box-shadow: 0px 0px 22px 5px rgba(178,178,178,0.75);
+           }
+         }
+        /// CHATGPT  /// CHATGPT  /// CHATGPT  /// CHATGPT  /// CHATGPT  /// CHATGPT  /// CHATGPT
+      }
+      /// ADDED AI-CONTAINER  /// ADDED AI-CONTAINER  /// ADDED AI-CONTAINER  /// ADDED AI-CONTAINER  /// ADDED AI-CONTAINER
       /// TOOLS SECTION THIRD CONTAINER /// TOOLS SECTION THIRD CONTAINER  /// TOOLS SECTION THIRD CONTAINER 
       .Framework-section-title{
         text-align: center;
@@ -723,12 +831,26 @@ body{
   }
     /// WEBSITES AND FRAMEWORKS SECTION   /// WEBSITES AND FRAMEWORKS SECTION   /// WEBSITES AND FRAMEWORKS SECTION     
 }
+/// RESPONSIVE 
+/// RESPONSIVE 
+@media screen and (min-width: 387px) and (max-width: 400px) {
+  body {
+    padding-bottom: 1950px !important;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 388px) {
+  body {
+    padding-bottom: 2050px !important;
+  }
+}
+/// RESPONSIVE 
+/// RESPONSIVE 
  /// RESPONSIVE 480PX /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX
  /// RESPONSIVE 480PX /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX
 @media screen and (max-width: 480px) {
   body{
-      height: 2400px; ///
-      padding-bottom: 100px;
+      height: 2900px !important;
+      padding-bottom: 650px;
       .home-page{
           display: flex;
           flex-direction: column;
@@ -766,27 +888,31 @@ body{
           flex-wrap: wrap;
           gap: 30px;
         }
+        .added-container{
+          height: auto;
+          flex-wrap: wrap;
+          gap: 30px;
+        }
+        .Ai-container{
+          height: auto;
+          flex-wrap: wrap;
+          gap: 30px;
+        }
       }
     }   
   }
 }
  /// RESPONSIVE 480PX /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX
  /// RESPONSIVE 480PX /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX  /// RESPONSIVE 480PX
- @media screen and (max-width: 768px) {
-  body{
-    height: 2500px !important; /// 
-}
- }
  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX
  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX
  @media screen and (max-width: 768px) {
   body{
-    height: 2300px; /// 
+    height: 2400px !important; 
     .home-page{
         display: flex;
         flex-direction: column;
-        height: auto;
-        
+        height: auto;    
         .home-page-left-side{
             width: 100%;  
             flex-direction: column;   
@@ -817,6 +943,16 @@ body{
         flex-wrap: wrap;
       }
       .tools-section-third-container{
+        height: auto;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+      .added-container{
+        height: auto;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+      .Ai-container{
         height: auto;
         flex-wrap: wrap;
         gap: 30px;

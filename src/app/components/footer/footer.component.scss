@@ -9,7 +9,7 @@
 
 
 body{
-    height: 500px;
+    height: 510px;
     background: #00144f;
     background: linear-gradient(270deg,#00144f 0%, #000000 80%);
     background: -webkit-linear-gradient(270deg,#00144f 0%, #000000 80%);
@@ -63,35 +63,44 @@ body{
                     }
                 }
             }
-            .footer-languages-section{        
+            .footer-check-out-section{        
                 width: 300px;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
                 margin-left: 30px;
-                .footer-languages-section-title{
+                .footer-check-out-section-title{
                     color: #fff;
                     font-family: sans-serif;
-                    margin-bottom: 10px;
+                    margin-bottom: 20px;
                 }
-                .footer-languages-section-icon-link{
-                    text-decoration: none;
-                    font-size: 30px;
-                    display: flex;
-                    align-items: center;
-                    color: #fff;
-                    gap: 20px;
-                    width: 170px;
-                    .footer-languages-section-icon-link-text{
-                        font-size: 18px;
-                        font-family: sans-serif;
-                        transition: 500ms;
-                        &:hover{
-                            color: red;
-                        }
-                    }
+              .footer-check-out-section-link{
+                display: flex;
+                align-items: center;              
+                width: 200px;
+                text-decoration: none;
+                color: #fff;
+                font-size: 20px;
+                font-family: sans-serif;
+                gap: 10px;
+                transition: 500ms;
+                &:hover{
+                    color: rgb(0, 123, 255);
                 }
+                .footer-check-out-section-icon{
+                    font-size: 25px;
+                }
+                .orcid-image{
+                    scale: 60%;
+                    height: 50px;
+                    width: 50px;
+                    transform: translateX(-15px);
+                }
+                .orcid-title{
+                    transform: translateX(-20px);
+                }
+              }
             }
             .footer-projects-section{   
                 width: 300px;
@@ -181,8 +190,12 @@ body{
                     }         
             }
         }
+        .footer-line{
+            width: 100%;
+            height: 1px;
+            background-color: #ddd;
+        }
         .footer-bottom-section{
-            border-top: solid 1px #ddd;
             height: 20%;
             display: flex;
             justify-content: center;
@@ -200,13 +213,17 @@ body{
 /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
 @media screen and (max-width: 480px) {
     body{
-        height: 2000px;  
-        padding-bottom: 400px;
+        height: auto;  
+        padding-bottom: 50px;
         .footer{
-            height: 1400px;
+            height: auto;
             .footer-main-section{
                 flex-direction: column;
-                gap: 20px;  
+                gap: 70px;  
+            }
+            .footer-bottom-section{
+                height: auto;
+                margin-top: 50px;
             }
         }
     }
@@ -217,7 +234,7 @@ body{
 /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX
 @media screen and (max-width: 768px) {
     body{
-        height: 1000px;  
+        height: auto;  
         .footer{
             .footer-main-section{
                 height: 90%;
@@ -226,7 +243,7 @@ body{
                 .footer-contact-section{
                       height: 15%;            
                 }
-                .footer-languages-section{        
+                .footer-check-out-section{        
                       height: 30%;
                       margin-left: 0px;              
                 }
@@ -234,12 +251,13 @@ body{
                       height: 25%;
                 }
                 .footer-social-media-section{
-                      height: 18%;       
+                      height: 18%;  
+                      padding-bottom: 50px;     
                 }
             }
-            .footer-bottom-section{
-                border-top: solid 1px #ddd;    
+            .footer-bottom-section{ 
                 height: 10%;
+                margin-top: 50px;
             }
         }
     }
