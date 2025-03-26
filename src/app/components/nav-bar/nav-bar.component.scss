@@ -73,7 +73,7 @@
     }
     /// SCROLL FUNCTION  /// SCROLL FUNCTION
     .nav-bar-left-side {
-      width: 50%;
+      width: 40%;
       display: flex;
       align-items: center;
       .nav-bar-content{
@@ -107,8 +107,15 @@
       }   
     }
     .nav-bar-right-side {
-      width: 50%;
+      width: 60%;
       @include Flex();
+      .nav-bar-switch {
+        width: 100px;
+        height: 50px;
+        margin-right: 30px;
+        @include Flex();
+  
+    }
       .nav-bar-links-container{
         width: 50%;
         height: 50%;
@@ -286,6 +293,13 @@
             }
           }       
         }
+        .nav-bar-switch{
+          @include Flex();
+          margin-top: 15px;
+          position: absolute;
+          z-index: 100;
+          width: 100%;
+        }
       }   
     }
   /// BURGER MENU CONTAINER  /// BURGER MENU CONTAINER   /// BURGER MENU CONTAINER   /// BURGER MENU CONTAINER 
@@ -299,6 +313,9 @@
   .nav-bar{
     .nav-bar-right-side{
       .nav-bar-links-container{
+        display: none;
+      }
+      .nav-bar-switch{
         display: none;
       }
       .burger-menu{
@@ -333,6 +350,9 @@
       .nav-bar-links-container{
         display: none;
       }
+      .nav-bar-switch{
+        display: none;
+      }
       .burger-menu{
         border: solid 1px #008cff;
         display: block;
@@ -359,4 +379,12 @@
 }
 /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
 
-  
+/// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE
+/// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE
+:host-context([theme="light"]) {
+  .nav-bar{
+    background-color: #ddd;
+  }
+}
+/// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE
+/// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE
