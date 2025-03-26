@@ -6,8 +6,11 @@
       color: orange;
     }
   }
+
+
 body{
-    height: 500px;
+    height: 510px;
+    background-color: transparent;
     .footer{
         height: 100%;
         width: 100%;
@@ -16,7 +19,7 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 40px;
+            gap: 25px;
             .footer-contact-section{
                 width: 300px;
                 height: 100%;
@@ -58,7 +61,7 @@ body{
                 }
             }
             .footer-languages-section{        
-                width: 300px;
+                width: 210px;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
@@ -86,6 +89,30 @@ body{
                         }
                     }
                 }
+            }
+            .footer-back-end-projects-section{        
+                width: 200px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .footer-back-end-projects-section-title{
+                    color: #fff;
+                    font-family: sans-serif;
+                    margin-bottom: 20px;
+                }
+              .footer-back-end-projects-section-link{                  
+                width: 200px;
+                text-decoration: none;
+                color: rgb(13, 167, 243);
+                font-size: 17px;
+                font-family: sans-serif;
+                transition: 500ms;
+                margin-top: 8px;
+                &:hover{
+                    color: rgb(225, 239, 255);
+                }          
+              }
             }
             .footer-projects-section{   
                 width: 300px;
@@ -175,8 +202,12 @@ body{
                     }         
             }
         }
+        .footer-line{
+            width: 100%;
+            height: 1px;
+            background-color: #ddd;
+        }
         .footer-bottom-section{
-            border-top: solid 1px #ddd;
             height: 20%;
             display: flex;
             justify-content: center;
@@ -190,17 +221,43 @@ body{
         }
     }
 }
+/// RESPONSIVEC
+ @media screen and (min-width: 360px) and (max-width: 400px) {
+    body{
+        .footer{
+            .footer-main-section{
+                .footer-languages-section{
+                    transform: translateX(-60px);
+                }
+                .footer-back-end-projects-section{
+                    transform: translateX(-60px);
+                }
+            }
+        }
+    }
+ }
+/// RESPONSIVE
 /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
 /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX /// RESPONSIVE 480PX
 @media screen and (max-width: 480px) {
     body{
-        height: 2000px;  
-        padding-bottom: 400px;
+        height: auto;  
+        padding-bottom: 50px;
         .footer{
-            height: 1400px;
+            height: auto;
             .footer-main-section{
                 flex-direction: column;
-                gap: 20px;  
+                gap: 70px;  
+                .footer-languages-section{
+                    transform: translateX(-60px);
+                }
+                .footer-back-end-projects-section{
+                    transform: translateX(-60px);
+                }
+            }
+            .footer-bottom-section{
+                height: auto;
+                margin-top: 50px;
             }
         }
     }
@@ -211,7 +268,7 @@ body{
 /// RESPONSIVE 768PX /// RESPONSIVE 768PX /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX
 @media screen and (max-width: 768px) {
     body{
-        height: 1000px;  
+        height: auto;  
         .footer{
             .footer-main-section{
                 height: 90%;
@@ -220,7 +277,7 @@ body{
                 .footer-contact-section{
                       height: 15%;            
                 }
-                .footer-languages-section{        
+                .footer-back-end-projects-section{        
                       height: 30%;
                       margin-left: 0px;              
                 }
@@ -228,12 +285,13 @@ body{
                       height: 25%;
                 }
                 .footer-social-media-section{
-                      height: 18%;       
+                      height: 18%;  
+                      padding-bottom: 50px;     
                 }
             }
-            .footer-bottom-section{
-                border-top: solid 1px #ddd;    
+            .footer-bottom-section{ 
                 height: 10%;
+                margin-top: 50px;
             }
         }
     }
