@@ -26,6 +26,7 @@ import { TrFooterComponent } from './components/languages/tr-footer/tr-footer.co
 import { SqlFooterComponent } from './components/languages/sql-footer/sql-footer.component';
 import { LanguagesPageComponent } from './components/languages/languages-page/languages-page.component';
 import { SwitchComponent } from './components/switch/switch.component';
+import { InfoComponent } from './components/info/info.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { SwitchComponent } from './components/switch/switch.component';
     SqlFooterComponent,
     LanguagesPageComponent,
     SwitchComponent,
+    InfoComponent,
   ],
   imports: [
     BrowserModule,
