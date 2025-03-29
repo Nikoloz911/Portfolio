@@ -27,7 +27,7 @@
   .container {
     z-index: 10;
     position: relative;
-    width: 340px;
+    width: 380px;
     height: 220px;
     transition: 200ms;
     cursor: pointer;
@@ -437,6 +437,46 @@ body {
     }
   }
 }
+/// RESPONSIVE 
+@media screen and (min-width: 387px) and (max-width: 400px) {
+body{
+  .projects-page{
+        .projects-second-section-title{
+        display: none;
+      }
+    .projects-first-section{
+      display: none;
+    }
+    .projects-second-section{
+      .project-link{
+        .project-second-section-card-container{
+          width: 350px;
+        }
+      }
+    }
+  }
+}
+}
+@media screen and (min-width: 360px) and (max-width: 388px) {
+  body{
+    .projects-page{
+      .projects-second-section-title{
+        display: none;
+      }
+      .projects-first-section{
+        display: none;
+      }
+      .projects-second-section{
+        .project-link{
+          .project-second-section-card-container{
+            width: 320px;
+          }
+        }
+      }
+    }
+  }
+}
+/// RESPONSIVE 
 @media screen and (max-width: 480px) {
   body{
     .projects-page{

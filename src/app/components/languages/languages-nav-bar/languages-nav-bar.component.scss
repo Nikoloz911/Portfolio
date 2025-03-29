@@ -35,6 +35,15 @@
          }
     }
 }
+/// RESPONSIVE
+@media screen and (min-width: 360px) and (max-width: 400px) {
+    .main{
+        .main-links{
+            scale: 90%;
+        }
+    }
+}
+/// RESPONSIVE
 @media screen and (max-width: 480px) {
     .main{
         width: 85% !important;

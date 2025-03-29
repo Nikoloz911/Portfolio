@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
+.no-scroll {
+    overflow: hidden !important;
+  }
+  
+
 /* For Webkit Browsers (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
     width: 12px;

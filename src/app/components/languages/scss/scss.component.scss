@@ -151,6 +151,38 @@ body{
         }
       }
 }
+/// RESPONSIVE
+@media screen and (min-width: 360px) and (max-width: 400px) {
+  body{
+    .scss-page{
+      .scss-page-first-section{
+        .scss-page-first-section-images-side{
+          .scss-page-first-image{
+            width: 360px;
+          }
+          .scss-page-second-image{
+            width: 360px;
+          }
+          .scss-page-third-image{
+            width: 360px;
+          }
+        }
+      }
+      .scss-page-second-section{
+        .scss-page-second-section-images-side{
+          .scss-page-fifth-image{
+            width: 360px;
+          }
+          .scss-page-fourth-image{
+            width: 360px;
+          }
+        
+        }
+      }
+    }
+  }
+}
+/// RESPONSIVE
 /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX
 /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX
 @media screen and (max-width: 480px) {
