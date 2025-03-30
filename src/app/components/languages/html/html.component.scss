@@ -487,3 +487,81 @@ body {
 }
 /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
 /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+
+:host-context([theme="light"]) {
+  body{
+    background: #fff;
+    .html-page{
+      .html-page-first-section{
+        .html-page-first-section-left-side{
+          .html-page-first-description{
+            color: #000;
+          }
+        }
+        .html-page-first-section-right-side{
+          .html-page-first-section-right-side-first-container{
+            .html-page-first-section-first-title {
+              color: #000;
+            }
+          }
+          .html-page-first-section-right-side-second-container{
+            .html-page-first-section-second-title {
+              color: #000;
+            }
+            .second-image-icon {
+              color: #000;
+            }
+          }
+        }     
+      }
+      .html-page-second-section{
+        .html-page-second-section-left-side{
+          .html-page-first-description{
+            color: #000;
+          }
+        }
+        .html-page-second-section-right-side{
+          .html-page-second-section-right-side-first-container{
+            .html-page-second-section-first-title {
+              color: #000;
+            }
+          }
+          .html-page-second-section-right-side-second-container{
+            .html-page-second-section-second-title {
+              color: #000;
+            }
+            .second-image-icon {
+              color: #000;
+            }
+          }
+        }     
+      }
+      .html-page-third-section{
+        .html-page-third-section-left-side{
+          .html-page-first-description{
+            color: #000;
+          }
+        }
+        .html-page-third-section-right-side{
+          .html-page-third-section-right-side-first{
+            .html-page-third-section-first-title {
+              color: #000;
+            }
+          }
+          .html-page-third-section-right-side-second{
+            .html-page-third-section-second-title {
+              color: #000;
+            }
+            .third-image-icon {
+              color: #000;
+            }
+          }
+        }     
+      }
+    }
+  }
+}
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE

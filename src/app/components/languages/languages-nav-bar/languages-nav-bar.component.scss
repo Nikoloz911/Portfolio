@@ -10,7 +10,7 @@
     align-items: center;
     .main-links{
         width: 100%;
-        border: solid 1px #fff;
+        border: solid 2px #fff;
         border-radius: 10px;
         height: 60px;
         margin-left: 50px;
@@ -76,3 +76,19 @@
         }
     }
 }
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+
+:host-context([theme="light"]) {
+    .main{
+        color: #000;
+        .main-links{
+            border: solid 2px #000;
+            .main-link{
+                color: #000;
+            }
+        }
+    }
+}
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE

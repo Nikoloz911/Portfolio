@@ -290,3 +290,30 @@ body {
 }
 /// responsive 768 px /// responsive 768 px  /// responsive 768 px  /// responsive 768 px  /// responsive 768 px
 /// responsive 768 px /// responsive 768 px  /// responsive 768 px  /// responsive 768 px  /// responsive 768 px
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+:host-context([theme="light"]) {
+  body{
+    background: #fff;
+    .c-sharp-page{
+      .first-section{
+        .description-side{
+          .description{
+            color: #000;
+          }
+        }
+      }
+      .second-section{
+        .description-side{
+          .description{
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
