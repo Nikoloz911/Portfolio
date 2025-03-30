@@ -25,6 +25,8 @@ import { ImageModalComponent } from './components/image-modal/image-modal.compon
 import { TrFooterComponent } from './components/languages/tr-footer/tr-footer.component';
 import { SqlFooterComponent } from './components/languages/sql-footer/sql-footer.component';
 import { LanguagesPageComponent } from './components/languages/languages-page/languages-page.component';
+import { SwitchComponent } from './components/switch/switch.component';
+import { InfoComponent } from './components/info/info.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +50,8 @@ import { LanguagesPageComponent } from './components/languages/languages-page/la
     TrFooterComponent,
     SqlFooterComponent,
     LanguagesPageComponent,
+    SwitchComponent,
+    InfoComponent,
   ],
   imports: [
     BrowserModule,

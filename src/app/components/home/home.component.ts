@@ -24,11 +24,13 @@ export class HomeComponent implements OnInit {
     let hasVisited = sessionStorage.getItem('hasVisited');  /// sessionStorage Instead of LocalStorage
     if (!hasVisited) {
       this.showAnimation = true;
+      document.body.style.overflow = 'hidden';
       setTimeout(() => {
         this.hideAnimation = true;
       }, 2000);
       setTimeout(() => {
         this.showAnimation = false;
+        document.body.style.overflow = '';
       }, 3000);
       sessionStorage.setItem('hasVisited', 'true');  /// sessionStorage Instead of LocalStorage
     }

@@ -487,3 +487,49 @@ body{
     }
   }
 }
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+:host-context([theme="light"]) {
+  body{
+    background: #fff;
+    .projects-page{
+      .projects-page-title{
+        color: #000;
+      }
+      .projects-second-section-title{
+        color: #000;
+      }
+      .projects-second-section{
+        .project-link{
+          .project-second-section-card-container{
+            background-color: #fff;     
+            &::after {
+              background: rgba(255, 255, 255, 0.9);
+            }
+          }
+          h1{
+            color: #000;
+          }
+          .project-details{
+            li{
+              strong{
+                color: #000;
+                &:hover{
+                  color: #0092cc;
+                }
+              }
+              span{
+                color: #000;
+                &:hover{
+                  color: #0092cc;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE

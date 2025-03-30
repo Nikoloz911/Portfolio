@@ -256,3 +256,26 @@ body{
 /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
 /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
 
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+:host-context([theme="light"]) {
+  body{
+    background: #fff;
+    .scss-page{
+      .scss-page-first-section-description-side{
+        .scss-page-first-description{
+          color: #000;
+        }
+      }
+      .scss-page-second-section-description-side{
+        .scss-page-second-description{
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE

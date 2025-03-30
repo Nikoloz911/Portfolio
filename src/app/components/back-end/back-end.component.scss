@@ -1,3 +1,25 @@
+/// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS
+@mixin Icons-Styles {
+    display: none;
+    color: #fff;
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+  }
+  @mixin Screenshot-Styles {
+    object-fit: cover;
+    width: 250px;
+    border-radius: 10px;
+    height: 400px;
+    transition: filter 300ms ease-in-out;
+    cursor: pointer;  
+    &:hover {
+      filter: brightness(70%);
+    }
+  }
+/// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS
 body{
     height: 1500px;
     font-family: sans-serif;
@@ -14,12 +36,10 @@ body{
     }
   .first-section{
     margin-top: 40px;
-    border: solid 2px red;
     height: 470px;
     display: flex;
     color: #fff;
     .first-section-left-side{
-        border: solid 2px red;
         width: 40%;
         padding: 40px;
         text-align: center;
@@ -44,11 +64,38 @@ body{
         justify-content: center;
         align-items: center;
         gap: 30px;
+        /// SCREENSHOT STYLES   /// SCREENSHOT STYLES   /// SCREENSHOT STYLES
         .back-end-page-first-screenshot{
-            object-fit: cover;
-            width: 300px;
-            height: 400px;
+         @include Screenshot-Styles();
         }
+        .first-screenshot-icon{
+            @include Icons-Styles();
+            transform: translate(170%, -70%);          
+        }
+        .back-end-page-first-screenshot:hover + .first-screenshot-icon {
+            display: block;
+          }
+           .back-end-page-second-screenshot{
+            @include Screenshot-Styles();
+        }
+        .second-screenshot-icon{
+            @include Icons-Styles();
+            transform: translate(870%, -70%);            
+        }
+        .back-end-page-second-screenshot:hover + .second-screenshot-icon {
+            display: block;
+          }
+          .back-end-page-third-screenshot{
+            @include Screenshot-Styles();
+        }
+        .third-screenshot-icon{
+            @include Icons-Styles();
+            transform: translate(1550%, -70%);          
+        }
+        .back-end-page-third-screenshot:hover + .third-screenshot-icon {
+            display: block;
+          }
+        /// SCREENSHOT STYLES   /// SCREENSHOT STYLES   /// SCREENSHOT STYLES
     }
   }
   .second-section{

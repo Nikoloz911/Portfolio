@@ -219,3 +219,25 @@ body {
     }
   }
 }
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+:host-context([theme="light"]) {
+  body{
+    background: #fff;
+    .sql-page{
+      .first-section{
+        .description-side{
+          .description{
+            color: #000;
+          }
+          .second-description{
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE

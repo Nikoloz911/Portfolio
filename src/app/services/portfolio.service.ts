@@ -4,6 +4,18 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class PortfolioService {
+  private apiUrl = 'https://gitconnected.com/v1/portfolio/nikoloz911';
+  constructor(private http: HttpClient) { }
 
-  constructor() { }
+  async getSummary(): Promise<string> {
+    try {
+      let response = await fetch(this.apiUrl);
+      let data = await response.json();
+      return data.basics.summary;
+    } catch (error) {
+      console.error('Error fetching summary:', error);
+      return 'Failed to load summary';
+    }
+  }
 }
+
