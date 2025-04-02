@@ -127,7 +127,7 @@ body {
 }
 /// Entrance Animation  /// Entrance Animation  /// Entrance Animation  /// Entrance Animation
 body {
-  height: 2100px;
+  height: 2150px;
   padding-bottom: 80px;
   width: 100%;
   background: #040000;
@@ -343,7 +343,8 @@ body {
   }
   /// WEBSITES AND FRAMEWORKS SECTION   /// WEBSITES AND FRAMEWORKS SECTION   /// WEBSITES AND FRAMEWORKS SECTION
   .tools-section {
-    height: 600px;
+    height: 800px;
+    overflow: hidden;
     .tools-section-title {
       color: #fff;
       font-family: cursive;
@@ -786,6 +787,7 @@ body {
       }
       .tools-section-third-container {
         height: 100px;
+        margin-top: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -852,12 +854,12 @@ body {
 /// RESPONSIVE
 @media screen and (min-width: 387px) and (max-width: 400px) {
   body {
-    padding-bottom: 2050px !important;
+    padding-bottom: 2400px !important;
   }
 }
 @media screen and (min-width: 360px) and (max-width: 388px) {
   body {
-    padding-bottom: 2050px !important;
+    padding-bottom: 2500px !important;
   }
 }
 /// RESPONSIVE
@@ -925,7 +927,7 @@ body {
 /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX  /// RESPONSIVE 768PX
 @media screen and (max-width: 768px) {
   body {
-    height: 3300px !important;
+    height: 3200px !important;
     .home-page {
       display: flex;
       flex-direction: column;

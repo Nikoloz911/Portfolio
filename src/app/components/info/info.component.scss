@@ -42,47 +42,35 @@ body{
 /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE
 /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE
 /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVEv
-@media screen and (min-width: 387px) and (max-width: 400px) {
-    body {
-      height: 1000px !important;
-      .info-container{
-        .languages-text{
-            width: 340px !important;
-        }
-        .summary{
-            width: 360px !important;
-        }
-        .websites-text{
-            width: 360px !important;
-        }
-    }
-    }
-  }
+
   @media screen and (min-width: 360px) and (max-width: 388px) {
     body {
         height: 1100px !important;
         .info-container{
           .languages-text{
-              width: 320px !important;
+              width: 300px !important;
           }
           .summary{
-              width: 320px !important;
+              width: 300px !important;
           }
           .websites-text{
-              width: 320px !important;
+              width: 300px !important;
           }
       }
       }
   }
 @media screen and (max-width: 480px) {
     body{
-        height: 800px;
+        height: 1100px  !important;
         .info-container{
             .summary{
-                width: 460px;
+                width: 320px !important;
+            }
+            .languages-text{
+                width: 320px !important;
             }
             .websites-text{
-                width: 460px;
+                width: 320px  !important;
             }
         }
     }
