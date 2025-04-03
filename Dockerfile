@@ -1,28 +1,20 @@
-FROM node:18 AS build
-
+FROM node:alpine
 
 WORKDIR /app
 
+COPY . /app
 
-COPY package*.json ./
-
+RUN npm install -g @angular/cli
 
 RUN npm install
 
 
-COPY . .
+CMD ["ng", "serve", "--host", "0.0.0.0"]
 
 
-RUN npm run build --prod
+# .dockerignore
 
-
-FROM nginx:alpine
-
-
-COPY --from=build /app/dist/Portfolio /usr/share/nginx/html
-
-
-EXPOSE 80
-
-
-CMD ["nginx", "-g", "daemon off;"]
+# node_modules
+# dist
+# .git
+# .gitignore
