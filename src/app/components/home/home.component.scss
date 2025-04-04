@@ -847,18 +847,54 @@ body {
       }
       /// TOOLS SECTION THIRD CONTAINER /// TOOLS SECTION THIRD CONTAINER  /// TOOLS SECTION THIRD CONTAINER
     }
-    .home-page-button-container{
+    .home-page-button-container {
       width: 100%;
       height: 100px;
       display: flex;
       justify-content: center;
-      margin-top: 200px;
-      .resume-button{
+      margin-top: 200px; 
+      .resume-button {
         background-color: #fff;
-        color: #000;
-        width: 180px;
-        height: 50px;
+        color: #ff0000;
+        width: 200px;
+        height: 55px;
         cursor: pointer;
+        position: relative;
+        border: none;
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease; 
+        &:hover {
+          box-shadow: 0 6px 20px rgba(66, 153, 225, 0.25);       
+          .gradient-overlay {
+            opacity: 0.4;
+          }
+        }     
+        .button-text {
+          position: relative;
+          z-index: 2;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+        }      
+        .gradient-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          pointer-events: none;
+          z-index: 1;
+          background: radial-gradient(circle at 50% 50%, rgba(66, 153, 225, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
+        }
       }
     }
   }
@@ -1185,6 +1221,11 @@ body {
             @include tools-section-first-container-icon-Styles-DARK-MODE();
           }
         }
+      }
+    }
+    .home-page-button-container{
+      .resume-button{
+        border: solid 1px #b1b1b1;
       }
     }
   }
