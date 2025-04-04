@@ -61,6 +61,7 @@ body{
     .first-section-right-side{
         width: 60%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 30px;
@@ -100,13 +101,10 @@ body{
   }
   .second-section{
     margin-top: 100px;
-    border: solid 2px red;
     height: 500px;
     display: flex;
     color: #fff;
-    
     .second-section-left-side{
-        border: solid 2px red;
         width: 40%;
         padding: 40px;
         text-align: center;
@@ -139,7 +137,80 @@ body{
         }
     }
     .second-section-right-side{
-        
+      width: 60%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      /// SCREENSHOT STYLES   /// SCREENSHOT STYLES   /// SCREENSHOT STYLES
+      .back-end-page-fourth-screenshot{
+       @include Screenshot-Styles();
+      }
+      .fourth-screenshot-icon{
+          @include Icons-Styles();
+          transform: translate(170%, 1200%);          
+      }
+      .back-end-page-fourth-screenshot:hover + .fourth-screenshot-icon {
+          display: block;
+        }
+         .back-end-page-fifth-screenshot{
+          @include Screenshot-Styles();
+      }
+      .fifth-screenshot-icon{
+          @include Icons-Styles();
+          transform: translate(870%, 1200%);            
+      }
+      .back-end-page-fifth-screenshot:hover + .fifth-screenshot-icon {
+          display: block;
+        }
+        .back-end-page-sixth-screenshot{
+          @include Screenshot-Styles();
+      }
+      .sixth-screenshot-icon{
+          @include Icons-Styles();
+          transform: translate(1550%, 1200%);          
+      }
+      .back-end-page-sixth-screenshot:hover + .sixth-screenshot-icon {
+          display: block;
+        }
+      /// SCREENSHOT STYLES   /// SCREENSHOT STYLES   /// SCREENSHOT STYLES
     }
+  }
+}
+@media screen and (max-width: 480px) {
+  body{
+    height: auto !important;
+    .header{
+      padding-top: 130px;
+      .title{
+        font-size: 21px;
+      }
+    }
+  }
+  .first-section{
+      flex-direction: column;
+       border: solid 1px red;
+       height: auto !important;
+    .first-section-left-side{
+      width: 80% !important;
+    }
+    .first-section-right-side{
+      width: 100% !important;
+    
+    }
+  }
+  .second-section{
+    flex-direction: column;
+    border: solid 1px red;
+    height: auto !important;
+    padding-bottom: 100px;
+ .second-section-left-side{
+   width: 80% !important;
+ }
+ .second-section-right-side{
+   width: 100% !important;
+
+ }
   }
 }
