@@ -1,7 +1,4 @@
 stages:
-  - build
-  - test
-  - deploy
   - merge
 
 variables:
@@ -12,33 +9,6 @@ before_script:
   - git config --global user.email "nikalobjanidze014@gmail.com"
   - git config --global user.name "Nikoloz911"
   - git config --global --add safe.directory '*'
-
-build-job:
-  stage: build
-  script:
-    - echo "Compiling the code..."
-    - echo "Compile complete."
-
-unit-test-job:
-  stage: test
-  script:
-    - echo "Running unit tests... This will take about 60 seconds."
-    - sleep 60
-    - echo "Code coverage is 90%"
-
-lint-test-job:
-  stage: test
-  script:
-    - echo "Linting code... This will take about 10 seconds."
-    - sleep 10
-    - echo "No lint issues found."
-
-deploy-job:
-  stage: deploy
-  environment: production
-  script:
-    - echo "Deploying application..."
-    - echo "Application successfully deployed."
 
 merge_to_master:
   stage: merge
