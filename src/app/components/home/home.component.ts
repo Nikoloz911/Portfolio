@@ -39,28 +39,32 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
   
   ngAfterViewInit(): void {
-    this.setupButtonEffect();
+    setTimeout(() => {
+      this.setupButtonEffect();
+    }, 0);
   }
-  
+
   downloadResume(): void {
     let link = document.createElement('a');
     link.href = 'assets/resume/nika.pdf';
-    link.download = 'Nikoloz_Resume.pdf'; 
+    link.download = 'Nikoloz_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   }
-  
+
   private setupButtonEffect(): void {
-    let button = document.querySelector('.resume-button') as HTMLElement;
-    let gradientOverlay = document.querySelector('.gradient-overlay') as HTMLElement;
+    const button = document.querySelector('.resume-button') as HTMLElement;
+    const gradientOverlay = button?.querySelector('.gradient-overlay') as HTMLElement;
+    
     if (button && gradientOverlay) {
       button.addEventListener('mousemove', (e: MouseEvent) => {
-        let rect = button.getBoundingClientRect();
-        let x = e.clientX - rect.left; 
-        let y = e.clientY - rect.top;     
-        let xPercent = Math.round((x / rect.width) * 100);
-        let yPercent = Math.round((y / rect.height) * 100);
+        const rect = button.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        const xPercent = Math.round((x / rect.width) * 100);
+        const yPercent = Math.round((y / rect.height) * 100);
         
         gradientOverlay.style.background = `radial-gradient(circle at ${xPercent}% ${yPercent}%, rgba(66, 153, 225, 0.8) 0%, rgba(255, 255, 255, 0) 70%)`;
         gradientOverlay.style.opacity = '0.5';
@@ -69,6 +73,8 @@ export class HomeComponent implements OnInit, AfterViewInit {
       button.addEventListener('mouseleave', () => {
         gradientOverlay.style.opacity = '0';
       });
+    } else {
+      console.error('Button or gradient overlay element not found');
     }
   }
 }
