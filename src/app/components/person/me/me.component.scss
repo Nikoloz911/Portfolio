@@ -1,126 +1,129 @@
-  /* Animations */  /* Animations */  /* Animations */ /* Animations */  /* Animations */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+/* Animations */ /* Animations */ /* Animations */ /* Animations */ /* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  @keyframes glowText {
-    0%, 100% {
-      text-shadow: 0 0 10px #ff4949, 0 0 20px #ff4949, 0 0 30px #ff4949;
-    }
-    50% {
-      text-shadow: 0 0 20px #ff7a7a, 0 0 30px #ff7a7a, 0 0 40px #ff7a7a;
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  @keyframes expandUnderline {
-    from {
-      width: 0;
-    }
-    to {
-      width: 150px;
-    }
+}
+@keyframes glowText {
+  0%,
+  100% {
+    text-shadow: 0 0 10px #ff4949, 0 0 20px #ff4949, 0 0 30px #ff4949;
   }
-  /* Animations */  /* Animations */  /* Animations */ /* Animations */  /* Animations */
-body{
-        font-family: 'Arial', sans-serif;
-        height: 1150px;
-        background: #040000;
-        background: linear-gradient(270deg,#040000 0%, #00114f 80%);
-        background: -webkit-linear-gradient(270deg,#040000 0%, #00114f 80%);
-        background: -moz-linear-gradient(270deg,#040000 0%, #00114f 80%);
-        color: #fff;
-      .about-me-container {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        animation: fadeIn 1.5s ease-in-out;
-        .heading-container {
-          text-align: center;
-          margin-bottom: 30px;
-        }     
-        .heading {
-            margin-top: 100px;
-            font-size: 3rem;
-            font-weight: bold;
-            background: linear-gradient(90deg, #ff7a7a, #ff4949);
-            background-clip: text; 
-            -webkit-background-clip: text; 
-            color: transparent;
-            -webkit-text-fill-color: transparent;
-            animation: glowText 2s infinite;
+  50% {
+    text-shadow: 0 0 20px #ff7a7a, 0 0 30px #ff7a7a, 0 0 40px #ff7a7a;
+  }
+}
+@keyframes expandUnderline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 150px;
+  }
+}
+/* Animations */ /* Animations */ /* Animations */ /* Animations */ /* Animations */
+body {
+  font-family: "Arial", sans-serif;
+  height: 1150px;
+  background: #040000;
+  background: linear-gradient(270deg, #040000 0%, #00114f 80%);
+  background: -webkit-linear-gradient(270deg, #040000 0%, #00114f 80%);
+  background: -moz-linear-gradient(270deg, #040000 0%, #00114f 80%);
+  color: #fff;
+  .about-me-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1.5s ease-in-out;
+    .heading-container {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .heading {
+      margin-top: 100px;
+      font-size: 3rem;
+      font-weight: bold;
+      background: linear-gradient(90deg, #ff7a7a, #ff4949);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      animation: glowText 2s infinite;
+    }
+    .content-container {
+      width: 60%;
+      .introduction {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        line-height: 1.8;
+      }
+      .skills,
+      .github,
+      .goals {
+        margin: 20px;
+        .section-heading {
+          font-size: 1.8rem;
+          margin-bottom: 20px;
+          color: #ff7a7a;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            height: 3px;
+            width: 150px;
+            background-color: #ff4949;
+            animation: expandUnderline 1.8s ease-out;
+          }
         }
-        .content-container {
-          width: 60%;
-          .introduction {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            line-height: 1.8;
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            margin: 5px 0;
+            font-size: 1.1rem;
+            line-height: 1.6;
           }
-          .skills, .github, .goals {
-            margin: 20px;
-            .section-heading {
-              font-size: 1.8rem;
-              margin-bottom: 20px;
-              color: #ff7a7a;
-              position: relative;
-              &::after {
-                content: '';
-                position: absolute;
-                left: 0;
-                bottom: -5px;
-                height: 3px;
-                width: 150px;
-                background-color: #ff4949;
-                animation: expandUnderline 1.8s ease-out;
-              }
-            }
-      
-            ul {
-              list-style: none;
-              padding: 0;
-      
-              li {
-                margin: 5px 0;
-                font-size: 1.1rem;
-                line-height: 1.6;
-              }
-            }
-            .github-link {
-              color: #ff4949;
-              text-decoration: none;
-              font-weight: bold;
-              transition: color 0.3s;
-      
-              &:hover {
-                color: #ff7a7a;
-              }
-            }
-            .github-text{
-                font-size: 18px;
-                line-height: 1.8;
-            }
-            .goal-text{
-                font-size: 18px;
-                line-height: 1.8;
-            }
+        }
+        .github-link {
+          color: #ff4949;
+          text-decoration: none;
+          font-weight: bold;
+          transition: color 0.3s;
+
+          &:hover {
+            color: #ff7a7a;
           }
+        }
+        .github-text {
+          font-size: 18px;
+          line-height: 1.8;
+        }
+        .goal-text {
+          font-size: 18px;
+          line-height: 1.8;
         }
       }
+    }
+  }
 }
-/// RESPONSIVE 
+/// RESPONSIVE
 @media screen and (min-width: 387px) and (max-width: 400px) {
   body {
-    .about-me-container{
-      .content-container{
+    .about-me-container {
+      .content-container {
         width: 320px !important;
-        .introduction{
+        .introduction {
           width: 320px;
           font-size: 19px;
         }
@@ -130,10 +133,10 @@ body{
 }
 @media screen and (min-width: 360px) and (max-width: 388px) {
   body {
-    .about-me-container{
-      .content-container{
+    .about-me-container {
+      .content-container {
         width: 310px !important;
-        .introduction{
+        .introduction {
           width: 310px;
           font-size: 19px;
         }
@@ -141,38 +144,38 @@ body{
     }
   }
 }
-/// RESPONSIVE 
+/// RESPONSIVE
 @media screen and (max-width: 480px) {
-    body{
-        height: auto;
-        padding-bottom: 100px;
-        .about-me-container{
-          .content-container{
-            overflow: hidden;
-           max-width: 420px;
-           padding-left: 40px;
-           padding-right: 20px;
-          }
-        }
-    }
-}
-@media screen and (max-width: 768px) {
-  body{
+  body {
     height: auto;
     padding-bottom: 100px;
-      .about-me-container{
-        .content-container{
-          padding-left: 40px;
-          padding-right: 20px;
-          width: 700px;
-        }
+    .about-me-container {
+      .content-container {
+        overflow: hidden;
+        max-width: 420px;
+        padding-left: 40px;
+        padding-right: 20px;
       }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    height: auto;
+    padding-bottom: 100px;
+    .about-me-container {
+      .content-container {
+        padding-left: 40px;
+        padding-right: 20px;
+        width: 700px;
+      }
+    }
   }
 }
 /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
 /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
 :host-context([theme="light"]) {
-  body{
+  body {
     background: #fff;
     color: #000;
   }

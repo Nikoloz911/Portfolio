@@ -340,51 +340,48 @@ body {
 ///RESPONSIVE
 @media screen and (min-width: 360px) and (max-width: 400px) {
   body {
-    .html-page{
-      .html-page-first-section{
-        .html-page-first-section-right-side{
-        .html-page-first-section-right-side-first-container{
-          .html-page-first-section-first-image{
-            width: 360px;
+    .html-page {
+      .html-page-first-section {
+        .html-page-first-section-right-side {
+          .html-page-first-section-right-side-first-container {
+            .html-page-first-section-first-image {
+              width: 360px;
+            }
           }
-        }
-        .html-page-first-section-right-side-second-container{
-          .html-page-first-section-second-image{
-            width: 360px;
-          }
-        }
-      }
-      }
-      .html-page-second-section{
-        .html-page-second-section-right-side{
-        .html-page-second-section-right-side-first-container{
-          .html-page-second-section-first-image{
-            width: 360px;
-          }
-        }
-        .html-page-second-section-right-side-second-container{
-          .html-page-second-section-second-image{
-            width: 360px;
+          .html-page-first-section-right-side-second-container {
+            .html-page-first-section-second-image {
+              width: 360px;
+            }
           }
         }
       }
-      }
-      .html-page-third-section{
-      .html-page-third-section-right-side{
-        .html-page-third-section-right-side-first{
-          .html-page-third-section-first-image{
-            width: 360px;
-  
+      .html-page-second-section {
+        .html-page-second-section-right-side {
+          .html-page-second-section-right-side-first-container {
+            .html-page-second-section-first-image {
+              width: 360px;
+            }
           }
-        }
-        .html-page-third-section-right-side-second{
-          .html-page-third-section-second-image{
-            width: 360px;
-  
+          .html-page-second-section-right-side-second-container {
+            .html-page-second-section-second-image {
+              width: 360px;
+            }
           }
         }
       }
-    
+      .html-page-third-section {
+        .html-page-third-section-right-side {
+          .html-page-third-section-right-side-first {
+            .html-page-third-section-first-image {
+              width: 360px;
+            }
+          }
+          .html-page-third-section-right-side-second {
+            .html-page-third-section-second-image {
+              width: 360px;
+            }
+          }
+        }
       }
     }
   }
@@ -491,22 +488,22 @@ body {
 /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
 
 :host-context([theme="light"]) {
-  body{
+  body {
     background: #fff;
-    .html-page{
-      .html-page-first-section{
-        .html-page-first-section-left-side{
-          .html-page-first-description{
+    .html-page {
+      .html-page-first-section {
+        .html-page-first-section-left-side {
+          .html-page-first-description {
             color: #000;
           }
         }
-        .html-page-first-section-right-side{
-          .html-page-first-section-right-side-first-container{
+        .html-page-first-section-right-side {
+          .html-page-first-section-right-side-first-container {
             .html-page-first-section-first-title {
               color: #000;
             }
           }
-          .html-page-first-section-right-side-second-container{
+          .html-page-first-section-right-side-second-container {
             .html-page-first-section-second-title {
               color: #000;
             }
@@ -514,21 +511,21 @@ body {
               color: #000;
             }
           }
-        }     
+        }
       }
-      .html-page-second-section{
-        .html-page-second-section-left-side{
-          .html-page-first-description{
+      .html-page-second-section {
+        .html-page-second-section-left-side {
+          .html-page-first-description {
             color: #000;
           }
         }
-        .html-page-second-section-right-side{
-          .html-page-second-section-right-side-first-container{
+        .html-page-second-section-right-side {
+          .html-page-second-section-right-side-first-container {
             .html-page-second-section-first-title {
               color: #000;
             }
           }
-          .html-page-second-section-right-side-second-container{
+          .html-page-second-section-right-side-second-container {
             .html-page-second-section-second-title {
               color: #000;
             }
@@ -536,21 +533,21 @@ body {
               color: #000;
             }
           }
-        }     
+        }
       }
-      .html-page-third-section{
-        .html-page-third-section-left-side{
-          .html-page-first-description{
+      .html-page-third-section {
+        .html-page-third-section-left-side {
+          .html-page-first-description {
             color: #000;
           }
         }
-        .html-page-third-section-right-side{
-          .html-page-third-section-right-side-first{
+        .html-page-third-section-right-side {
+          .html-page-third-section-right-side-first {
             .html-page-third-section-first-title {
               color: #000;
             }
           }
-          .html-page-third-section-right-side-second{
+          .html-page-third-section-right-side-second {
             .html-page-third-section-second-title {
               color: #000;
             }
@@ -558,7 +555,7 @@ body {
               color: #000;
             }
           }
-        }     
+        }
       }
     }
   }

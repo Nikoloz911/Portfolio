@@ -853,7 +853,7 @@ body {
       display: flex;
       justify-content: center;
       margin-top: 200px;
-      
+
       .resume-button {
         background-color: #181818;
         color: #fff;
@@ -868,12 +868,12 @@ body {
         letter-spacing: 0.5px;
         overflow: hidden;
         transition: transform 0.2s ease, box-shadow 0.2s ease;
-        
+
         &:hover {
           box-shadow: 0 6px 20px rgba(66, 153, 225, 0.25);
           transform: translateY(-2px);
         }
-        
+
         .button-text {
           position: relative;
           z-index: 2;
@@ -883,7 +883,7 @@ body {
           width: 100%;
           height: 100%;
         }
-        
+
         .gradient-overlay {
           position: absolute;
           top: 0;
@@ -894,22 +894,25 @@ body {
           transition: opacity 0.3s ease;
           pointer-events: none;
           z-index: 1;
-          background: radial-gradient(circle at 50% 50%, rgba(66, 153, 225, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
+          background: radial-gradient(
+            circle at 50% 50%,
+            rgba(66, 153, 225, 0.8) 0%,
+            rgba(255, 255, 255, 0) 70%
+          );
         }
       }
     }
   }
   /// WEBSITES AND FRAMEWORKS SECTION   /// WEBSITES AND FRAMEWORKS SECTION   /// WEBSITES AND FRAMEWORKS SECTION
- 
 }
 /// RESPONSIVE
 /// RESPONSIVE
 @media screen and (min-width: 387px) and (max-width: 400px) {
   body {
     padding-bottom: 2600px !important;
-    .tools-section{
-      .home-page-button-container{
-        .resume-button{
+    .tools-section {
+      .home-page-button-container {
+        .resume-button {
           transform: translateY(-100px);
         }
       }
@@ -919,9 +922,9 @@ body {
 @media screen and (min-width: 360px) and (max-width: 388px) {
   body {
     padding-bottom: 2600px !important;
-    .tools-section{
-      .home-page-button-container{
-        .resume-button{
+    .tools-section {
+      .home-page-button-container {
+        .resume-button {
           transform: translateY(-100px);
         }
       }
@@ -984,8 +987,8 @@ body {
           gap: 30px;
         }
       }
-      .home-page-button-container{
-        .resume-button{
+      .home-page-button-container {
+        .resume-button {
           transform: translateY(-100px);
         }
       }
@@ -1048,8 +1051,8 @@ body {
           gap: 30px;
         }
       }
-      .home-page-button-container{
-        .resume-button{
+      .home-page-button-container {
+        .resume-button {
           transform: translateY(-100px);
         }
       }
@@ -1224,8 +1227,8 @@ body {
         }
       }
     }
-    .home-page-button-container{
-      .resume-button{
+    .home-page-button-container {
+      .resume-button {
         border: solid 1px #b1b1b1;
       }
     }

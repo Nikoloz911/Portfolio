@@ -4,7 +4,7 @@
   height: 300px;
   border-radius: 10px;
   transition: filter 300ms ease-in-out;
-  cursor: pointer;  
+  cursor: pointer;
   &:hover {
     filter: brightness(70%);
   }
@@ -20,163 +20,172 @@
 }
 /// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS
 
-body{
-    height: auto; 
-    font-family: sans-serif;
-    background: #000000;
-    background: linear-gradient(270deg,#000000 20%, #780083 40%, #a500bc 60%);
-    background: -webkit-linear-gradient(270deg,#000000 20%, #780083 40%, #a500bc 60%);
-    background: -moz-linear-gradient(270deg,#000000 20%, #780083 40%, #a500bc 60%);
-    .header {
+body {
+  height: auto;
+  font-family: sans-serif;
+  background: #000000;
+  background: linear-gradient(270deg, #000000 20%, #780083 40%, #a500bc 60%);
+  background: -webkit-linear-gradient(
+    270deg,
+    #000000 20%,
+    #780083 40%,
+    #a500bc 60%
+  );
+  background: -moz-linear-gradient(
+    270deg,
+    #000000 20%,
+    #780083 40%,
+    #a500bc 60%
+  );
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin-top: 30px;
+    .title-icon {
+      text-decoration: none;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100%;
+      .scss-icon {
+        font-size: 90px;
+      }
+    }
+  }
+
+  .scss-page {
+    height: auto;
+    padding-bottom: 100px;
+    .scss-page-first-section {
+      margin-top: 50px;
+      height: auto;
+      .scss-page-first-section-description-side {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 80px;
-        margin-top: 30px;
-        .title-icon {
-          text-decoration: none;
+        .scss-page-first-description {
+          color: #fff;
+          letter-spacing: 1px;
+          width: 700px;
           text-align: center;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100px;
-          height: 100%;
-          .scss-icon {
-            font-size: 90px;
-          }
+          font-size: 18px;
         }
       }
-      
-      .scss-page{
+      .scss-page-first-section-images-side {
+        margin-top: 50px;
+        padding-bottom: 50px;
         height: auto;
-        padding-bottom: 100px;
-        .scss-page-first-section{
-          margin-top: 50px;
-          height: auto;
-          .scss-page-first-section-description-side{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .scss-page-first-description{
-              color: #fff;
-              letter-spacing: 1px;
-              width: 700px;
-              text-align: center;
-              font-size: 18px;
-            }     
-          }
-          .scss-page-first-section-images-side{
-            margin-top: 50px;
-            padding-bottom: 50px;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 50px;   
-            .scss-page-first-image{
-              @include Images-Styles();
-            }
-            .scss-page-second-image{
-              @include Images-Styles();
-            }
-            .scss-page-third-image{
-              @include Images-Styles();
-            }
-            .first-image-icon {
-              @include Icons-Styles();
-              transform: translate(-1300%, 450%);          
-            }
-            .second-image-icon {
-              @include Icons-Styles();
-              transform: translate(-50%, 450%);          
-            }
-            .third-image-icon {
-              @include Icons-Styles();
-              transform: translate(1200%, 450%);          
-            }
-            .scss-page-first-image:hover + .first-image-icon {
-              display: block;
-            }
-            .scss-page-second-image:hover + .second-image-icon {
-              display: block;
-            }
-            .scss-page-third-image:hover + .third-image-icon {
-              display: block;
-            }
-          }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        .scss-page-first-image {
+          @include Images-Styles();
         }
-        .scss-page-second-section{
-          height: auto;
-          .scss-page-second-section-description-side{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .scss-page-second-description{
-              color: #fff;
-              letter-spacing: 1px;
-              width: 700px;
-              text-align: center;
-              font-size: 18px;
-            }
-          }
-          .scss-page-second-section-images-side{
-            margin-top: 50px;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 50px; 
-            .scss-page-fourth-image{
-              @include Images-Styles();
-            }
-            .scss-page-fifth-image{
-              @include Images-Styles();
-            }    
-            .fourth-image-icon {
-              @include Icons-Styles();
-              transform: translate(-700%, 1650%);          
-            }
-            .fifth-image-icon {
-              @include Icons-Styles();
-              transform: translate(580%, 1650%);          
-            } 
-            .scss-page-fourth-image:hover + .fourth-image-icon {
-              display: block;
-            }
-            .scss-page-fifth-image:hover + .fifth-image-icon {
-              display: block;
-            }    
-          }
+        .scss-page-second-image {
+          @include Images-Styles();
+        }
+        .scss-page-third-image {
+          @include Images-Styles();
+        }
+        .first-image-icon {
+          @include Icons-Styles();
+          transform: translate(-1300%, 450%);
+        }
+        .second-image-icon {
+          @include Icons-Styles();
+          transform: translate(-50%, 450%);
+        }
+        .third-image-icon {
+          @include Icons-Styles();
+          transform: translate(1200%, 450%);
+        }
+        .scss-page-first-image:hover + .first-image-icon {
+          display: block;
+        }
+        .scss-page-second-image:hover + .second-image-icon {
+          display: block;
+        }
+        .scss-page-third-image:hover + .third-image-icon {
+          display: block;
         }
       }
+    }
+    .scss-page-second-section {
+      height: auto;
+      .scss-page-second-section-description-side {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .scss-page-second-description {
+          color: #fff;
+          letter-spacing: 1px;
+          width: 700px;
+          text-align: center;
+          font-size: 18px;
+        }
+      }
+      .scss-page-second-section-images-side {
+        margin-top: 50px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        .scss-page-fourth-image {
+          @include Images-Styles();
+        }
+        .scss-page-fifth-image {
+          @include Images-Styles();
+        }
+        .fourth-image-icon {
+          @include Icons-Styles();
+          transform: translate(-700%, 1650%);
+        }
+        .fifth-image-icon {
+          @include Icons-Styles();
+          transform: translate(580%, 1650%);
+        }
+        .scss-page-fourth-image:hover + .fourth-image-icon {
+          display: block;
+        }
+        .scss-page-fifth-image:hover + .fifth-image-icon {
+          display: block;
+        }
+      }
+    }
+  }
 }
 /// RESPONSIVE
 @media screen and (min-width: 360px) and (max-width: 400px) {
-  body{
-    .scss-page{
-      .scss-page-first-section{
-        .scss-page-first-section-images-side{
-          .scss-page-first-image{
+  body {
+    .scss-page {
+      .scss-page-first-section {
+        .scss-page-first-section-images-side {
+          .scss-page-first-image {
             width: 360px;
           }
-          .scss-page-second-image{
+          .scss-page-second-image {
             width: 360px;
           }
-          .scss-page-third-image{
+          .scss-page-third-image {
             width: 360px;
           }
         }
       }
-      .scss-page-second-section{
-        .scss-page-second-section-images-side{
-          .scss-page-fifth-image{
+      .scss-page-second-section {
+        .scss-page-second-section-images-side {
+          .scss-page-fifth-image {
             width: 360px;
           }
-          .scss-page-fourth-image{
+          .scss-page-fourth-image {
             width: 360px;
           }
-        
         }
       }
     }
@@ -186,32 +195,32 @@ body{
 /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX
 /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX
 @media screen and (max-width: 480px) {
-  body{
-    .scss-page{
-      .scss-page-first-section{
+  body {
+    .scss-page {
+      .scss-page-first-section {
         padding-bottom: 100px;
-        .scss-page-first-section-images-side{
-          flex-direction: column;    
+        .scss-page-first-section-images-side {
+          flex-direction: column;
           .first-image-icon {
-            transform: translate(-50%, 700%);          
+            transform: translate(-50%, 700%);
           }
           .second-image-icon {
-            transform: translate(-50%, 1400%);          
+            transform: translate(-50%, 1400%);
           }
           .third-image-icon {
-            transform: translate(-50%, 2150%);          
+            transform: translate(-50%, 2150%);
           }
         }
       }
-      .scss-page-second-section{
-        .scss-page-second-section-images-side{
+      .scss-page-second-section {
+        .scss-page-second-section-images-side {
           flex-direction: column;
           .fourth-image-icon {
-            transform: translate(-50%, 3600%);          
+            transform: translate(-50%, 3600%);
           }
           .fifth-image-icon {
-            transform: translate(-50%, 4350%);          
-          } 
+            transform: translate(-50%, 4350%);
+          }
         }
       }
     }
@@ -222,32 +231,32 @@ body{
 /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
 /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
 @media screen and (max-width: 768px) {
-  body{
-    .scss-page{
-      .scss-page-first-section{
+  body {
+    .scss-page {
+      .scss-page-first-section {
         padding-bottom: 100px;
-        .scss-page-first-section-images-side{
-          flex-direction: column;    
+        .scss-page-first-section-images-side {
+          flex-direction: column;
           .first-image-icon {
-            transform: translate(-50%, 550%);          
+            transform: translate(-50%, 550%);
           }
           .second-image-icon {
-            transform: translate(-50%, 1250%);          
+            transform: translate(-50%, 1250%);
           }
           .third-image-icon {
-            transform: translate(-50%, 2050%);          
+            transform: translate(-50%, 2050%);
           }
         }
       }
-      .scss-page-second-section{
-        .scss-page-second-section-images-side{
+      .scss-page-second-section {
+        .scss-page-second-section-images-side {
           flex-direction: column;
           .fourth-image-icon {
-            transform: translate(-50%, 3300%);          
+            transform: translate(-50%, 3300%);
           }
           .fifth-image-icon {
-            transform: translate(-50%, 4050%);          
-          } 
+            transform: translate(-50%, 4050%);
+          }
         }
       }
     }
@@ -259,23 +268,22 @@ body{
 /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
 /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
 :host-context([theme="light"]) {
-  body{
+  body {
     background: #fff;
-    .scss-page{
-      .scss-page-first-section-description-side{
-        .scss-page-first-description{
+    .scss-page {
+      .scss-page-first-section-description-side {
+        .scss-page-first-description {
           color: #000;
         }
       }
-      .scss-page-second-section-description-side{
-        .scss-page-second-description{
+      .scss-page-second-section-description-side {
+        .scss-page-second-description {
           color: #000;
         }
       }
     }
   }
 }
-
 
 /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
 /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE

@@ -17,7 +17,7 @@
     filter: brightness(70%);
   }
 }
-@mixin Responsive-Icon-Styles{
+@mixin Responsive-Icon-Styles {
   .first-section {
     .first-section-right-side {
       width: 100% !important;
@@ -32,7 +32,7 @@
       }
     }
   }
-  .second-section {  
+  .second-section {
     .second-section-right-side {
       .fourth-screenshot-icon {
         transform: translate(10%, -1000%) !important;
@@ -317,30 +317,30 @@ body {
 /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
 /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
 /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
-/// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE 
-/// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE 
+/// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE
+/// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE
 @media screen and (min-width: 387px) and (max-width: 400px) {
   @include Responsive-Icon-Styles();
 }
 @media screen and (min-width: 360px) and (max-width: 388px) {
- @include Responsive-Icon-Styles();
+  @include Responsive-Icon-Styles();
 }
-/// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE 
-/// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE 
+/// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE
+/// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE
 /// LIGHT MODE   /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
 /// LIGHT MODE   /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
 :host-context([theme="light"]) {
-  body{
+  body {
     background: #fff;
-    .header{
-      .title{
+    .header {
+      .title {
         color: #040000;
       }
     }
-    .first-section{
+    .first-section {
       color: #000;
     }
-    .second-section{
+    .second-section {
       color: #000;
     }
   }

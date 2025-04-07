@@ -1,62 +1,61 @@
-body{
-    height: 930px;
+body {
+  height: 930px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #040000;
+  background: linear-gradient(270deg, #040000 0%, #00114f 80%);
+  background: -webkit-linear-gradient(270deg, #040000 0%, #00114f 80%);
+  background: -moz-linear-gradient(270deg, #040000 0%, #00114f 80%);
+  .error-container-title {
     display: flex;
-    flex-direction: column;
+    color: #fff;
+    font-family: sans-serif;
+    width: 300px;
+    height: 150px;
+    gap: 30px;
+    font-size: 45px;
     justify-content: center;
     align-items: center;
-    background: #040000;
-    background: linear-gradient(270deg,#040000 0%, #00114f 80%);
-    background: -webkit-linear-gradient(270deg,#040000 0%, #00114f 80%);
-    background: -moz-linear-gradient(270deg,#040000 0%, #00114f 80%);
-    .error-container-title {
-        display: flex;
-        color: #fff;
-        font-family: sans-serif;
-        width: 300px;
-        height: 150px;
-        gap: 30px;
-        font-size: 45px;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      .error-container-body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        font-family: sans-serif;
-        width: 400px;
-        height: 150px;
-        font-size: 20px;
-      }
-      .animate {
-        animation: colorChange 5s ease-in-out infinite;
-        animation-delay: calc(var(--i) * 0.5s);
-      }
-      
-      .animate:nth-child(1) {
-        --i: 0;
-      }
-      
-      .animate:nth-child(2) {
-        --i: 1;
-      }
-      
-      .animate:nth-child(3) {
-        --i: 2;
-      }
-       /// ANIMATION   /// ANIMATION   /// ANIMATION
-       @keyframes colorChange {
-        0% {
-          color: #fff;
-        }
-        50% {
-          color: red;
-        }
-        100% {
-          color: #fff;
-        }
-      }
-      
+  }
+
+  .error-container-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: sans-serif;
+    width: 400px;
+    height: 150px;
+    font-size: 20px;
+  }
+  .animate {
+    animation: colorChange 5s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.5s);
+  }
+
+  .animate:nth-child(1) {
+    --i: 0;
+  }
+
+  .animate:nth-child(2) {
+    --i: 1;
+  }
+
+  .animate:nth-child(3) {
+    --i: 2;
+  }
+  /// ANIMATION   /// ANIMATION   /// ANIMATION
+  @keyframes colorChange {
+    0% {
+      color: #fff;
+    }
+    50% {
+      color: red;
+    }
+    100% {
+      color: #fff;
+    }
+  }
 }
