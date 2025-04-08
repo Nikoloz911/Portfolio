@@ -30,13 +30,6 @@ body {
     .link {
       color: #0088ff;
     }
-    .websites-text {
-      margin-top: 30px;
-      font-size: 18px;
-      width: 800px;
-      text-align: center;
-      letter-spacing: 2px;
-    }
   }
 }
 /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE
@@ -53,9 +46,6 @@ body {
       .summary {
         width: 300px !important;
       }
-      .websites-text {
-        width: 300px !important;
-      }
     }
   }
 }
@@ -69,9 +59,6 @@ body {
       .languages-text {
         width: 320px !important;
       }
-      .websites-text {
-        width: 320px !important;
-      }
     }
   }
 }
@@ -80,9 +67,6 @@ body {
     height: 650px;
     .info-container {
       .summary {
-        width: 740px;
-      }
-      .websites-text {
         width: 740px;
       }
     }
