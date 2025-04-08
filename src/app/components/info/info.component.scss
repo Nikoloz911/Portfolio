@@ -1,0 +1,87 @@
+body {
+  background-color: transparent;
+  height: 550px;
+  color: #fff;
+  font-family: sans-serif;
+  .info-container {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .info-container-title {
+      color: #94a6ff;
+      font-size: 30px;
+    }
+    .summary {
+      margin-top: 50px;
+      text-align: center;
+      width: 800px;
+      font-size: 18px;
+      letter-spacing: 2px;
+      white-space: pre-line;
+    }
+    .languages-text {
+      font-size: 18px;
+      letter-spacing: 2px;
+      text-align: center;
+      margin-top: 40px;
+    }
+    .link {
+      color: #0088ff;
+    }
+  }
+}
+/// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE
+/// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE
+/// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVEv
+
+@media screen and (min-width: 360px) and (max-width: 388px) {
+  body {
+    height: 1100px !important;
+    .info-container {
+      .languages-text {
+        width: 300px !important;
+      }
+      .summary {
+        width: 300px !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    height: 1100px !important;
+    .info-container {
+      .summary {
+        width: 320px !important;
+      }
+      .languages-text {
+        width: 320px !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    height: 650px;
+    .info-container {
+      .summary {
+        width: 740px;
+      }
+    }
+  }
+}
+/// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE
+/// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE
+/// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE  /// RESPONSIVE
+
+/// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE
+/// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE
+:host-context([theme="light"]) {
+  body {
+    color: #000;
+  }
+}
+/// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE
+/// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE  /// LIGTH MODE

@@ -3,7 +3,7 @@
   height: 300px;
   border-radius: 10px;
   transition: filter 300ms ease-in-out;
-  cursor: pointer;  
+  cursor: pointer;
   &:hover {
     filter: brightness(70%);
   }
@@ -19,80 +19,90 @@
 }
 
 @mixin Images-Side-Styles {
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 40px;
-            gap: 20px;
-            justify-content: center;
-            align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
-    height: auto;
-    padding-bottom: 200px; 
-    font-family: sans-serif;
-    background: #000000;
-    background: linear-gradient(270deg,#000000 10%, #d5d5d5 50%, #ffffff 80%);
-    background: -webkit-linear-gradient(270deg,#000000 10%, #d5d5d5 50%, #ffffff 80%);
-    background: -moz-linear-gradient(270deg,#000000 10%, #d5d5d5 50%, #ffffff 80%);
-    .header {
+  height: auto;
+  padding-bottom: 200px;
+  font-family: sans-serif;
+  background: #000000;
+  background: linear-gradient(270deg, #000000 10%, #d5d5d5 50%, #ffffff 80%);
+  background: -webkit-linear-gradient(
+    270deg,
+    #000000 10%,
+    #d5d5d5 50%,
+    #ffffff 80%
+  );
+  background: -moz-linear-gradient(
+    270deg,
+    #000000 10%,
+    #d5d5d5 50%,
+    #ffffff 80%
+  );
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin-top: 30px;
+    .title-icon {
+      text-decoration: none;
+      text-align: center;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
-      height: 80px;
-      margin-top: 30px;
-      .title-icon {
-        text-decoration: none;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100px;
-        height: 100%;
-        .html-icon {
-          font-size: 90px;
-        }
+      width: 100px;
+      height: 100%;
+      .html-icon {
+        font-size: 90px;
       }
     }
-    .sql-page{
-      height: auto; 
-      .first-section{
+  }
+  .sql-page {
+    height: auto;
+    .first-section {
       height: auto;
       padding-bottom: 100px;
-      margin-top: 50px;      
-      .description-side{
+      margin-top: 50px;
+      .description-side {
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         color: #fff;
-        .description{
+        .description {
           width: 700px;
           font-size: 18px;
         }
-        .second-description{
+        .second-description {
           margin-top: 20px;
           width: 700px;
           font-size: 18px;
         }
       }
-      .images-side{
+      .images-side {
         @include Images-Side-Styles();
-        .Ts-page-first-image{
+        .Ts-page-first-image {
           @include Images-Styles();
         }
-        .Ts-page-second-image{
+        .Ts-page-second-image {
           @include Images-Styles();
-        }  
-        .first-image-icon{
-          @include Icons-Styles();
-          transform: translate(-650%, 500%);  
         }
-        .second-image-icon{
+        .first-image-icon {
           @include Icons-Styles();
-          transform: translate(550%, 500%);          
+          transform: translate(-650%, 500%);
+        }
+        .second-image-icon {
+          @include Icons-Styles();
+          transform: translate(550%, 500%);
         }
         .Ts-page-first-image:hover + .first-image-icon {
           display: block;
@@ -101,121 +111,143 @@ body {
           display: block;
         }
       }
-      }
-      .second-section{
+    }
+    .second-section {
       height: auto;
-        .description-side{
-          text-align: center;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-          color: #000;
+      .description-side {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #000;
+      }
+      .description {
+        width: 700px;
+        font-size: 18px;
+      }
+      .second-description {
+        margin-top: 20px;
+        width: 700px;
+        font-size: 18px;
+      }
+      .images-side {
+        @include Images-Side-Styles();
+        .Ts-page-first-image {
+          @include Images-Styles();
         }
-        .description{
-          width: 700px;
-          font-size: 18px;
+        .first-image-icon {
+          @include Icons-Styles();
+          transform: translate(-50%, 2000%);
         }
-        .second-description{
-          margin-top: 20px;
-          width: 700px;
-          font-size: 18px;
-        }
-        .images-side{
-          @include Images-Side-Styles();
-          .Ts-page-first-image{
-            @include Images-Styles();
-          }
-          .first-image-icon{
-            @include Icons-Styles();
-            transform: translate(-50%, 2000%);  
-          }
-          .Ts-page-first-image:hover + .first-image-icon {
-            display: block;
-          }
+        .Ts-page-first-image:hover + .first-image-icon {
+          display: block;
         }
       }
     }
+  }
 }
 @media screen and (min-width: 360px) and (max-width: 400px) {
-  body{
-    .sql-page{
-      .first-section{
-        .images-side{
-          .Ts-page-first-image{
+  body {
+    .sql-page {
+      .first-section {
+        .images-side {
+          .Ts-page-first-image {
             width: 360px;
           }
-          .Ts-page-second-image{
+          .Ts-page-second-image {
             width: 360px;
           }
-          .Ts-page-third-image{
+          .Ts-page-third-image {
             width: 360px;
           }
         }
       }
-      .second-section{
-        .images-side{
-          .Ts-page-first-image{
+      .second-section {
+        .images-side {
+          .Ts-page-first-image {
             width: 360px;
           }
-          .Ts-page-second-image{
+          .Ts-page-second-image {
             width: 360px;
           }
-          .Ts-page-third-image{
+          .Ts-page-third-image {
             width: 360px;
-          }    
+          }
         }
       }
-      .third-section{
-        .images-side{
-          .Ts-page-first-image{
+      .third-section {
+        .images-side {
+          .Ts-page-first-image {
             width: 360px;
           }
-          .Ts-page-second-image{
+          .Ts-page-second-image {
             width: 360px;
           }
-          .Ts-page-third-image{
+          .Ts-page-third-image {
             width: 360px;
-          }    
+          }
         }
       }
     }
   }
 }
 @media screen and (max-width: 480px) {
-  body{
-    .sql-page{
-      .first-section{
-        .description-side{
-          .description{
+  body {
+    .sql-page {
+      .first-section {
+        .description-side {
+          .description {
             width: 420px;
           }
-          .second-description{
+          .second-description {
             width: 420px;
           }
         }
-        .images-side{
-          .first-image-icon{
-            transform: translate(-50%, 900%);  
+        .images-side {
+          .first-image-icon {
+            transform: translate(-50%, 900%);
           }
-          .second-image-icon{
-            transform: translate(-50%, 1600%);          
+          .second-image-icon {
+            transform: translate(-50%, 1600%);
           }
         }
       }
-      .second-section{
-        .description{
+      .second-section {
+        .description {
           width: 400px;
         }
-        .second-description{
+        .second-description {
           width: 400px;
         }
-        .images-side{
-          .first-image-icon{
-            transform: translate(-50%, 3200%);  
+        .images-side {
+          .first-image-icon {
+            transform: translate(-50%, 3200%);
           }
         }
       }
     }
   }
 }
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+:host-context([theme="light"]) {
+  body {
+    background: #fff;
+    .sql-page {
+      .first-section {
+        .description-side {
+          .description {
+            color: #000;
+          }
+          .second-description {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE

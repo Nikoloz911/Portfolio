@@ -7,19 +7,23 @@ import { Component } from '@angular/core';
 })
 export class SwitchComponent {
   isDarkMode = true; 
+
   ngOnInit() {
-    this.applyTheme();
+    this.restoreThemePreference();
   }
+
   toggleTheme() {
     this.isDarkMode = !this.isDarkMode;
     this.applyTheme();
+    localStorage.setItem('theme', this.isDarkMode ? 'dark' : 'light');
   }
 
   private applyTheme() {
     document.body.setAttribute('theme', this.isDarkMode ? 'dark' : 'light');
   }
-  restoreThemePreference() {
-    const savedTheme = localStorage.getItem('theme');
+
+  private restoreThemePreference() {
+    let savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
       this.isDarkMode = savedTheme === 'dark';
       this.applyTheme();

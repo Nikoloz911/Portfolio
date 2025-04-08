@@ -4,7 +4,7 @@
   height: 300px;
   border-radius: 10px;
   transition: filter 300ms ease-in-out;
-  cursor: pointer;  
+  cursor: pointer;
   &:hover {
     filter: brightness(70%);
   }
@@ -19,188 +19,188 @@
   pointer-events: none;
 }
 @mixin Images-Side-Styles {
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 40px;
-            gap: 50px;
-            justify-content: center;
-            align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
 }
 /// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS
 /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES
 
 body {
-    height: auto;
-    font-family: sans-serif;
-    background: #000000;
-    background: linear-gradient(270deg,#000000 20%, #9600ff 60%);
-    background: -webkit-linear-gradient(270deg,#000000 20%, #9600ff 60%);
-    background: -moz-linear-gradient(270deg,#000000 20%, #9600ff 60%);
-    .header {
+  height: auto;
+  font-family: sans-serif;
+  background: #000000;
+  background: linear-gradient(270deg, #000000 20%, #9600ff 60%);
+  background: -webkit-linear-gradient(270deg, #000000 20%, #9600ff 60%);
+  background: -moz-linear-gradient(270deg, #000000 20%, #9600ff 60%);
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin-top: 30px;
+    .title-icon {
+      text-decoration: none;
+      text-align: center;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
-      height: 80px;
-      margin-top: 30px;
-      .title-icon {
-        text-decoration: none;
+      width: 100px;
+      height: 100%;
+      .html-icon {
+        font-size: 90px;
+      }
+    }
+  }
+  .c-sharp-page {
+    height: auto;
+    padding-bottom: 140px;
+    .first-section {
+      margin-top: 50px;
+      height: auto;
+      .description-side {
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100px;
-        height: 100%;
-        .html-icon {
-          font-size: 90px;
+        .description {
+          color: #fff;
+          width: 700px;
+          font-size: 18px;
         }
       }
-    }
-    .c-sharp-page{
-        height: auto; 
-        padding-bottom: 140px;
-        .first-section{
-          margin-top: 50px;
-        height: auto;
-          .description-side{
-           text-align: center;
-           display: flex;
-           justify-content: center;
-           align-items: center;
-            .description{
-            color: #fff;
-            width: 700px;
-            font-size: 18px;
-            }
-          }
-          /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES
-          .images-side{
-            @include Images-Side-Styles();
-             .Ts-page-first-image{
-               @include Images-Styles();
-             }
-             .Ts-page-second-image{
-               @include Images-Styles();
-             }
-             .Ts-page-third-image{
-               @include Images-Styles();
-             }
-             .first-image-icon{
-               @include Icons-Styles();
-               transform: translate(-1300%, 440%);  
-             }
-             .second-image-icon{
-               @include Icons-Styles();
-               transform: translate(-50%, 440%);          
-             }
-             .third-image-icon{
-               @include Icons-Styles();
-               transform: translate(1250%, 440%);          
-             }
-             .Ts-page-first-image:hover + .first-image-icon {
-               display: block;
-             }
-             .Ts-page-second-image:hover + .second-image-icon {
-               display: block;
-             }
-             .Ts-page-third-image:hover + .third-image-icon {
-               display: block;
-             }
-           }
-          /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES
+      /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES
+      .images-side {
+        @include Images-Side-Styles();
+        .Ts-page-first-image {
+          @include Images-Styles();
         }
-        .second-section{
-        margin-top: 70px;
-        height: auto;
-          .description-side{
-           text-align: center;
-           display: flex;
-           justify-content: center;
-           align-items: center;
-            .description{
-            color: #fff;
-            width: 700px;
-            font-size: 18px;
-            }
-          }
-          /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES
-          .images-side{
-            @include Images-Side-Styles();
-            .Ts-page-first-image{
-              @include Images-Styles();
-            }
-            .Ts-page-second-image{
-              @include Images-Styles();
-            }
-            .Ts-page-third-image{
-              @include Images-Styles();
-            }
-            .first-image-icon{
-              @include Icons-Styles();
-              transform: translate(-1300%, 1600%);  
-            }
-            .second-image-icon{
-              @include Icons-Styles();
-              transform: translate(-50%, 1600%);          
-            }
-            .third-image-icon{
-              @include Icons-Styles();
-              transform: translate(1200%, 1600%);          
-            }
-            .Ts-page-first-image:hover + .first-image-icon {
-              display: block;
-            }
-            .Ts-page-second-image:hover + .second-image-icon {
-              display: block;
-            }
-            .Ts-page-third-image:hover + .third-image-icon {
-              display: block;
-            }
-          }
-          /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES
+        .Ts-page-second-image {
+          @include Images-Styles();
         }
+        .Ts-page-third-image {
+          @include Images-Styles();
+        }
+        .first-image-icon {
+          @include Icons-Styles();
+          transform: translate(-1300%, 440%);
+        }
+        .second-image-icon {
+          @include Icons-Styles();
+          transform: translate(-50%, 440%);
+        }
+        .third-image-icon {
+          @include Icons-Styles();
+          transform: translate(1250%, 440%);
+        }
+        .Ts-page-first-image:hover + .first-image-icon {
+          display: block;
+        }
+        .Ts-page-second-image:hover + .second-image-icon {
+          display: block;
+        }
+        .Ts-page-third-image:hover + .third-image-icon {
+          display: block;
+        }
+      }
+      /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES
     }
+    .second-section {
+      margin-top: 70px;
+      height: auto;
+      .description-side {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .description {
+          color: #fff;
+          width: 700px;
+          font-size: 18px;
+        }
+      }
+      /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES
+      .images-side {
+        @include Images-Side-Styles();
+        .Ts-page-first-image {
+          @include Images-Styles();
+        }
+        .Ts-page-second-image {
+          @include Images-Styles();
+        }
+        .Ts-page-third-image {
+          @include Images-Styles();
+        }
+        .first-image-icon {
+          @include Icons-Styles();
+          transform: translate(-1300%, 1600%);
+        }
+        .second-image-icon {
+          @include Icons-Styles();
+          transform: translate(-50%, 1600%);
+        }
+        .third-image-icon {
+          @include Icons-Styles();
+          transform: translate(1200%, 1600%);
+        }
+        .Ts-page-first-image:hover + .first-image-icon {
+          display: block;
+        }
+        .Ts-page-second-image:hover + .second-image-icon {
+          display: block;
+        }
+        .Ts-page-third-image:hover + .third-image-icon {
+          display: block;
+        }
+      }
+      /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES   /// COPYING STYLES
+    }
+  }
 }
 @media screen and (min-width: 360px) and (max-width: 400px) {
-  body{
-    .c-sharp-page{
-      .first-section{
-        .images-side{
-          .Ts-page-first-image{
+  body {
+    .c-sharp-page {
+      .first-section {
+        .images-side {
+          .Ts-page-first-image {
             width: 360px;
           }
-          .Ts-page-second-image{
+          .Ts-page-second-image {
             width: 360px;
           }
-          .Ts-page-third-image{
+          .Ts-page-third-image {
             width: 360px;
           }
         }
       }
-      .second-section{
-        .images-side{
-          .Ts-page-first-image{
+      .second-section {
+        .images-side {
+          .Ts-page-first-image {
             width: 360px;
           }
-          .Ts-page-second-image{
+          .Ts-page-second-image {
             width: 360px;
           }
-          .Ts-page-third-image{
+          .Ts-page-third-image {
             width: 360px;
-          }    
+          }
         }
       }
-      .third-section{
-        .images-side{
-          .Ts-page-first-image{
+      .third-section {
+        .images-side {
+          .Ts-page-first-image {
             width: 360px;
           }
-          .Ts-page-second-image{
+          .Ts-page-second-image {
             width: 360px;
           }
-          .Ts-page-third-image{
+          .Ts-page-third-image {
             width: 360px;
-          }    
+          }
         }
       }
     }
@@ -209,38 +209,38 @@ body {
 /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX
 /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX  /// RESPONSIVE 480 PX /// RESPONSIVE 480 PX
 @media screen and (max-width: 480px) {
-  body{
-    .c-sharp-page{
-      .first-section{
-        .images-side{
-            .first-image-icon{
-               @include Icons-Styles();
-               transform: translate(-40%, 650%) !important;  
-             }
-             .second-image-icon{
-               @include Icons-Styles();
-               transform: translate(-40%, 1400%)  !important;          
-             }
-             .third-image-icon{
-               @include Icons-Styles();
-               transform: translate(-40%, 2150%)  !important;          
-             }
+  body {
+    .c-sharp-page {
+      .first-section {
+        .images-side {
+          .first-image-icon {
+            @include Icons-Styles();
+            transform: translate(-40%, 650%) !important;
+          }
+          .second-image-icon {
+            @include Icons-Styles();
+            transform: translate(-40%, 1400%) !important;
+          }
+          .third-image-icon {
+            @include Icons-Styles();
+            transform: translate(-40%, 2150%) !important;
+          }
         }
       }
-       .second-section{
-        .images-side{
-            .first-image-icon{
-               @include Icons-Styles();
-               transform: translate(-40%, 3450%)  !important;  
-             }
-             .second-image-icon{
-               @include Icons-Styles();
-               transform: translate(-40%, 4200%)  !important;          
-             }
-             .third-image-icon{
-               @include Icons-Styles();
-               transform: translate(-40%, 5000%)  !important;          
-             }
+      .second-section {
+        .images-side {
+          .first-image-icon {
+            @include Icons-Styles();
+            transform: translate(-40%, 3450%) !important;
+          }
+          .second-image-icon {
+            @include Icons-Styles();
+            transform: translate(-40%, 4200%) !important;
+          }
+          .third-image-icon {
+            @include Icons-Styles();
+            transform: translate(-40%, 5000%) !important;
+          }
         }
       }
     }
@@ -251,38 +251,38 @@ body {
 /// responsive 768 px /// responsive 768 px  /// responsive 768 px  /// responsive 768 px  /// responsive 768 px
 /// responsive 768 px /// responsive 768 px  /// responsive 768 px  /// responsive 768 px  /// responsive 768 px
 @media screen and (max-width: 768px) {
-  body{
-    .c-sharp-page{
-      .first-section{
-        .images-side{
-            .first-image-icon{
-               @include Icons-Styles();
-               transform: translate(-40%, 530%);  
-             }
-             .second-image-icon{
-               @include Icons-Styles();
-               transform: translate(-40%, 1300%);          
-             }
-             .third-image-icon{
-               @include Icons-Styles();
-               transform: translate(-40%, 2000%);          
-             }
+  body {
+    .c-sharp-page {
+      .first-section {
+        .images-side {
+          .first-image-icon {
+            @include Icons-Styles();
+            transform: translate(-40%, 530%);
+          }
+          .second-image-icon {
+            @include Icons-Styles();
+            transform: translate(-40%, 1300%);
+          }
+          .third-image-icon {
+            @include Icons-Styles();
+            transform: translate(-40%, 2000%);
+          }
         }
       }
-       .second-section{
-        .images-side{
-            .first-image-icon{
-               @include Icons-Styles();
-               transform: translate(-40%, 3250%);  
-             }
-             .second-image-icon{
-               @include Icons-Styles();
-               transform: translate(-40%, 4000%);          
-             }
-             .third-image-icon{
-               @include Icons-Styles();
-               transform: translate(-40%, 4800%);          
-             }
+      .second-section {
+        .images-side {
+          .first-image-icon {
+            @include Icons-Styles();
+            transform: translate(-40%, 3250%);
+          }
+          .second-image-icon {
+            @include Icons-Styles();
+            transform: translate(-40%, 4000%);
+          }
+          .third-image-icon {
+            @include Icons-Styles();
+            transform: translate(-40%, 4800%);
+          }
         }
       }
     }
@@ -290,3 +290,29 @@ body {
 }
 /// responsive 768 px /// responsive 768 px  /// responsive 768 px  /// responsive 768 px  /// responsive 768 px
 /// responsive 768 px /// responsive 768 px  /// responsive 768 px  /// responsive 768 px  /// responsive 768 px
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+:host-context([theme="light"]) {
+  body {
+    background: #fff;
+    .c-sharp-page {
+      .first-section {
+        .description-side {
+          .description {
+            color: #000;
+          }
+        }
+      }
+      .second-section {
+        .description-side {
+          .description {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
+/// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
