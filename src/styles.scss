@@ -1,33 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
 
 .no-scroll {
-    overflow: hidden !important;
-  }
-  
+  overflow: hidden !important;
+}
 
 /* For Webkit Browsers (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
+  width: 12px;
+  height: 12px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 10px;
-    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
 }
 ::-webkit-scrollbar-thumb {
-    background: #007bff;
-    border-radius: 10px;
-    border: 3px solid #f1f1f1;
+  background: #007bff;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
 }
 /* For Firefox */
 * {
-    scrollbar-width: thin;
-    scrollbar-color: #007bff #f1f1f1; 
+  scrollbar-width: thin;
+  scrollbar-color: #007bff #f1f1f1;
 }
 /* Global styles */
 * {
-    margin: 0;
+  margin: 0;
 }
 
 /// ABOUT ME PAGE IS SCROLLING DOWN LITTLE BIT WHEN REFRESHING PAGE
