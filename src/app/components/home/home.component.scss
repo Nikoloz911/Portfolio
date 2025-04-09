@@ -317,6 +317,61 @@ body {
       }
     }
   }
+  .home-page-button-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    .resume-button {
+      background-color: #181818;
+      color: #fff;
+      width: 200px;
+      height: 55px;
+      cursor: pointer;
+      position: relative;
+      border: none;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+      &:hover {
+        box-shadow: 0 6px 20px rgba(66, 153, 225, 0.25);
+        transform: translateY(-2px);
+      }
+
+      .button-text {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
+
+      .gradient-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+        z-index: 1;
+        background: radial-gradient(
+          circle at 50% 50%,
+          rgba(66, 153, 225, 0.8) 0%,
+          rgba(255, 255, 255, 0) 70%
+        );
+      }
+    }
+  }
 }
 /// RESPONSIVE
 /// RESPONSIVE
@@ -445,7 +500,9 @@ body {
     }
     .home-page-button-container {
       .resume-button {
-        border: solid 1px #b1b1b1;
+        background-color: #ddd;
+        color: #333;
+        border: solid 1px #000000;
       }
     }
   }

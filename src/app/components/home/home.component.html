@@ -1,74 +1,93 @@
-<!-- Entrance Animation -->  <!-- Entrance Animation -->  <!-- Entrance Animation -->
-<div 
-  *ngIf="showAnimation" 
-  [@fadeIn]="!hideAnimation ? 'visible' : 'hidden'" 
-  [@fadeOut]="hideAnimation ? 'hidden' : 'visible'" 
+<!-- Entrance Animation -->
+<!-- Entrance Animation -->
+<!-- Entrance Animation -->
+<div
+  *ngIf="showAnimation"
+  [@fadeIn]="!hideAnimation ? 'visible' : 'hidden'"
+  [@fadeOut]="hideAnimation ? 'hidden' : 'visible'"
   class="intro-animation"
 >
-  <h3 style="font-family: sans-serif;">Welcome to My Portfolio</h3>
+  <h3 style="font-family: sans-serif">Welcome to My Portfolio</h3>
 </div>
-<!-- Entrance Animation -->  <!-- Entrance Animation -->  <!-- Entrance Animation -->
+<!-- Entrance Animation -->
+<!-- Entrance Animation -->
+<!-- Entrance Animation -->
 <body>
-  <div *ngIf="!showAnimation" >
+  <div *ngIf="!showAnimation">
     <app-nav-bar></app-nav-bar>
     <div class="home-page">
-        <div class="home-page-left-side">
-            <h1 class="home-page-title">Nikoloz Lobzhanidze</h1>
-            <div class="home-page-image-container">
-              <img class="home-page-image" src="/assets/images/ProfilePictureDark.jpg" alt="Image">
-            </div>            
-            <h1 class="home-page-title-description">FullStack Developer</h1>
-            <button class="home-page-left-side-button" [routerLink]="'/Projects'">Projects</button>
+      <div class="home-page-left-side">
+        <h1 class="home-page-title">Nikoloz Lobzhanidze</h1>
+        <div class="home-page-image-container">
+          <img
+            class="home-page-image"
+            src="/assets/images/ProfilePictureDark.jpg"
+            alt="Image"
+          />
         </div>
-        <div class="home-page-right-side">
-            <h1 class="home-page-right-side-title">Languages</h1>
-            <div class="home-page-right-side-icons-container">
-              <h1 class="home-page-right-side-icons-container-top-side-title">Front-End</h1>
-              <div class="home-page-right-side-icons-container-top-side">
-                <a class="icon-Link" href="/html">
-                  <div class="html-icon">               
-                       <i class="devicon-html5-plain-wordmark colored"></i>
-                  </div>
-              </a>
-              <a class="icon-Link" href="/css">
-                  <div class="css-icon">                             
-                       <i class="devicon-css3-plain-wordmark colored"></i>
-                 </div>
-              </a>
-                 <a class="icon-Link" href="/scss">
-                 <div class="scss-icon">                             
-                      <i class="devicon-sass-original colored"></i>
-                   </div>
-                  </a>
-                   <a class="icon-Link" href="/javascript">
-                  <div class="Javascript-icon">       
-                     <i class="devicon-javascript-plain colored"></i>    
-                    </div>
-                  </a>
-                    <a class="icon-Link" href="/typescript">
-                    <div class="Typescript-icon">
-                      <i class="devicon-typescript-plain colored"></i>
-                    </div>
-                  </a>
+        <h1 class="home-page-title-description">FullStack Developer</h1>
+        <button class="home-page-left-side-button" [routerLink]="'/Projects'">
+          Projects
+        </button>
+      </div>
+      <div class="home-page-right-side">
+        <h1 class="home-page-right-side-title">Languages</h1>
+        <div class="home-page-right-side-icons-container">
+          <h1 class="home-page-right-side-icons-container-top-side-title">
+            Front-End
+          </h1>
+          <div class="home-page-right-side-icons-container-top-side">
+            <a class="icon-Link" href="/html">
+              <div class="html-icon">
+                <i class="devicon-html5-plain-wordmark colored"></i>
               </div>
-             <h1 class="home-page-right-side-icons-container-bottom-side-title">Back-End</h1>
-              <div class="home-page-right-side-icons-container-bottom-side">
-                <a class="icon-Link" href="/Csharp">
-                    <div class="Csharp-icon">
-                        <i class="devicon-csharp-plain-wordmark colored"></i>
-                    </div>
-                  </a>
-                  <a class="icon-Link" href="/sql">
-                    <div class="Sql-icon">
-                      <i class="devicon-azuresqldatabase-plain colored"></i>
-                    </div>
-                  </a>
+            </a>
+            <a class="icon-Link" href="/css">
+              <div class="css-icon">
+                <i class="devicon-css3-plain-wordmark colored"></i>
               </div>
-            </div>   
+            </a>
+            <a class="icon-Link" href="/scss">
+              <div class="scss-icon">
+                <i class="devicon-sass-original colored"></i>
+              </div>
+            </a>
+            <a class="icon-Link" href="/javascript">
+              <div class="Javascript-icon">
+                <i class="devicon-javascript-plain colored"></i>
+              </div>
+            </a>
+            <a class="icon-Link" href="/typescript">
+              <div class="Typescript-icon">
+                <i class="devicon-typescript-plain colored"></i>
+              </div>
+            </a>
+          </div>
+          <h1 class="home-page-right-side-icons-container-bottom-side-title">
+            Back-End
+          </h1>
+          <div class="home-page-right-side-icons-container-bottom-side">
+            <a class="icon-Link" href="/Csharp">
+              <div class="Csharp-icon">
+                <i class="devicon-csharp-plain-wordmark colored"></i>
+              </div>
+            </a>
+            <a class="icon-Link" href="/sql">
+              <div class="Sql-icon">
+                <i class="devicon-azuresqldatabase-plain colored"></i>
+              </div>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
     <app-info></app-info>
-</div>
+    <div class="home-page-button-container">
+      <button class="resume-button" (click)="downloadResume()">
+        <div class="gradient-overlay"></div>
+        <span class="button-text">Download Resume</span>
+      </button>
+    </div>
+  </div>
 </body>
 <app-footer></app-footer>
-
