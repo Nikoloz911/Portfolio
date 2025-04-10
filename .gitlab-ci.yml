@@ -15,7 +15,7 @@ merge_to_master:
   script:
     - git checkout master
     - git pull origin master
-    - git merge origin/test --no-edit
+    - git merge origin/Test --no-edit
     - git push https://oauth2:${GITLAB_TOKEN}@gitlab.com/Nikoloz911/Portfolio.git master
   only:
-    - test
+    - Test
