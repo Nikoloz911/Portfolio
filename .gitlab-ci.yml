@@ -2,7 +2,8 @@ stages:
   - merge
 
 variables:
-  GIT_STRATEGY: fetch 
+  GIT_STRATEGY: fetch
+  GIT_DEPTH: 0 
 
 before_script:
   - apt-get update && apt-get install -y git 
@@ -13,6 +14,7 @@ before_script:
 merge_to_master:
   stage: merge
   script:
+    - git fetch origin master
     - git checkout master
     - git pull origin master
     - git merge origin/Test --no-edit
