@@ -37,7 +37,7 @@ export class LanguagesPageComponent {
       name: 'TypeScript', 
       icon: 'devicon-typescript-plain colored',
       category: 'language',
-      description: 'Strongly typed programming language that builds on JavaScript'
+      description: 'Typed superset of JavaScript compiling to plain JavaScript'
     },
     { 
       name: 'C#', 
@@ -55,7 +55,7 @@ export class LanguagesPageComponent {
       name: 'Angular', 
       icon: 'devicon-angularjs-plain colored',
       category: 'framework',
-      description: 'Platform for building mobile and desktop web applications'
+      description: 'Platform for building web applications'
     },
     { 
       name: 'ASP.NET', 
@@ -67,4 +67,11 @@ export class LanguagesPageComponent {
 
   languageSkills = this.skills.filter(skill => skill.category === 'language');
   frameworkSkills = this.skills.filter(skill => skill.category === 'framework');
+
+  getLanguageRoute(name: string): string {
+    if (name === 'C#') {
+      return '/Csharp';
+    }
+    return '/' + name.toLowerCase();
+  }
 }
