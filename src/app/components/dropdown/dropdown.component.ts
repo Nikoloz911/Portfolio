@@ -62,7 +62,7 @@ export class DropdownComponent {
 
   updatePageText(): void {
     document.querySelectorAll('[data-translate]').forEach(element => {
-      const key = element.getAttribute('data-translate');
+      let key = element.getAttribute('data-translate');
       if (key && this.translations[this.currentLanguage] && this.translations[this.currentLanguage][key]) {
         element.textContent = this.translations[this.currentLanguage][key];
       }
@@ -70,16 +70,16 @@ export class DropdownComponent {
   }
 
   updateNavbarText(lang: string): void {
-    const labels = this.translations[lang];
+    let labels = this.translations[lang];
 
     Object.keys(labels).forEach(key => {
-      const li = document.querySelectorAll(`[data-translate="${key}"]`);
+      let li = document.querySelectorAll(`[data-translate="${key}"]`);
       li.forEach(el => {
-        const word = labels[key];
+        let word = labels[key];
         el.innerHTML = '';
 
         word.split('').forEach(letter => {
-          const span = document.createElement('span');
+          let span = document.createElement('span');
           span.className = letter === ' ' ? 'space' : 'letter';
           span.textContent = letter;
           el.appendChild(span);
