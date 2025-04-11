@@ -1,1 +1,18 @@
-<p>dropdown works!</p>
+<div class="languages-dropdown">
+    <div class="selected-language" (click)="toggleDropdown()">
+      <img [src]="getCurrentLanguage()?.flag" alt="Flag">
+      <span>{{ getCurrentLanguage()?.name }}</span>
+      <i class="dropdown-arrow" [class.arrow-up]="isOpen"></i>
+    </div>
+    
+    <div class="dropdown-options" *ngIf="isOpen">
+      <div 
+        class="language-option" 
+        *ngFor="let lang of languages" 
+        (click)="setLanguage(lang.code)"
+        [class.active]="currentLanguage === lang.code">
+        <img [src]="lang.flag" alt="{{ lang.name }} flag">
+        <span>{{ lang.name }}</span>
+      </div>
+    </div>
+  </div>
