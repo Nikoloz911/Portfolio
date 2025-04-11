@@ -1,146 +1,197 @@
 <header>
-<nav id="nav-bar" class="nav-bar">
-  <div class="nav-bar-left-side">
-    <a class="nav-bar-content" href="/home">
-    <img class="nav-bar-image" src="/assets/images/Logo.jpg" alt="">
-    <h1 class="nav-bar-title">Portfolio</h1>
-    </a>
-  </div>
-  <div class="nav-bar-right-side"> 
-    <div class="nav-bar-switch">
-    <app-switch></app-switch>
+  <nav id="nav-bar" class="nav-bar">
+    <div class="nav-bar-left-side">
+      <a class="nav-bar-content" href="/home">
+        <img class="nav-bar-image" src="/assets/images/Logo.jpg" alt="" />
+        <h1 class="nav-bar-title">Portfolio</h1>
+      </a>
     </div>
-    <!-- NAV-BAR LINKS CONTAINER -->   <!-- NAV-BAR LINKS CONTAINER -->   <!-- NAV-BAR LINKS CONTAINER -->  
-    <!-- NAV-BAR LINKS CONTAINER -->   <!-- NAV-BAR LINKS CONTAINER -->   <!-- NAV-BAR LINKS CONTAINER -->  
-    <div class="nav-bar-links-container">
-      <ul class="nav-bar-links">
-        <a
-        [routerLink]="'/'"
-        class="nav-bar-link"
-        [class.active-link]="isActive('/')"
-      >
-        <li>
-          <span class="letter">H</span>
-          <span class="letter">o</span>
-          <span class="letter">m</span>
-          <span class="letter">e</span>
-        </li>
-      </a>      
-        <a routerLink="/Me" routerLinkActive="active-link" cd  class="nav-bar-link">
-          <li>
-            <span class="letter">A</span>
-            <span class="letter">b</span>
-            <span class="letter">o</span>
-            <span class="letter">u</span>
-            <span class="letter">t</span>
-            <span class="space"></span>
-            <span class="letter">M</span>
-            <span class="letter">e</span>
-          </li>
-        </a>
-        <a routerLink="/Projects" routerLinkActive="active-link"  class="nav-bar-link">
-          <li>
-            <span class="letter">P</span>
-            <span class="letter">r</span>
-            <span class="letter">o</span>
-            <span class="letter">j</span>
-            <span class="letter">e</span>
-            <span class="letter">c</span>
-            <span class="letter">t</span>
-            <span class="letter">s</span>
-          </li>
-        </a>
-        <a routerLink="/back-end" routerLinkActive="active-link" class="nav-bar-link">
-          <li>
-            <span class="letter">B</span>
-            <span class="letter">a</span>
-            <span class="letter">c</span>
-            <span class="letter">k</span>
-            <span class="letter">-</span>
-            <span class="letter">E</span>
-            <span class="letter">n</span>
-            <span class="letter">d</span>
-          </li>
-        </a>
-      </ul>
+    <div class="nav-bar-right-side">
+      <div class="nav-bar-dropdown">
+      <app-dropdown></app-dropdown>
     </div>
-    <!-- NAV-BAR LINKS CONTAINER -->   <!-- NAV-BAR LINKS CONTAINER -->   <!-- NAV-BAR LINKS CONTAINER -->  
-    <!-- NAV-BAR LINKS CONTAINER -->   <!-- NAV-BAR LINKS CONTAINER -->   <!-- NAV-BAR LINKS CONTAINER -->  
-
-    <div class="burger-menu" (click)="toggleBurgerMenu()">
-      <div class="burger-menu-content">
-        <div class="burger-menu-line"></div>
-        <div class="burger-menu-line"></div>
-        <div class="burger-menu-line"></div>
-      </div>
-    </div>
-  </div>
-  <!-- RESPONSIVE BURGER MENU CONTAINER  -->   <!-- RESPONSIVE BURGER MENU CONTAINER  -->   <!-- RESPONSIVE BURGER MENU CONTAINER  -->
-  <div id="burger-menu-container" class="burger-menu-container" [style.display]="isBurgerMenuOpen ? 'block' : 'none'">
-    <!-- NAV-BAR LINKS CONTAINER -->   <!-- NAV-BAR LINKS CONTAINER -->   <!-- NAV-BAR LINKS CONTAINER -->  
-    <!-- NAV-BAR LINKS CONTAINER -->   <!-- NAV-BAR LINKS CONTAINER -->   <!-- NAV-BAR LINKS CONTAINER -->  
-    <div class="nav-bar-links-container">
       <div class="nav-bar-switch">
-      <app-switch></app-switch>
+        <app-switch></app-switch>
       </div>
-      <ul class="nav-bar-links">
-        <a
-        [routerLink]="'/'"
-        class="nav-bar-link"
-        [class.active-link]="isActive('/')"
-      >
-        <li>
-          <span class="letter">H</span>
-          <span class="letter">o</span>
-          <span class="letter">m</span>
-          <span class="letter">e</span>
-        </li>
-      </a>      
-        <a routerLink="/Me" routerLinkActive="active-link" class="nav-bar-link">
-          <li>
-            <span class="letter">A</span>
-            <span class="letter">b</span>
-            <span class="letter">o</span>
-            <span class="letter">u</span>
-            <span class="letter">t</span>
-            <span class="space"></span>
-            <span class="letter">M</span>
-            <span class="letter">e</span>
-          </li>
-        </a>
-        <a routerLink="/Projects" routerLinkActive="active-link" class="nav-bar-link">
-          <li>
-            <span class="letter">P</span>
-            <span class="letter">r</span>
-            <span class="letter">o</span>
-            <span class="letter">j</span>
-            <span class="letter">e</span>
-            <span class="letter">c</span>
-            <span class="letter">t</span>
-            <span class="letter">s</span>
-          </li>
-        </a>
-        <a routerLink="/back-end" routerLinkActive="active-link" class="nav-bar-link">
-          <li>
-            <span class="letter">B</span>
-            <span class="letter">a</span>
-            <span class="letter">c</span>
-            <span class="letter">k</span>
-            <span class="letter">-</span>
-            <span class="letter">E</span>
-            <span class="letter">n</span>
-            <span class="letter">d</span>
-          </li>
-        </a>
-      </ul>
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <div class="nav-bar-links-container">
+        <ul class="nav-bar-links">
+          <a
+            [routerLink]="'/'"
+            class="nav-bar-link"
+            [class.active-link]="isActive('/')"
+          >
+            <li data-translate="home">
+              <span class="letter">H</span>
+              <span class="letter">o</span>
+              <span class="letter">m</span>
+              <span class="letter">e</span>
+            </li>
+          </a>
+          <a
+            routerLink="/Me"
+            routerLinkActive="active-link"
+            cd
+            class="nav-bar-link"
+          >
+            <li data-translate="about">
+              <span class="letter">A</span>
+              <span class="letter">b</span>
+              <span class="letter">o</span>
+              <span class="letter">u</span>
+              <span class="letter">t</span>
+              <span class="space"></span>
+              <span class="letter">M</span>
+              <span class="letter">e</span>
+            </li>
+          </a>
+          <a
+            routerLink="/Projects"
+            routerLinkActive="active-link"
+            class="nav-bar-link"
+          >
+            <li data-translate="projects">
+              <span class="letter">P</span>
+              <span class="letter">r</span>
+              <span class="letter">o</span>
+              <span class="letter">j</span>
+              <span class="letter">e</span>
+              <span class="letter">c</span>
+              <span class="letter">t</span>
+              <span class="letter">s</span>
+            </li>
+          </a>
+          <a
+            routerLink="/back-end"
+            routerLinkActive="active-link"
+            class="nav-bar-link"
+          >
+            <li data-translate="backend">
+              <span class="letter">B</span>
+              <span class="letter">a</span>
+              <span class="letter">c</span>
+              <span class="letter">k</span>
+              <span class="letter">-</span>
+              <span class="letter">E</span>
+              <span class="letter">n</span>
+              <span class="letter">d</span>
+            </li>
+          </a>
+        </ul>
+      </div>
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <!-- NAV-BAR LINKS CONTAINER -->
 
+      <div class="burger-menu" (click)="toggleBurgerMenu()">
+        <div class="burger-menu-content">
+          <div class="burger-menu-line"></div>
+          <div class="burger-menu-line"></div>
+          <div class="burger-menu-line"></div>
+        </div>
+      </div>
     </div>
-    <!-- NAV-BAR LINKS CONTAINER -->   <!-- NAV-BAR LINKS CONTAINER -->   <!-- NAV-BAR LINKS CONTAINER -->  
-    <!-- NAV-BAR LINKS CONTAINER -->   <!-- NAV-BAR LINKS CONTAINER -->   <!-- NAV-BAR LINKS CONTAINER -->  
-  
-
-  </div>
-  <!-- RESPONSIVE BURGER MENU CONTAINER  -->   <!-- RESPONSIVE BURGER MENU CONTAINER  -->   <!-- RESPONSIVE BURGER MENU CONTAINER  -->
-
-</nav>
+    <!-- RESPONSIVE BURGER MENU CONTAINER  -->
+    <!-- RESPONSIVE BURGER MENU CONTAINER  -->
+    <!-- RESPONSIVE BURGER MENU CONTAINER  -->
+    <div
+      id="burger-menu-container"
+      class="burger-menu-container"
+      [style.display]="isBurgerMenuOpen ? 'block' : 'none'"
+    >
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <div class="nav-bar-links-container">
+        <div class="nav-bar-dropdown">
+          <app-dropdown (dropdownOpened)="handleDropdown($event)"></app-dropdown>
+        </div>
+        <div class="nav-bar-switch" *ngIf="!isDropdownOpen">
+          <app-switch></app-switch>
+        </div>            
+        <ul class="nav-bar-links">
+          <a
+            [routerLink]="'/'"
+            class="nav-bar-link"
+            [class.active-link]="isActive('/')"
+          >
+            <li data-translate="home">
+              <span class="letter">H</span>
+              <span class="letter">o</span>
+              <span class="letter">m</span>
+              <span class="letter">e</span>
+            </li>
+          </a>
+          <a
+            routerLink="/Me"
+            routerLinkActive="active-link"
+            class="nav-bar-link"
+          >
+            <li data-translate="about">
+              <span class="letter">A</span>
+              <span class="letter">b</span>
+              <span class="letter">o</span>
+              <span class="letter">u</span>
+              <span class="letter">t</span>
+              <span class="space"></span>
+              <span class="letter">M</span>
+              <span class="letter">e</span>
+            </li>
+          </a>
+          <a
+            routerLink="/Projects"
+            routerLinkActive="active-link"
+            class="nav-bar-link"
+          >
+            <li data-translate="projects">
+              <span class="letter">P</span>
+              <span class="letter">r</span>
+              <span class="letter">o</span>
+              <span class="letter">j</span>
+              <span class="letter">e</span>
+              <span class="letter">c</span>
+              <span class="letter">t</span>
+              <span class="letter">s</span>
+            </li>
+          </a>
+          <a
+            routerLink="/back-end"
+            routerLinkActive="active-link"
+            class="nav-bar-link"
+          >
+            <li data-translate="backend">
+              <span class="letter">B</span>
+              <span class="letter">a</span>
+              <span class="letter">c</span>
+              <span class="letter">k</span>
+              <span class="letter">-</span>
+              <span class="letter">E</span>
+              <span class="letter">n</span>
+              <span class="letter">d</span>
+            </li>
+          </a>
+        </ul>
+      </div>
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <!-- NAV-BAR LINKS CONTAINER -->
+      <!-- NAV-BAR LINKS CONTAINER -->
+    </div>
+    <!-- RESPONSIVE BURGER MENU CONTAINER  -->
+    <!-- RESPONSIVE BURGER MENU CONTAINER  -->
+    <!-- RESPONSIVE BURGER MENU CONTAINER  -->
+  </nav>
 </header>
