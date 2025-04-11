@@ -1,4 +1,34 @@
 <app-nav-bar></app-nav-bar>
 <body>
-    
+<div class="container">
+  <section class="skills-section">
+    <h1 class="main-title">My Tech Stack</h1>   
+    <div class="section-container">
+      <h2 class="section-title">Languages</h2>
+      <div class="skills-grid">
+        <a [routerLink]="[getLanguageRoute(skill.name)]" class="card-link" *ngFor="let skill of languageSkills">
+          <div class="card" id="card">
+            <div class="content">
+              <i [class]="skill.icon"></i>
+              <h3>{{skill.name}}</h3>
+              <p>{{skill.description}}</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="section-container">
+      <h2 class="section-title">Frameworks</h2>
+      <div class="skills-grid">
+        <div class="card" *ngFor="let skill of frameworkSkills">
+          <div class="content">
+            <i [class]="skill.icon"></i>
+            <h3>{{skill.name}}</h3>
+            <p>{{skill.description}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
 </body>
