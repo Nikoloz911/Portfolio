@@ -27,6 +27,7 @@ import { SqlFooterComponent } from './components/languages/sql-footer/sql-footer
 import { LanguagesPageComponent } from './components/languages/languages-page/languages-page.component';
 import { SwitchComponent } from './components/switch/switch.component';
 import { InfoComponent } from './components/info/info.component';
+import { DropdownComponent } from './components/dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { InfoComponent } from './components/info/info.component';
     LanguagesPageComponent,
     SwitchComponent,
     InfoComponent,
+    DropdownComponent,
   ],
   imports: [
     BrowserModule,
