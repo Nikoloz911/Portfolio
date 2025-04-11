@@ -1,0 +1,28 @@
+name: Force Sync Test → Master
+
+on:
+  push:
+    branches:
+      - Test
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Test branch
+        uses: actions/checkout@v4
+        with:
+          ref: Test
+          token: ${{ secrets.GITHUB_TOKEN }} 
+
+      - name: Set up Git user
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Force push Test into master
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git push origin Test:master --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
