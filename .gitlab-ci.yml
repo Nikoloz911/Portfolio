@@ -21,3 +21,13 @@ merge_to_master:
     - git push https://oauth2:${GITLAB_TOKEN}@gitlab.com/Nikoloz911/Portfolio.git master
   only:
     - Test
+
+
+
+
+
+
+
+
+
+    
