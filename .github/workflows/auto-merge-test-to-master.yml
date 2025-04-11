@@ -9,10 +9,11 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Test
+      - name: Checkout Test branch
         uses: actions/checkout@v4
         with:
           ref: Test
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Git user
         run: |
@@ -21,7 +22,7 @@ jobs:
 
       - name: Force push Test into master
         run: |
-          git fetch origin
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git push origin Test:master --force
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
