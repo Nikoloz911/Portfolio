@@ -68,3 +68,30 @@
     }
   }
 }
+
+:host-context([theme="light"]) {
+  .languages-dropdown {
+    color: #000;
+    border: solid 1px #000;
+    
+    .dropdown-arrow {
+      border: solid #000;
+      border-width: 0 2px 2px 0;
+    }
+    
+    .dropdown-options {
+      background-color: #fff;
+      border: solid 1px #000;
+    }
+    
+    .language-option {
+      &:hover {
+        background-color: #f0f0f0;
+      }
+      
+      &.active {
+        background-color: #e0e0e0;
+      }
+    }
+  }
+}
