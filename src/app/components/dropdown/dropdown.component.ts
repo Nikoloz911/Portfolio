@@ -23,21 +23,33 @@ export class DropdownComponent {
     { code: 'en', name: 'English', flag: 'assets/flags/usa.webp' },
     { code: 'ka', name: 'ქართული', flag: 'assets/flags/georgia.webp' }
   ];
-
+/// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS
+/// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS
   translations: ITranslations = {
     en: {
       home: 'Home',
       about: 'About Me',
       projects: 'Projects',
-      backend: 'Back-End'
+      backend: 'Back-End',
+      Name: 'Nikoloz Lobzhanidze',
+      title: 'FullStack Developer',
+      languages: 'Languages',
     },
+    /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN
     ka: {
       home: 'მთავარი',
       about: 'შესახებ',
       projects: 'პროექტები',
-      backend: 'ბექ-ენდი'
+      backend: 'ბექ-ენდი',
+      Name: 'ნიკოლოზ ლობჟანიძე',
+      title: 'FullStack დეველოპერი',
+      languages: 'ენები',
+
     }
+    /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN
   };
+/// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS
+/// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS
 
   toggleDropdown(): void {
     this.isOpen = !this.isOpen;
