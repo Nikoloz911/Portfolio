@@ -1,6 +1,6 @@
 body {
   background-color: transparent;
-  height: 550px;
+  height: auto;
   color: #fff;
   font-family: sans-serif;
   .info-container {
@@ -38,7 +38,7 @@ body {
 
 @media screen and (min-width: 360px) and (max-width: 388px) {
   body {
-    height: 1100px !important;
+    height: auto !important;
     .info-container {
       .languages-text {
         width: 300px !important;
@@ -51,7 +51,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   body {
-    height: 1100px !important;
+    height: auto !important;
     .info-container {
       .summary {
         width: 320px !important;
@@ -64,7 +64,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   body {
-    height: 650px;
+    height: auto;
     .info-container {
       .summary {
         width: 740px;

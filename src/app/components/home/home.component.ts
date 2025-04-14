@@ -59,7 +59,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
   downloadResume(): void {
     let link = document.createElement('a');
-    link.href = 'assets/resume/nika.pdf';
+    link.href = 'assets/resume/nika.pdf'; // Resume
     link.download = 'Nikoloz_Resume.pdf';
     document.body.appendChild(link);
     link.click();
