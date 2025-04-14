@@ -96,10 +96,9 @@
   opacity: 0;
   pointer-events: none;
 }
-html,
-body {
-  overflow: hidden;
+hhtml, body {
   margin: 0;
+  scroll-behavior: smooth; 
 }
 /// Entrance Animation  /// Entrance Animation  /// Entrance Animation  /// Entrance Animation
 body {
@@ -110,6 +109,8 @@ body {
   background: linear-gradient(270deg, #040000 0%, #00114f 80%);
   background: -webkit-linear-gradient(270deg, #040000 0%, #00114f 80%);
   background: -moz-linear-gradient(270deg, #040000 0%, #00114f 80%);
+  position: relative;
+  min-height: 100vh;
   .home-page {
     display: flex;
     width: 100%;
