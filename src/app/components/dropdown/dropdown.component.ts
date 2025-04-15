@@ -56,6 +56,8 @@ export class DropdownComponent implements OnInit {
        githubText: 'My favorite platform for collaborating with other developers is GitHub. You can check out Codes of my projects and connect with me at:  ',
        goal: 'my Goal',
        goalText: 'My ultimate goal is to work in my field of expertise and create efficient and scalable web applications. I am continuously improving my skills to become a better developer.',
+       projectsTitle: 'PROJECTS',
+       projectsDetails: 'Projects Details',
     },
     /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN
     ka: {
@@ -88,7 +90,14 @@ export class DropdownComponent implements OnInit {
      githubText: 'ჩემი საყვარელი პლატფორმა სხვა დეველოპერებთან თანამშრომლობისთვის არის GitHub. შეგიძლია ნახო ჩემი პროექტების კოდები და დამიკავშირდე შემდეგ მისამართზე:  ',
      goal: 'ჩემი მიზანი',
      goalText: 'ჩემი მთავარი მიზანია ვიმუშაო ჩემს სპეციალობაში და შევქმნა ეფექტური და მასშტაბირებადი ვებ აპლიკაციები. მუდმივად ვმუშაობ საკუთარ უნარების გაუმჯობესებაზე, რომ უკეთესი დეველოპერი გავხდე.',
-     
+     projectsTitle: 'პროექტები',
+     projectsDetails: 'პროექტების დეტალები',
+     hasApi: 'აქბს აპი:',
+     yes: 'კი',
+     TechStack: 'ტექნიკური დასტა: ',
+     design: 'დიზაინი',
+     responsive: 'რესპონსივი',
+     isResponsive: '',
     }
     /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN
   };
