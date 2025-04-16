@@ -58,6 +58,12 @@ export class DropdownComponent implements OnInit {
        goalText: 'My ultimate goal is to work in my field of expertise and create efficient and scalable web applications. I am continuously improving my skills to become a better developer.',
        projectsTitle: 'PROJECTS',
        projectsDetails: 'Projects Details',
+       hasApi: 'Has API:',
+       yes: 'YES',
+       no: 'NO',
+       TechStack: 'Tech Stack: ',
+       design: 'design: ',
+       responsive: 'Responsive: ',
     },
     /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN
     ka: {
@@ -92,12 +98,12 @@ export class DropdownComponent implements OnInit {
      goalText: 'ჩემი მთავარი მიზანია ვიმუშაო ჩემს სპეციალობაში და შევქმნა ეფექტური და მასშტაბირებადი ვებ აპლიკაციები. მუდმივად ვმუშაობ საკუთარ უნარების გაუმჯობესებაზე, რომ უკეთესი დეველოპერი გავხდე.',
      projectsTitle: 'პროექტები',
      projectsDetails: 'პროექტების დეტალები',
-     hasApi: 'აქბს აპი:',
+     hasApi: 'აქვს აპი:',
      yes: 'კი',
+     no: 'არა',
      TechStack: 'ტექნიკური დასტა: ',
-     design: 'დიზაინი',
-     responsive: 'რესპონსივი',
-     isResponsive: '',
+     design: 'დიზაინი:',
+     responsive: 'რესპონსივი:',
     }
     /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN
   };
