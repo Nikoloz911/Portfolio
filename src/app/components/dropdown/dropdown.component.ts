@@ -64,6 +64,13 @@ export class DropdownComponent implements OnInit {
        TechStack: 'Tech Stack: ',
        design: 'design: ',
        responsive: 'Responsive: ',
+       firstDescription: 'I have strong expertise in back-end development, and it’s where my true passion lies. Compared to front-end, back-end development excites me more due to the variety of complex and powerful features it offers.',
+       secondDescription: 'Most of my work is done in Visual Studio 2022, which I am highly proficient in. I’ve mastered almost every feature of it, making it my most comfortable and productive environment. Occasionally, I also use JetBrains Rider. I am also highly skilled in using the terminal within Visual Studio, especially when it comes to solving challenging problems like database errors, Connection problems between classes and migration issues. I know exactly where to look and how to resolve them efficiently.',
+       thirdDescription: 'My experience includes working with one-to-one, one-to-many, and many-to-many relationships, with a strong understanding of their concepts and practical implementation. I enjoy designing and managing database relationships and ensuring smooth data interaction across applications.',
+       fourthDescription: 'While its sometimes difficult to showcase back-end projects since they’re not like front-end websites you can easily host, I’ve shared my work on GitHub. Feel free to explore my repositories and don’t forget to read the README files. they contain valuable insights about each project.',
+       fifhtDescription: 'Over the past year, I have dedicated myself to learning back-end development and continue to grow my skills every day. I’ve completed two significant projects using console applications, where I invested a lot of time refining my problem-solving and coding abilities.',
+       sixthDescription: 'I also have experience with ASP.NET and building RESTful APIs. One of the most valuable lessons I’ve learned is the importance of project organization, especially when working on larger systems. Keeping code clean and structured is something I take pride in.',
+       backEndTitle: 'Back-End Developer Experience',
     },
     /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN
     ka: {
@@ -104,6 +111,13 @@ export class DropdownComponent implements OnInit {
      TechStack: 'ტექნიკური დასტა: ',
      design: 'დიზაინი:',
      responsive: 'რესპონსივი:',
+     firstDescription: 'მე მაქვს ძლიერი გამოცდილება ბექენდ დეველოპმენტში, და სწორედ აქ არის ჩემი რეალური ვნება. შედარებით ფრონტ-ენდთან, ბექენდ დეველოპმენტი მეტწილად მხიბლავს თავისი კომპლექსური და ძლიერ შესაძლებლობებით.',
+  secondDescription: 'ჩემი უმეტესობა სამუშაოს გაკეთებულია Visual Studio 2022-ში, რომელშიც მე ძალიან მძლავრად ვარ დაკავებული. მე შევისწავლე თითქმის ყველა ფუნქცია და ეს ჩემი ყველაზე კომფორტული და პროდუქტიული გარემოა. ზოგჯერ ასევე ვიყენებ JetBrains Rider-ს. ასევე ძალიან გამოცდილება მაქვს Visual Studio-ს ტერმინალში მუშაობაში, განსაკუთრებით მაშინ, როცა მაქვს გამოწვევები, როგორიცაა მონაცემთა ბაზის შეცდომები, კლასების შორის კავშირის პრობლემები და მიგრაციის საკითხები. მე ზუსტად ვიცი სად უნდა ვეძებო და როგორ განვიხილო ისინი ეფექტურად.',
+  thirdDescription: 'ჩემი გამოცდილება მოიცავს ერთზე ერთ, ერთზე მრავალი და მრავალი - მრავალი ურთიერთობების მუშაობას, რომელთაც კარგად მესმის მათი კონცეფციები და პრაქტიკული გამოყენება. მიყვარს მონაცემთა ბაზის ურთიერთობების დიზაინი და მართვა და ვაცნობიერებ მათ შეუფერხებელი ურთიერთქმედება აპლიკაციებში.',
+  fourthDescription: 'დროებით რთულია ბექენდ პროექტების ჩვენება, რადგან ისინი არ არიან მსგავსი ფრონტ-ენდ საიტებს, რომლებსაც ადვილად ჰოსტავ, მაგრამ მე ჩემი სამუშაო GitHub-ზე მაქვს გაზიარებული. გთხოვთ, ეწვიოთ ჩემს რეპოზიტორიებს და ნუ დაგავიწყდებათ წაიკითხოთ README ფაილები. ისინი შეიცავენ მნიშვნელოვან ინფორმაციას თითოეული პროექტის შესახებ.',
+  fifhtDescription: 'გაცილებით წარსულ წელს, მე მიმდებარედ ვსწავლობდი ბექენდ დეველოპმენტს და ყოველდღე ვზრდი ჩემს უნარებს. შევასრულე ორი მნიშვნელოვანი პროექტი კონსოლ აპლიკაციებით, სადაც ბევრი დრო დავხარჯე ჩემი პრობლემების გადაწყვეტისა და კოდირების უნარების გამოთამაშებაში.',
+  backEndTitle: 'ბექენდ დეველოპერის გამოცდილება',
+
     }
     /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN  /// GEORGIAN
   };
