@@ -2,35 +2,38 @@
     <app-nav-bar></app-nav-bar>
     <div class="about-me-container">
         <div class="heading-container">
-            <h1 class="heading">About Me</h1>
+            <h1 class="heading" data-translate="aboutMe">About Me</h1>
         </div>
         <div class="content-container">
-            <p class="introduction">
+            <p class="introduction" data-translate="introduction">
                 I’m Fullstack developer who graduated from the IT Step Academy Georgia in April 2025. I successfully completed a full-stack development course, where I gained expertise in both front-end and back-end technologies. During this journey, I’ve developed a strong foundation in coding, problem-solving, and building dynamic applications, and I’m proud to share these skills.
             </p>        
             <img style="cursor: pointer;" src="/assets/images/STEP.svg" alt="Image" (click)="goToLink()">
             <div class="skills">
-                <h2 class="section-heading">Skills</h2>
+                <h2 class="section-heading" data-translate="skiils">Skills</h2>
                 <ul>
-                    <li>Knowledge in IT Fundamentals: Familiar with concepts covered in CompTIA A+, including hardware, software, networking</li>
-                    <li>Frontend Development: Proficient in HTML, CSS, SCSS, JavaScript, TypeScript, and the Angular framework</li>
-                    <li>Backend Development: Skilled in C#, ASP.NET, and .NET Core</li>
-                    <li>Backend Tools and Services: Proficient in .NET, with experience in integrating SMTP and Twilio Services</li>
-                    <li>Database Management: Strong understanding of SQL and Entity Framework</li>
-                    <li>Additional Knowledge: Basic experience with Python, Kotlin, Go, Java and Unity</li>
-                    <li>Here’s my LinkedIn skills page. feel free to check out my skills here too <a href="https://www.linkedin.com/in/nikalobzhanidze/details/skills/" target="_blank">LinkedIn</a></li>
+                    <li data-translate="AboutMeText1">Knowledge in IT Fundamentals: Familiar with concepts covered in CompTIA A+, including hardware, software, networking</li>
+                    <li data-translate="AboutMeText2">Frontend Development: Proficient in HTML, CSS, SCSS, JavaScript, TypeScript, and the Angular framework</li>
+                    <li data-translate="AboutMeText3">Backend Development: Skilled in C#, ASP.NET, and .NET Core</li>
+                    <li data-translate="AboutMeText4">Backend Tools and Services: Proficient in .NET, with experience in integrating SMTP and Twilio Services</li>
+                    <li data-translate="AboutMeText5">Database Management: Strong understanding of SQL and Entity Framework</li>
+                    <li data-translate="AboutMeText6">Additional Knowledge: Basic experience with Python, Kotlin, Go, Java and Unity</li>
+                    <li>
+                        <span data-translate="AboutMeText7"></span>
+                        <a href="https://www.linkedin.com/in/nikalobzhanidze/details/skills/" target="_blank" data-translate="AboutMeText7Link">LinkedIn</a>
+                      </li>         
                 </ul>                
             </div>
             <div class="github">
-                <h2 class="section-heading">My GitHub</h2>
+                <h2 class="section-heading" data-translate="github">My GitHub</h2>
                 <p class="github-text">
-                    My favorite platform for collaborating with other developers is GitHub. You can check out Codes of my projects and connect with me at: 
-                    <a href="https://github.com/Nikoloz911" target="_blank" class="github-link">Nikoloz911</a>.
-                </p>
+                    <span data-translate="githubText"></span>
+                    <a href="https://github.com/Nikoloz911" target="_blank" class="github-link" data-translate="githubLink">Nikoloz911</a>.
+                  </p>                  
             </div>
             <div class="goals">
-                <h2 class="section-heading">My Goal</h2>
-                <p class="goal-text">
+                <h2 class="section-heading" data-translate="goal">My Goal</h2>
+                <p class="goal-text" data-translate="goalText">
                     My ultimate goal is to work in my field of expertise and create efficient and scalable web applications. I am continuously improving my skills to become a better developer.
                 </p>                
             </div>
