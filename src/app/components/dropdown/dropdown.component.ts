@@ -157,7 +157,7 @@ export class DropdownComponent implements OnInit {
   };
   /// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS
   /// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS
-
+  // Loads saved language preference from localStorage and applies it
   ngOnInit(): void {
     const savedLanguage = localStorage.getItem('selectedLanguage');
     if (savedLanguage) {
@@ -168,12 +168,14 @@ export class DropdownComponent implements OnInit {
     }
   }
 
+  // Toggles the language dropdown menu visibility
   toggleDropdown(): void {
     this.isOpen = !this.isOpen;
     this.dropdownVisible = this.isOpen;
     this.dropdownOpened.emit(this.dropdownVisible);
   }
 
+  // Sets new language, updates UI text, and saves preference
   setLanguage(langCode: string): void {
     this.currentLanguage = langCode;
     this.isOpen = false;
@@ -183,10 +185,12 @@ export class DropdownComponent implements OnInit {
     localStorage.setItem('selectedLanguage', langCode);
   }
 
+  // Gets the current language object from languages array
   getCurrentLanguage(): Language | undefined {
     return this.languages.find((lang) => lang.code === this.currentLanguage);
   }
 
+  // Updates all translatable elements on the page to current language
   updatePageText(): void {
     document.querySelectorAll('[data-translate]').forEach((element) => {
       let key = element.getAttribute('data-translate');
@@ -200,6 +204,7 @@ export class DropdownComponent implements OnInit {
     });
   }
 
+  // Updates navbar text with letter-by-letter spans for styling
   updateNavbarText(lang: string): void {
     let labels = this.translations[lang];
 
@@ -219,6 +224,7 @@ export class DropdownComponent implements OnInit {
     });
   }
 
+  // Gets translation for a specific key in current language
   translate(key: string): string {
     if (
       this.translations[this.currentLanguage] &&
@@ -229,6 +235,7 @@ export class DropdownComponent implements OnInit {
     return key;
   }
 
+  // Closes dropdown when clicking outside of it
   onClickOutside(event: Event): void {
     if (!(event.target as HTMLElement).closest('.languages-dropdown')) {
       if (this.isOpen) {
