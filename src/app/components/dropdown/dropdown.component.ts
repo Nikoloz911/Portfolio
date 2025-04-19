@@ -159,7 +159,7 @@ export class DropdownComponent implements OnInit {
   /// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS  /// TRANSLATIONS
   // Loads saved language preference from localStorage and applies it
   ngOnInit(): void {
-    const savedLanguage = localStorage.getItem('selectedLanguage');
+    let savedLanguage = localStorage.getItem('selectedLanguage');
     if (savedLanguage) {
       this.currentLanguage = savedLanguage;
       setTimeout(() => {
@@ -239,7 +239,7 @@ export class DropdownComponent implements OnInit {
   onClickOutside(event: Event): void {
     if (!(event.target as HTMLElement).closest('.languages-dropdown')) {
       if (this.isOpen) {
-        this.isOpen = false;
+        this.isOpen = false;``
         this.dropdownVisible = false;
         this.dropdownOpened.emit(false);
       }
