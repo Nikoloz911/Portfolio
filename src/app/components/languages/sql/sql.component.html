@@ -1,42 +1,78 @@
 <app-nav-bar></app-nav-bar>
 <body>
-    <app-languages-nav-bar></app-languages-nav-bar>
-    <header class="header">
-        <a class="title-icon" href="/sql">
-            <div class="html-icon">               
-                  <i class="devicon-azuresqldatabase-plain colored"></i>
-           </div>
-        </a>
-    </header>
-    <div class="sql-page">
-        <section class="first-section">
-            <div class="description-side">
-                <p class="description">I have extensive experience in data management and SQL, which allows me to write efficient and clean SQL queries. While I often use C# and Entity Framework to create tables and manage databases, I still excel at writing raw SQL code when needed.</p>
-                <p class="second-description">My approach to SQL development is grounded in rigorous testing. I always start by testing my queries in a local environment on a test database with sample tables before executing them in a live setting. This ensures that I can verify the accuracy of the logic, especially when working with complex transactions. This practice helps me avoid errors and guarantees that my SQL code functions correctly.</p>
-            </div>
-            <div class="images-side">
-                <img (click)="openImage('assets/code/Screenshot-31.png')"  class="Ts-page-first-image" src="/assets/code/Screenshot-31.png" alt="Image">
-                <div class="first-image-icon"><i class="bi bi-aspect-ratio"></i></div>
-                <img (click)="openImage('assets/code/Screenshot-30.png')"  class="Ts-page-second-image" src="/assets/code/Screenshot-30.png" alt="Image">
-                <div class="second-image-icon"><i class="bi bi-aspect-ratio"></i></div>     
-               </div>
-        </section>
-        <section class="second-section">
-            <div class="description-side">
-                <p class="description">In SQL, I’m proficient in creating tables, inserting data, managing transactions, and sorting data. The process I follow in SQL is similar to how I handle data in C# and Entity Framework, but I take care to ensure that my SQL code is as efficient and readable as possible.</p>
-                <p class="second-description">Just like in other programming languages, I make it a point to write clear comments in my SQL code. Since SQL queries are typically written in a single query file, it's essential to maintain well-structured and well-documented code for future reference and collaboration.</p>
-            </div>
-            <div class="images-side">
-                <div class="images-side">
-                    <img (click)="openImage('assets/code/Screenshot-29.png')"  class="Ts-page-first-image" src="/assets/code/Screenshot-29.png" alt="Image">
-                    <div class="first-image-icon"><i class="bi bi-aspect-ratio"></i></div>
-                   </div>
-            </div>
-        </section>
-    </div>
-
+  <app-languages-nav-bar></app-languages-nav-bar>
+  <header class="header">
+    <a class="title-icon" href="/sql">
+      <div class="html-icon">
+        <i class="devicon-azuresqldatabase-plain colored"></i>
+      </div>
+    </a>
+  </header>
+  <div class="sql-page">
+    <section class="first-section">
+      <div class="description-side">
+        <p class="description">
+          I have extensive experience in data management and SQL, which allows
+          me to write efficient and clean SQL queries. While I often use C# and
+          Entity Framework to create tables and manage databases, I still excel
+          at writing raw SQL code when needed.
+        </p>
+        <p class="second-description">
+          My approach to SQL development is grounded in rigorous testing. I
+          always start by testing my queries in a local environment on a test
+          database with sample tables before executing them in a live setting.
+          This ensures that I can verify the accuracy of the logic, especially
+          when working with complex transactions. This practice helps me avoid
+          errors and guarantees that my SQL code functions correctly.
+        </p>
+      </div>
+      <div class="images-side">
+        <img
+          (click)="openImage('assets/code/Screenshot-31.png')"
+          class="Ts-page-first-image"
+          src="/assets/code/Screenshot-31.png"
+          alt="Image"
+        />
+        <div class="first-image-icon"><i class="bi bi-aspect-ratio"></i></div>
+        <img
+          (click)="openImage('assets/code/Screenshot-30.png')"
+          class="Ts-page-second-image"
+          src="/assets/code/Screenshot-30.png"
+          alt="Image"
+        />
+        <div class="second-image-icon"><i class="bi bi-aspect-ratio"></i></div>
+      </div>
+    </section>
+    <section class="second-section">
+      <div class="description-side">
+        <p class="description">
+          In SQL, I’m proficient in creating tables, inserting data, managing
+          transactions, and sorting data. The process I follow in SQL is similar
+          to how I handle data in C# and Entity Framework, but I take care to
+          ensure that my SQL code is as efficient and readable as possible.
+        </p>
+        <p class="second-description">
+          Just like in other programming languages, I make it a point to write
+          clear comments in my SQL code. Since SQL queries are typically written
+          in a single query file, it's essential to maintain well-structured and
+          well-documented code for future reference and collaboration.
+        </p>
+      </div>
+      <div class="images-side">
+        <div class="images-side">
+          <img
+            (click)="openImage('assets/code/Screenshot-29.png')"
+            class="Ts-page-first-image"
+            src="/assets/code/Screenshot-29.png"
+            alt="Image"
+          />
+          <div class="first-image-icon"><i class="bi bi-aspect-ratio"></i></div>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 <app-sql-footer></app-sql-footer>
 <!-- This Is for Open Image-modal-component -->
-<app-image-modal #imageModal></app-image-modal> 
+<app-image-modal #imageModal></app-image-modal>
 <!-- This Is for Open Image-modal-component -->
