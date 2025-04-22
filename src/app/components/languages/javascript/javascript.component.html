@@ -1,41 +1,54 @@
 <app-nav-bar></app-nav-bar>
 <body>
-      <app-languages-nav-bar></app-languages-nav-bar>
-    <header class="header">
+  <app-languages-nav-bar></app-languages-nav-bar>
+  <header class="header">
     <a class="title-icon" href="/js">
-        <div class="javascript-icon">               
-            <i class="devicon-javascript-plain colored"></i>   
-       </div>
+      <div class="javascript-icon">
+        <i class="devicon-javascript-plain colored"></i>
+      </div>
     </a>
-</header>
-<div class="javascript-page">
+  </header>
+  <div class="javascript-page">
     <div class="javascript-page-description-side">
-        <p class="javascript-text">
-            <span class="highlight-text">
-              I've worked extensively with one of the most functional and widely-used programming languages. 
-              Before transitioning to TypeScript, I used it frequently for various projects. When developing outside the Angular ecosystem, it's my go-to choice. 
-              However, since Angular comes with TypeScript by default, there's no need to rely on it separately. That being said, my foundation in TypeScript wouldn't be as strong without prior experience in this language.
-            </span> 
-          
-            I used to write complex logic, including DOM manipulation and API integrations, fetching data and displaying it dynamically in HTML. 
-            I know many useful functions that simplify development, though Angular streamlines these processes even further, often requiring less code for similar tasks.
-          
-            One of my major projects where I applied these skills was Zoomer although its API is now blocked, and the design is outdated. 
-            If you go to my GitHub, you'll find my code well-structured and thoroughly commented. Here’s the link: <a class="project-link" href="https://github.com/Nikoloz911/Project-4-Zoomer/blob/main/scripts/app.js">app.js</a>
-          </p>
-          
+      <p class="javascript-text">
+        <span class="highlight-text">
+          I've worked extensively with one of the most functional and
+          widely-used programming languages. Before transitioning to TypeScript,
+          I used it frequently for various projects. When developing outside the
+          Angular ecosystem, it's my go-to choice. However, since Angular comes
+          with TypeScript by default, there's no need to rely on it separately.
+          That being said, my foundation in TypeScript wouldn't be as strong
+          without prior experience in this language.
+        </span>
+
+        I used to write complex logic, including DOM manipulation and API
+        integrations, fetching data and displaying it dynamically in HTML. I
+        know many useful functions that simplify development, though Angular
+        streamlines these processes even further, often requiring less code for
+        similar tasks. One of my major projects where I applied these skills was
+        Zoomer although its API is now blocked, and the design is outdated. If
+        you go to my GitHub, you'll find my code well-structured and thoroughly
+        commented. Here’s the link:
+        <a
+          class="project-link"
+          href="https://github.com/Nikoloz911/Project-4-Zoomer/blob/main/scripts/app.js"
+          >app.js</a
+        >
+      </p>
     </div>
     <div class="javascript-page-image-side">
-      <img (click)="openImage('assets/code/Screenshot-13.png')"  class="javascript-image" src="/assets/code/Screenshot-13.png" alt="Image">
+      <img
+        (click)="openImage('assets/code/Screenshot-13.png')"
+        class="javascript-image"
+        src="/assets/code/Screenshot-13.png"
+        alt="Image"
+      />
       <div class="first-image-icon"><i class="bi bi-aspect-ratio"></i></div>
     </div>
-</div>
- <app-tr-footer></app-tr-footer> 
+  </div>
+  <app-tr-footer></app-tr-footer>
 </body>
 
-
-
-
 <!-- This Is for Open Image-modal-component -->
-<app-image-modal #imageModal></app-image-modal> 
+<app-image-modal #imageModal></app-image-modal>
 <!-- This Is for Open Image-modal-component -->
