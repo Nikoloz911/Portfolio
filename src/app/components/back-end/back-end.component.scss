@@ -17,35 +17,6 @@
     filter: brightness(70%);
   }
 }
-@mixin Responsive-Icon-Styles {
-  .first-section {
-    .first-section-right-side {
-      width: 100% !important;
-      .first-screenshot-icon {
-        transform: translate(10%, -1000%) !important;
-      }
-      .second-screenshot-icon {
-        transform: translate(10%, -20%) !important;
-      }
-      .third-screenshot-icon {
-        transform: translate(10%, 850%) !important;
-      }
-    }
-  }
-  .second-section {
-    .second-section-right-side {
-      .fourth-screenshot-icon {
-        transform: translate(10%, -1000%) !important;
-      }
-      .fifth-screenshot-icon {
-        transform: translate(10%, -20%) !important;
-      }
-      .sixth-screenshot-icon {
-        transform: translate(10%, 850%) !important;
-      }
-    }
-  }
-}
 /// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS  /// MIXINS
 body {
   height: 1400px;
@@ -84,46 +55,6 @@ body {
         font-size: 17px;
         padding: 20px;
       }
-    }
-    .first-section-right-side {
-      width: 60%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      /// SCREENSHOT STYLES   /// SCREENSHOT STYLES   /// SCREENSHOT STYLES
-      .back-end-page-first-screenshot {
-        @include Screenshot-Styles();
-      }
-      .first-screenshot-icon {
-        @include Icons-Styles();
-        transform: translate(-670%, -70%);
-      }
-      .back-end-page-first-screenshot:hover + .first-screenshot-icon {
-        display: block;
-      }
-      .back-end-page-second-screenshot {
-        @include Screenshot-Styles();
-      }
-      .second-screenshot-icon {
-        @include Icons-Styles();
-        transform: translate(20%, -70%);
-      }
-      .back-end-page-second-screenshot:hover + .second-screenshot-icon {
-        display: block;
-      }
-      .back-end-page-third-screenshot {
-        @include Screenshot-Styles();
-      }
-      .third-screenshot-icon {
-        @include Icons-Styles();
-        transform: translate(730%, -70%);
-      }
-      .back-end-page-third-screenshot:hover + .third-screenshot-icon {
-        display: block;
-      }
-      /// SCREENSHOT STYLES   /// SCREENSHOT STYLES   /// SCREENSHOT STYLES
     }
   }
   .second-section {
@@ -224,18 +155,6 @@ body {
     .first-section-left-side {
       width: 80% !important;
     }
-    .first-section-right-side {
-      width: 100% !important;
-      .first-screenshot-icon {
-        display: none !important;
-      }
-      .second-screenshot-icon {
-        display: none !important;
-      }
-      .third-screenshot-icon {
-        display: none !important;
-      }
-    }
   }
   .second-section {
     flex-direction: column;
@@ -280,18 +199,6 @@ body {
     .first-section-left-side {
       width: 80% !important;
     }
-    .first-section-right-side {
-      width: 100% !important;
-      .first-screenshot-icon {
-        transform: translate(-350%, -500%) !important;
-      }
-      .second-screenshot-icon {
-        transform: translate(350%, -500%) !important;
-      }
-      .third-screenshot-icon {
-        transform: translate(10%, 400%) !important;
-      }
-    }
   }
   .second-section {
     flex-direction: column;
@@ -315,18 +222,8 @@ body {
   }
 }
 /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
-/// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
-/// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX  /// RESPONSIVE 768 PX
-/// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE
-/// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE
-@media screen and (min-width: 387px) and (max-width: 400px) {
-  @include Responsive-Icon-Styles();
-}
-@media screen and (min-width: 360px) and (max-width: 388px) {
-  @include Responsive-Icon-Styles();
-}
-/// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE
-/// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE   /// RESPONSIVE
+
+
 /// LIGHT MODE   /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
 /// LIGHT MODE   /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE  /// LIGHT MODE
 :host-context([theme="light"]) {
