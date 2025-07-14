@@ -1,6 +1,6 @@
 pipeline {
     agent any
-
+// This is a Jenkins pipeline script for a simple CI/CD process
     stages {
         stage('Clone Repo') {
             steps {
