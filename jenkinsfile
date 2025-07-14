@@ -1,26 +1,29 @@
 pipeline {
     agent any
-// This is a Jenkins pipeline script for a simple CI/CD process
+
     stages {
         stage('Clone Repo') {
             steps {
                 git 'https://github.com/Nikoloz911/Portfolio'
             }
         }
-        stage('Build') {
-            steps {
-                echo 'Building...'
-            }
-        }
-        stage('Test') {
-            steps {
-                echo 'Running tests...'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying...'
-            }
-        }
+
+        // stage('Build') {
+        //     steps {
+        //         echo 'Building...'
+        //     }
+        // }
+
+        // stage('Test') {
+        //     steps {
+        //         echo 'Running tests...'
+        //     }
+        // }
+
+        // stage('Deploy') {
+        //     steps {
+        //         echo 'Deploying...'
+        //     }
+        // }
     }
 }
